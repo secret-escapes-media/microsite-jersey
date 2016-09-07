@@ -1,0 +1,70 @@
+// styles for the offer blocks that appear on the terrain pages
+
+
+.offer {
+  background-color: $light-grey;
+  .row__column{
+    margin-top: 0;
+  }
+}
+
+.offer__image {
+  position: relative;
+  height: 18em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-size: cover;
+  @include bp( large ) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+  }
+}
+
+.offer__image-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.offer__content {
+  padding: $margin ($margin * 1.2);
+  p + p { margin-top: .2em; }
+}
+
+.offer__content-title {
+  margin-bottom: .482em;
+  font-size: 1.728em;
+}
+
+.offer__content-subtitle {
+  margin-bottom: .833em;
+  font-size: 1.2em;
+  line-height: 1.44;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 1em;
+    width: .833em;
+    margin-right: .482em;
+    margin-bottom: .2em;
+    vertical-align: bottom;
+    background-image: url( "../img/icon/map-pin.png" );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: contain;
+    .svg & { background-image: url( "../img/icon/map-pin.svg" ); }
+  }
+}
+
+.offer__content-price {
+  font-weight: bold;
+  font-size: 1.44em;
+}

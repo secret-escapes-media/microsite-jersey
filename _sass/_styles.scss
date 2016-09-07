@@ -1,0 +1,55 @@
+// all custom styles for the site
+
+
+.site-footer {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  color: darken( $white, 20 );
+  text-align: center;
+  font-size: .8em;
+  font-weight: 400;
+  background-color: $black;
+}
+
+
+// ---------- Background images ----------
+
+.section--fixed-bg {
+  padding-top: 8em;
+  padding-bottom: 8em;
+  color: $white;
+  background-color: $se-light-grey;
+  background: $se-light-grey center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  p { font-weight: 400; }
+  .page-content &:first-child:before {
+    content: '';
+    display: block;
+    height: 3.375em;
+  }
+}
+
+.overview .intro        { background-image: url('../img/bg/bg-01.jpg'); }
+.overview .another      { background-image: url('../img/bg/bg-02.jpg'); }
+.example-page .intro    { background-image: url('../img/bg/bg-04.jpg'); }
+.example-page .another  { background-image: url('../img/bg/bg-03.jpg'); }
+.offers .intro          { background-image: url('../img/bg/bg-05.jpg'); }
+
+
+// ---------- button ----------
+
+.btn {
+  @include transition;
+  display:inline-block;
+  padding: .5em 1.5em;
+  border: 1px solid $se-orange;
+  font-weight: 500;
+  border-radius: 10em;
+  &:hover {
+    color: white;
+    background-color: $se-orange;
+    text-decoration: none;
+  }
+  * + & { margin-top: 1em; }
+}
