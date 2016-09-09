@@ -1,0 +1,5 @@
+<div class="microsite-nav">
+  <ul class="microsite-nav__list">
+    {% assign nav-order = site.pages | sort:"nav-order" %}{% for page in nav-order %}{% if page.title %}<li class="microsite-nav__item microsite-nav__item--{{ page.class }}"><a class="microsite-nav__link" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>{% endif %}{% endfor %}
+  </ul>
+</div>

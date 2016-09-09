@@ -1,26 +1,116 @@
-  - title: An offer
-    category: category-1
-    class: a-third-offer
-    location: Region, Country
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-    price: 999999
-    price-description: per room per night
-    link: #
 
-  - title: Another offer
-    category: category-2
-    class: another-offer
-    location: Region, Country
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-    price: 999999
-    price-description: per room per night
-    link: #
+## Replenish offers
 
-  - title: A third offer
-    category: category-3
-    class: a-third-offer
-    location: Region, Country
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-    price: 999999
-    price-description: per room per night
-    link: #
+- title: An offer
+  category: replenish
+  class: a-third-offer
+  location: Region, Country
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+  price: 999999
+  price-description: per room per night
+  link: #
+
+- title: An offer
+  category: replenish
+  class: a-third-offer
+  location: Region, Country
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+  price: 999999
+  price-description: per room per night
+  link: #
+
+- title: An offer
+  category: replenish
+  class: a-third-offer
+  location: Region, Country
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+  price: 999999
+  price-description: per room per night
+  link: #
+
+## Rebalance offers
+
+- title: Another offer
+  category: rebalance
+  class: another-offer
+  location: Region, Country
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+  price: 999999
+  price-description: per room per night
+  link: #
+
+- title: Another offer
+  category: rebalance
+  class: another-offer
+  location: Region, Country
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+  price: 999999
+  price-description: per room per night
+  link: #
+
+- title: Another offer
+  category: rebalance
+  class: another-offer
+  location: Region, Country
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+  price: 999999
+  price-description: per room per night
+  link: #
+
+## Refresh offers
+
+- title: A third offer
+  category: refresh
+  class: a-third-offer
+  location: Region, Country
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+  price: 999999
+  price-description: per room per night
+  link: #
+
+- title: A third offer
+  category: refresh
+  class: a-third-offer
+  location: Region, Country
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+  price: 999999
+  price-description: per room per night
+  link: #
+
+- title: A third offer
+  category: refresh
+  class: a-third-offer
+  location: Region, Country
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+  price: 999999
+  price-description: per room per night
+  link: #
+
+## Restore offers
+
+- title: A third offer
+  category: restore
+  class: a-third-offer
+  location: Region, Country
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+  price: 999999
+  price-description: per room per night
+  link: #
+
+- title: A third offer
+  category: restore
+  class: a-third-offer
+  location: Region, Country
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+  price: 999999
+  price-description: per room per night
+  link: #
+
+- title: A third offer
+  category: restore
+  class: a-third-offer
+  location: Region, Country
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
+  price: 999999
+  price-description: per room per night
+  link: #

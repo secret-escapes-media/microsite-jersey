@@ -21,35 +21,152 @@
   background-color: $se-light-grey;
   background: $se-light-grey center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  p { font-weight: 400; }
-  .page-content &:first-child:before {
-    content: '';
-    display: block;
-    height: 3.375em;
+
+  &.parallax { background-position: center top; background-attachment: fixed; }
+
+  &.banner {
+    padding-top: 0;
+    padding-bottom: 0;
+    .banner__content {
+      padding-top: 8em;
+      padding-bottom: 8em;
+    }
   }
 }
 
-.overview .intro        { background-image: url('../img/bg/bg-01.jpg'); }
-.overview .another      { background-image: url('../img/bg/bg-02.jpg'); }
-.example-page .intro    { background-image: url('../img/bg/bg-04.jpg'); }
-.example-page .another  { background-image: url('../img/bg/bg-03.jpg'); }
-.offers .intro          { background-image: url('../img/bg/bg-05.jpg'); }
+.overview .section--fixed-bg h1 { font-size: 4em; }
 
+.section--lightgrey-bg  { background-color: $ms-light-grey; }
+.section--grey-bg       { background-color: $ms-grey; }
+.section--purple-bg     { background-color: $ms-purple; }
+.section--pink-bg       { background-color: $ms-pink; }
 
-// ---------- button ----------
-
-.btn {
-  @include transition;
-  display:inline-block;
-  padding: .5em 1.5em;
-  border: 1px solid $se-orange;
-  font-weight: 500;
-  border-radius: 10em;
-  &:hover {
-    color: white;
-    background-color: $se-orange;
-    text-decoration: none;
+.section--white-text    {
+  color: #fff;
+  .btn {
+    background-color: white;
+    color: $ms-purple;
+    &:hover {
+      background-color: $ms-pink;
+    }
   }
-  * + & { margin-top: 1em; }
+}
+
+// ---------- category ----------
+
+.category-tabs {
+  padding: 0;
+  &__links { overflow: hidden; }
+  &__content { display: none; overflow: hidden; }
+  @include bp( large ){
+    &__content { display: block; overflow: hidden; }
+  }
+}
+
+.category {
+  &__link {
+    @include transition;
+    color: #fff;
+    cursor: pointer;
+    background-color: $ms-purple;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: relative;
+    padding: 5em 1em 1em;
+    & + & { margin-top: 0; }
+    &--mobile {
+      display:block;
+      position: absolute;
+      top:0; left:0; right: 0; bottom:0;
+      z-index: 10;
+    }
+
+    @include bp( large ){
+      &--active { border-bottom: 0.5em solid white; padding-bottom: 0.5em; }
+      &:hover { text-decoration: none; }
+      &--mobile { display:none; }
+    }
+
+  }
+  &__content {
+    display: none;
+
+    &__copy {
+      .img-inline { height: 60px; margin: 10px 5px 0 0; }
+      padding: 3em 1em;
+    }
+    &__links {
+      background-color: $ms-purple;
+      overflow: hidden;
+      color: #fff;
+      a {
+        display: block; padding: 0.5em 2em;
+        &:hover { text-decoration: none; }
+      }
+      &--pink { background-color: $ms-pink; }
+    }
+
+    &:hover { text-decoration: none; }
+    &--active { display: block; }
+  }
+}
+
+// ---------- section image copy - half/half ----------
+
+.section--6-6 {
+  padding: 0;
+  &__image {  }
+  &__copy {
+    padding: 2em 5em;
+  }
+}
+
+.ambassador__watch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -53px;
+  margin-left: -53px;
+}
+
+
+// ---------- ambassadors ----------
+
+.ambassador {
+  padding: 0;
+  .ambassador__image { margin-top: 2em; }
+  .ambassador__copy {
+    width: 100%;
+    padding-bottom: 2em;
+    overflow: hidden;
+  }
+
+  @include bp( large ){
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    .ambassador__image {
+      margin-top: 0;
+      box-shadow: 0 0 5px rgba(0,0,0,0.15);
+    }
+    .ambassador__copy {
+      padding-top: 2em;
+    }
+    &--align-copy-left {
+      .ambassador__image {
+        float: right !important;
+        margin-right: 0;
+        margin-top: -1.5em;
+      }
+      .ambassador__copy {
+        float: left !important;
+        margin-right: 2.85714% !important;
+      }
+    }
+    &--align-copy-right {
+      .ambassador__image { margin-top: -1.5em; }
+    }
+  }
 }

@@ -1,0 +1,27 @@
+{% assign ambassadors = site.data.ambassadors %}
+{% for ambassador in ambassadors %}{% if ambassador.category == page.class %}
+
+<section class="section--6-6">
+  <div class="row--columns-6-6 row--columns-vertical-align">
+
+    <div class="row__column section--6-6__copy align-center">
+        <span class="h4">MEET</span>
+        <h3>{{ambassador.title}}</h3>
+        <p>{{ambassador.description}}</p>
+        <hr class="center" />
+        <a href="{{ambassador.link}}" target="_blank" class="h4 arrow_link">
+          {{ambassador.title}}'s story
+        </a>
+    </div>
+
+    <div class="row__column section--6-6__image bg-image-ratio bg-image-ratio--3-2" style="background-image: url({{site.baseurl}}/img/content/ambassador-{{ambassador.class}}.jpg);">
+
+      <a href="{{ambassador.link}}" target="_blank" class="ambassador__watch">
+        <img src="{{site.baseurl}}/img/content/play.png" alt="">
+      </a>
+
+    </div>
+
+  </div>
+</section>
+{% endif %}{% endfor %}

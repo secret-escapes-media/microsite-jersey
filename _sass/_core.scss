@@ -31,6 +31,12 @@ $se-dark-grey-33: rgba(41,39,40,.33);
 $se-dark-grey-5:  rgba(41,39,40,.5);
 $se-dark-grey-85: rgba(41,39,40,.85);
 
+$ms-navy:         #42404d;
+$ms-pink:         #c86297;
+$ms-purple:       #5d3047;
+$ms-light-grey:   #f3f3f3;
+$ms-grey:         #757575;
+
 
 // -------- breakpoints --------
 
@@ -161,3 +167,10 @@ $z-background:      -1;
 .bg-image-ratio--3-2:before   { padding-top: 66.666666666667%; }
 .bg-image-ratio--16-9:before  { padding-top: 56.25%; }
 .bg-image-ratio--21-9:before  { padding-top: 42.8571429%; }
+
+.bg-image-ratio--16-9-to-1-1:before  { 
+  padding-top: 56.25%;
+  @include bp( large ){
+    padding-top: 100%;
+  }
+}

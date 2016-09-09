@@ -2,7 +2,9 @@
 
 
 .offer {
-  background-color: $light-grey;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.15);
+  margin-bottom: 2em;
   .row__column{
     margin-top: 0;
   }
@@ -10,7 +12,7 @@
 
 .offer__image {
   position: relative;
-  height: 18em;
+  height: 200px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -35,6 +37,7 @@
 
 .offer__content {
   padding: $margin ($margin * 1.2);
+  p { font-size: 0.9em; line-height: 1.4; }
   p + p { margin-top: .2em; }
 }
 

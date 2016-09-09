@@ -1,0 +1,30 @@
+
+<div class="section--fixed-bg banner align-center" style="background-image: url({{site.baseurl}}/img/bg/banner-{{page.class}}.jpg);">
+
+  <div class="row row--padding">
+
+    <div class="banner__content">
+
+      {% if page.class == "overview" %}
+        <h1>
+          <strong>Your journey of discovery...</strong><br />
+          Starts here
+        </h1>
+      {% else %}
+        <h1>
+          {% if page.banner-title %}
+            {{ page.banner-title }}
+          {% else %}
+            {{ page.title }}
+          {% endif %}
+        </h1>
+        <p class="h3">{{page.banner-content}}</p>
+      {% endif %}
+
+    </div>
+
+    {% include microsite-nav.html %}
+
+  </div>
+
+</div>

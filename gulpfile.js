@@ -48,7 +48,7 @@ gulp.task('htmlMinify', function() {
     collapseWhitespace: true,
     removeComments: true
   }))
-  .pipe(gulp.dest('./_site'))
+  .pipe(gulp.dest('./_site'));
 });
 
 // css autoprefix & min
@@ -59,7 +59,7 @@ gulp.task('optimiseCss', function() {
     cascade: false
   }))
   .pipe(cssmin())
-  .pipe(gulp.dest('./_site'))
+  .pipe(gulp.dest('./_site'));
 });
 
 // compress images

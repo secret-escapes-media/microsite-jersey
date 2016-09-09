@@ -155,15 +155,13 @@ $icon-height: 20px;
 // -------- Microsite navigation --------
 
 .microsite-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: auto;
-  z-index: $z-overlay;
   text-align: center;
-  background-color: $black-5;
+  background-color: $ms-navy;
   overflow: hidden;
+  position: absolute;
+  bottom: -25px;
+  left: 0; right: 0;
+  border: 2px solid rgba(255,255,255,0.4);
 }
 
 .microsite-nav__list {
@@ -188,23 +186,24 @@ $icon-height: 20px;
   color: $white;
   flex-grow: 1;
   &--current {
-    color: $se-orange;
-    background-color: $black-5;
+    color: $ms-pink;
+    background-color: $black-25;
   }
 }
 
 .microsite-nav__link {
   transition: background-color $transition-time ease;
   display: block;
-  padding: 1.2em 1.44em;
+  padding: 1em 1.44em;
   font-size: .833em;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
   &:hover {
-    background-color: $black-85;
+    background-color: $black-25;
     text-decoration: none;
   }
   @include bp(large){
-    padding: 1.44em 1.2em;
+    padding: 1 1.2em;
   }
 }

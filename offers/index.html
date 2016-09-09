@@ -1,0 +1,31 @@
+---
+layout: default
+title: Offers
+class: offers
+nav-order: 6
+
+banner-title: Offers
+banner-content:
+
+intro: >
+  <p class="h3">The rich mellow colours of Jersey come to life in the autumn light, deepening into the vibrant golden tones of an Indian summer in Jersey. Replenish, restore, rebalance and refresh. However you want to feel, we have you covered with exclusive promotions and travel deals to experience the island break.</p>
+---
+
+
+{% include banner.html %}
+
+
+<section class="intro">
+  <div class="row row--padding align-center">
+    {{page.intro}}
+  </div>
+</section>
+
+
+<section class="section--lightgrey-bg">
+  {% assign offers = site.data.offers %}
+  {% include offer-content.html %}
+</section>
+
+
+{% include competition-section.html %}

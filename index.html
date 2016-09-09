@@ -3,33 +3,48 @@ layout: default
 title: Overview
 class: overview
 nav-order: 1
+
+banner-title: Your journey of rediscovery starts here
+banner-content:
+
+intro: >
+  <p>An island shaped by the sea where some of the most astonishing tides in the world circle the coast and feed the land. An island that’s small on size, but big on personality, where country lanes open to cliff top views and the sea is never more than ten minutes away. An island of rediscovery, packed with activities to experience and explore. Begin your escape here.</p>
+  <p>An island of rediscovery where landscapes are just waiting to be explored. An island of natural beauty, where you’re free to reconnect and revitalise in the fresh sea air. Whether it’s the view from the battlements of a 12th century castle, a beach walk along Jersey’s unspoilt coastline, or taking time to reflect while you watch the sun sink into the sea over St Ouen’s Bay, Jersey is there to be discovered. Explore Jersey and find your perfect island break.</p>
 ---
 
-<section class="section--fixed-bg intro">
-  <div class="row row--padding">
-    <h1>{{ page.title }}</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-    <a href="offers.html" class="btn">Offers</a>
+
+
+
+{% include banner.html %}
+
+
+<section class="intro">
+  <div class="row row--padding align-center">
+    {{page.intro}}
   </div>
 </section>
 
-<section>
-  <div class="row row--padding row--columns-4-4-4-gutters">
-    <p class="row__column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-    <p class="row__column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-    <p class="row__column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
+<section class="category-tabs">
+  <div class="category-tabs__links row--columns-3-3-3-3">
+    {% assign categories = site.pages | sort:"nav-order" | where: "page-type", "category" %}
+    {% for category in categories %}
+      {% include category-link.html %}
+    {% endfor %}
   </div>
-  <div class="row row--padding">
-    <a href="#" class="btn">button</a>
+
+  <div class="category-tabs__content align-center">
+    {% for category in categories %}
+      {% include category-block.html %}
+    {% endfor %}
   </div>
+
 </section>
 
-<section class="section--fixed-bg another">
-  <div class="row row--padding row--columns-4-8-gutters">
-    <p class="row__column">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-    <div class="row__column">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae harum quasi magni veniam eos laborum velit, provident laboriosam, distinctio laudantium voluptas natus sapiente nobis, amet. Maiores, quo eum iste quisquam!</p>
-    </div>
-  </div>
+
+<section class="section--lightgrey-bg">
+  {% assign offers = site.data.offers %}
+  {% include offer-content.html %}
 </section>
+
+
+{% include competition-section.html %}

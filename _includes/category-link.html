@@ -1,0 +1,8 @@
+<div
+  class="category__link row__column align-center{% if forloop.first %} category__link--active{% endif %}" data-category="{{category.class}}" 
+  style="background-image: url({{site.baseurl}}/img/bg/banner-{{category.class}}.jpg);">
+
+  <a class="category__link--mobile" href="{{category.url}}"></a>
+  <h2>{{category.title}}</h2>
+
+</div>

@@ -68,5 +68,62 @@
   }
 
 
+///////////////////////////////////////
+//      Parallax
+//      [ example: <div class="parallax" data-parallax-speed="0.2"> ]
+///////////////////////////////////////
+
+function parallax_background(){
+  var scrolled = $(document).scrollTop();
+
+  $('.parallax').each(function(){
+    var speed = $(this).attr('data-parallax-speed');
+    var offset = $(this).offset();
+    var parallax = -(scrolled - offset.top) * speed ;
+    $(this).css('background-position', 'center ' + parallax + 'px');
+  });
+}
+
+function bannerfade(){
+	var st = $(document).scrollTop();
+	var wh = $(window).height();
+
+	$('.banner__content').css({
+		"opacity": ((wh - (st*2)) / wh),
+		"letter-spacing": st/100
+	});
+}
+
+$(document).scroll(function() {
+  parallax_background();
+	bannerfade();
+});
+
+
+///////////////////////////////////////
+//      Category tabs
+///////////////////////////////////////
+
+
+$('.category__link').click(function(event){
+  var category = $(this).attr('data-category');
+
+  if($(this).hasClass('category__link--active')){
+  }else{
+    $('.category-tabs__links').find('.category__link--active').removeClass('category__link--active');
+    $(this).addClass('category__link--active');
+  }
+
+  $('.category-tabs__content')
+    .find('.category__content.category__content--active')
+    .removeClass('category__content--active');
+
+  $('.category-tabs__content')
+    .find('[data-category="' + category + '"]')
+    .addClass('category__content--active');
+
+});
+
+
 ///////////////////////////////////////////////////////////////////////////////
 });})(jQuery, this); // on ready end
