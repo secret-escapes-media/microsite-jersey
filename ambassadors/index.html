@@ -8,8 +8,8 @@ banner-title: Ambassadors
 banner-content: See the island through the eyes of islanders
 
 intro: >
-  <p>Discover the real Jersey in the words of the people who live here. Meet locals who are passionate about making the most of Jersey’s island setting, who live and breathe the landscape to the full all year round.</p>
-  <p>From a wildlife expert to a local restauranteur, a rock climber to a deli owner, discover life stories of Jersey’s ambassadors.</p>
+  <p class="h3">Discover the real Jersey in the words of the people who live here. Meet locals who are passionate about making the most of Jersey’s island setting, who live and breathe the landscape to the full all year round.</p>
+  <p class="h3">From a wildlife expert to a local restauranteur, a rock climber to a deli owner, discover life stories of Jersey’s ambassadors.</p>
 ---
 
 
@@ -35,7 +35,7 @@ intro: >
 
     <div class="row__column ambassador__image bg-image-ratio bg-image-ratio--16-9-to-1-1" style="background-image: url({{site.baseurl}}/img/content/ambassador-{{ambassador.class}}.jpg);">
 
-      <a href="{{ambassador.link}}" target="_blank" class="ambassador__watch">
+      <a href="https://www.youtube.com/watch?v={{ambassador.video-id}}" target="_blank" class="js-launch-modal ambassador__watch" data-target-modal="{{ambassador.class}}" data-video-id="{{ambassador.video-id}}">
         <img src="{{site.baseurl}}/img/content/play.png" alt="">
       </a>
 
@@ -52,6 +52,14 @@ intro: >
 
 </section>
 {% endfor %}
+
+<!-- Ambassador video modal -->
+<div class="js-modal modal is-closed" style="display: none;">
+  <div class="js-modal__close modal__close"></div>
+  <div class="modal__content modal__content--ambassador row row--padding row--columns-vertical-align is-closed">
+    <div class="js-modal__video modal__video bg-image-ratio--16-9 bg-image-ratio"></div>
+  </div>
+</div>
 
 
 {% include competition-section.html %}

@@ -1,7 +1,7 @@
 # Site settings
 title: Jersey
 description: >
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi veniam voluptatibus totam accusantium laborum quo dolore.
+  An island of rediscovery, packed with activities to experience and explore. Begin your escape here.
 baseurl: "/jersey" # the subpath of your site, e.g. /blog/
 url: "https://www.secretescapes.com" # the base hostname & protocol for your site
 

@@ -7,8 +7,11 @@
 
       {% if page.class == "overview" %}
         <h1>
-          <strong>Your journey of discovery...</strong><br />
-          Starts here
+          {% if page.banner-title %}
+            {{ page.banner-title }}
+          {% else %}
+            {{ page.title }}
+          {% endif %}
         </h1>
       {% else %}
         <h1>

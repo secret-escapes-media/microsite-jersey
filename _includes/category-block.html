@@ -14,11 +14,11 @@
     <div class="row__column align-right">
       {% assign ambassadors = site.data.ambassadors %}
       {% for ambassador in ambassadors %}{% if ambassador.category == category.class %}
-      <a href="{{site.baseurl}}/{{category.url}}">Meet our ambassador: <strong>{{ambassador.title}}</strong></a>
+      <a href="{{site.baseurl}}{{category.url}}#ambassador">Meet our ambassador: <strong>{{ambassador.title}}</strong></a>
       {% endif %}{% endfor %}
     </div>
     <div class="row__column align-left category__content__links--pink">
-      <a class="arrow_link arrow_link--white" href="{{site.baseurl}}/{{category.url}}"><strong>FIND OUT MORE</strong></a>
+      <a class="arrow_link arrow_link--white" href="{{site.baseurl}}{{category.url}}"><strong>FIND OUT MORE</strong></a>
     </div>
   </div>
 

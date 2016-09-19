@@ -161,7 +161,6 @@ $icon-height: 20px;
   position: absolute;
   bottom: -25px;
   left: 0; right: 0;
-  border: 2px solid rgba(255,255,255,0.4);
 }
 
 .microsite-nav__list {
@@ -189,16 +188,15 @@ $icon-height: 20px;
     color: $ms-pink;
     background-color: $black-25;
   }
+  &--win { background-color: $black-25; }
 }
 
 .microsite-nav__link {
   transition: background-color $transition-time ease;
   display: block;
-  padding: 1em 1.44em;
-  font-size: .833em;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .1em;
+  padding: 0.8em 1.44em;
+  font-size: 1em;
+  letter-spacing: .05em;
   &:hover {
     background-color: $black-25;
     text-decoration: none;

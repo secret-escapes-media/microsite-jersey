@@ -94,8 +94,9 @@
     display: none;
 
     &__copy {
-      .img-inline { height: 60px; margin: 10px 5px 0 0; }
       padding: 3em 1em;
+      min-height: 300px;
+      .img-inline { height: 60px; margin: 10px 5px 0 0; }
     }
     &__links {
       background-color: $ms-purple;
@@ -170,3 +171,8 @@
     }
   }
 }
+
+
+// ---------- modal ----------
+
+.modal {}
