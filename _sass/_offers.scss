@@ -36,14 +36,20 @@
 }
 
 .offer__content {
-  padding: $margin ($margin * 1.2);
+  padding: 20px 15px;
   p { font-size: 0.9em; line-height: 1.4; }
   p + p { margin-top: .2em; }
 }
 
 .offer__content-title {
+  margin-bottom: .2em;
+  font-size: 1.428em;
+}
+
+.offer__content-location {
+  font-size: 0.8em;
+  font-weight: 600;
   margin-bottom: .482em;
-  font-size: 1.728em;
 }
 
 .offer__content-subtitle {

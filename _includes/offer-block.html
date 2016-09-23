@@ -3,6 +3,7 @@
   </div></a>
   <div class="offer__content align-center">
     <h2 class="offer__content-title"><a id="title-link-{{ offer.class }}" href="{{ offer.link }}">{{ offer.title }}</a></h2>
+    <h5 class="offer__content-location">{{ offer.location | upcase }}</h5>
     <p>{{ offer.description }}</p>
     <a id="button-link-{{ offer.class }}" href="{{ offer.link }}" class="btn btn--arrow">View Offer</a>
   </div>

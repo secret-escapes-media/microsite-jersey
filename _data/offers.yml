@@ -1,116 +1,62 @@
 
 ## Replenish offers
 
-- title: An offer
+- title: Relaxing Jersey break with car hire
+  class: best-western-royal
   category: replenish
-  class: a-third-offer
-  location: Region, Country
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-  price: 999999
-  price-description: per room per night
-  link: #
-
-- title: An offer
-  category: replenish
-  class: a-third-offer
-  location: Region, Country
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-  price: 999999
-  price-description: per room per night
-  link: #
-
-- title: An offer
-  category: replenish
-  class: a-third-offer
-  location: Region, Country
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-  price: 999999
-  price-description: per room per night
-  link: #
+  location: Best Western Royal Hotel Jersey, Channel Islands
+  description: A picturesque St Helier break with breakfast, flights, car hire and optional dinner
+  price: 249
+  price-description: per person for 3 nights
+  link: https://www.secretescapes.com/relaxing-jersey-break-with-car-hire-hotel-la-place-st-brelade/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
 
 ## Rebalance offers
 
-- title: Another offer
+- title: Plush Jersey break with car hire
+  class: the-royal-yacht
   category: rebalance
-  class: another-offer
-  location: Region, Country
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-  price: 999999
-  price-description: per room per night
-  link: #
+  location: The Royal Yacht, Channel Islands
+  description: A St Helier spa hotel break, with breakfast, flights, car hire and optional gourmet dining
+  price: 298
+  price-description: per person for 3 nights
+  link: https://www.secretescapes.com/plush-jersey-break-with-car-hire-the-royal-yacht-channel-islands/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
 
-- title: Another offer
+- title: 5* exceptional Jersey break
+  class: longueville-manor
   category: rebalance
-  class: another-offer
-  location: Region, Country
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-  price: 999999
-  price-description: per room per night
-  link: #
-
-- title: Another offer
-  category: rebalance
-  class: another-offer
-  location: Region, Country
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-  price: 999999
-  price-description: per room per night
-  link: #
+  location: Longueville Manor, St Saviour
+  description: A magnificent Relais & Châteaux retreat - breakfast, one dinner, flights and car hire included
+  price: 289
+  price-description: per person for 3 nights
+  link: https://www.secretescapes.com/5-star-exceptional-jersey-break-longueville-manor-st-saviour/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
 
 ## Refresh offers
 
-- title: A third offer
+- title: Relaxing Jersey break with car hire
+  class: la-place-hotel-country-cottages
   category: refresh
-  class: a-third-offer
-  location: Region, Country
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-  price: 999999
-  price-description: per room per night
-  link: #
+  location: La Place Hotel & Country Cottages, Channel Islands
+  description: A country hotel stay in St Brelade, with breakfast, optional dinner, flights and car hire
+  price: 298
+  price-description: per person for 3 nights
+  link: https://www.secretescapes.com/relaxing-jersey-break-with-car-hire-hotel-la-place-st-brelade/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
 
-- title: A third offer
+- title: Charming Jersey break with car hire
+  class: greenhills-country-house-hotel
   category: refresh
-  class: a-third-offer
-  location: Region, Country
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-  price: 999999
-  price-description: per room per night
-  link: #
-
-- title: A third offer
-  category: refresh
-  class: a-third-offer
-  location: Region, Country
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-  price: 999999
-  price-description: per room per night
-  link: #
+  location: Greenhills Country House Hotel, Channel Islands
+  description: A 17th century country hotel, with breakfast, one dinner, afternoon tea, flights and car hire
+  price: 279
+  price-description: per person for 3 nights
+  link: https://www.secretescapes.com/charming-jersey-break-with-car-hire-greenhills-country-house-hotel-channel-islands/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
 
 ## Restore offers
 
-- title: A third offer
+- title: Beachfront Jersey break
+  class: golden-sands
   category: restore
-  class: a-third-offer
-  location: Region, Country
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-  price: 999999
-  price-description: per room per night
-  link: #
-
-- title: A third offer
-  category: restore
-  class: a-third-offer
-  location: Region, Country
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-  price: 999999
-  price-description: per room per night
-  link: #
-
-- title: A third offer
-  category: restore
-  class: a-third-offer
-  location: Region, Country
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-  price: 999999
-  price-description: per room per night
-  link: #
+  location: Golden Sands, St Brelade's Bay
+  description: Plenty of coastal charm at a St Brelade's hotel right on the bay - breakfast and car hire included
+  price: 199
+  price-description: per person for 2 nights
+  link: https://www.secretescapes.com/beachfront-jersey-break-golden-sands-st-brelades-bay/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
