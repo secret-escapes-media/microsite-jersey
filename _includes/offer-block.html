@@ -1,4 +1,4 @@
-<div class="offer offer--small row__column">
+<div class="offer row__column{% if offer_count > 2 %} offer--small{% endif %}">
   <a id="image-link-{{ offer.class }}" href="{{ offer.link }}"><div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.class }}.jpg')">
   </div></a>
   <div class="offer__content align-center">

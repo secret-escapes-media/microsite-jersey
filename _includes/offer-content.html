@@ -1,3 +1,7 @@
+{% assign offer_count = 0 %}
+{% for offer in offers %}
+  {% assign offer_count = offer_count | plus: 1 %}
+{% endfor %}
 
 {% if page.class != "offers" %}
 <div class="row row--padding align-center">
@@ -5,7 +9,13 @@
 </div>
 {% endif %}
 
-<div class="row--columns-4-4-4-gutters row row--padding">
+<div class="
+  {% if offer_count < 2 %}
+    row--columns-6-6-gutters row--column-center {% elsif offer_count < 3 %}
+    row--columns-6-6-gutters {% else %}
+    row--columns-4-4-4-gutters
+  {% endif %}
+  row row--padding">
 
   {% if page.class == "overview" %}
 
@@ -25,6 +35,6 @@
 
 {% if page.class != "offers" %}
 <div class="row row--padding align-center">
-  <a href="{{site.baseurl}}/offers" class="btn">View all offers</a>
+  <a href="{{site.baseurl}}/offers" class="btn btn--large">View all offers</a>
 </div>
 {% endif %}
