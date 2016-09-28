@@ -162,13 +162,14 @@ $z-background:      -1;
     width: 100%;
   }
 }
+a.bg-image-ratio { display: block; }
 .bg-image-ratio--1-1:before   { padding-top: 100%; }
 .bg-image-ratio--4-3:before   { padding-top: 75%; }
 .bg-image-ratio--3-2:before   { padding-top: 66.666666666667%; }
 .bg-image-ratio--16-9:before  { padding-top: 56.25%; }
 .bg-image-ratio--21-9:before  { padding-top: 42.8571429%; }
 
-.bg-image-ratio--16-9-to-1-1:before  { 
+.bg-image-ratio--16-9-to-1-1:before  {
   padding-top: 56.25%;
   @include bp( large ){
     padding-top: 100%;

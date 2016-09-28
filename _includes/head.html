@@ -6,6 +6,7 @@
 
   <title>{% if page.title %}{{ page.title }} | {{ site.title}}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 155 }}{% else %}{{ site.description }}{% endif %}">
+  <link rel="shortcut icon" href="http://mp.secretescapes.com/favicon.ico" type="image/png">
 
   <!-- START Social Data -->
   <meta property="og:type" content="website">
@@ -19,7 +20,7 @@
   <meta name="twitter:description" content="{{ site.description }}">
   <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/img/social/overview.jpg">
   <!-- END Social Data -->
-  
+
   <script src="https://use.typekit.net/ccn5ygn.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 

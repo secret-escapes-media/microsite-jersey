@@ -25,6 +25,7 @@
   &.parallax { background-position: center top; background-attachment: fixed; }
 
   &.banner {
+    position: relative;
     padding-top: 0;
     padding-bottom: 0;
     .banner__content {
@@ -34,7 +35,12 @@
   }
 }
 
-.overview .section--fixed-bg h1 { font-size: 4em; }
+.overview .section--fixed-bg h1 {
+  font-size: 2.6em;
+  @include bp( large ){
+    font-size: 4em;
+  }
+}
 
 .section--lightgrey-bg  { background-color: $ms-light-grey; }
 .section--grey-bg       { background-color: $ms-grey; }
