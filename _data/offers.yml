@@ -1,44 +1,36 @@
 
 ## Replenish offers
 
-- title: Relaxing Jersey break with car hire
-  order: 3
-  class: best-western-royal
-  category: replenish
-  location: Best Western Royal Hotel, St Helier, Jersey, Channel Islands
-  description: A picturesque St Helier break with breakfast, flights, car hire and optional dinner
-  price: 249
-  price-description: per person for 3 nights
-  link: https://www.secretescapes.com/relaxing-jersey-break-with-car-hire-best-western-royal-hotel-jersey-channel-islands/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
-
-## Rebalance offers
-
-- title: Plush Jersey break with car hire
-  order: 5
-  class: the-royal-yacht
-  category: rebalance
-  location: The Royal Yacht, St Helier, Jersey, Channel Islands
-  description: A St Helier spa hotel break, with breakfast, flights, car hire and optional gourmet dining
-  price: 298
-  price-description: per person for 3 nights
-  link: https://www.secretescapes.com/plush-jersey-break-with-car-hire-the-royal-yacht-channel-islands/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
-
 - title: 5* exceptional Jersey break
   order: 4
   class: longueville-manor
-  category: rebalance
+  rebalance: true
+  replenish: true
   location: Longueville Manor, St Saviour, Jersey, Channel Islands
   description: A magnificent Relais & Châteaux retreat - breakfast, one dinner, flights and car hire included
   price: 289
   price-description: per person for 3 nights
   link: https://www.secretescapes.com/5-star-exceptional-jersey-break-longueville-manor-st-saviour/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
 
+## Rebalance offers
+
+- title: Plush Jersey break with car hire
+  order: 5
+  class: the-royal-yacht
+  rebalance: true
+  replenish: true
+  location: The Royal Yacht, St Helier, Jersey, Channel Islands
+  description: A St Helier spa hotel break, with breakfast, flights, car hire and optional gourmet dining
+  price: 298
+  price-description: per person for 3 nights
+  link: https://www.secretescapes.com/plush-jersey-break-with-car-hire-the-royal-yacht-channel-islands/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
+
 ## Refresh offers
 
 - title: Boutique Jersey break with car hire
   order: 6
   class: la-place-hotel-country-cottages
-  category: refresh
+  refresh: true
   location: La Place Hotel & Country Cottages, St Brelade, Jersey, Channel Islands
   description: A country hotel stay in St Brelade, with breakfast, optional dinner, flights and car hire
   price: 298
@@ -48,7 +40,7 @@
 - title: Charming Jersey break with car hire
   order: 1
   class: greenhills-country-house-hotel
-  category: refresh
+  refresh: true
   location: Greenhills country house hotel, St Peter, Jersey, Channel Islands
   description: A 17th century country hotel, with breakfast, one dinner, afternoon tea, flights and car hire
   price: 279
@@ -60,9 +52,19 @@
 - title: Beachfront Jersey break with car hire
   order: 2
   class: golden-sands
-  category: restore
+  restore: true
   location: Golden sands St Brelade's Bay, Jersey, Channel Islands
   description: Plenty of coastal charm at a St Brelade's hotel right on the bay - breakfast and car hire included
   price: 199
   price-description: per person for 2 nights
   link: https://www.secretescapes.com/beachfront-jersey-break-golden-sands-st-brelades-bay/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
+
+- title: Relaxing Jersey break with car hire
+  order: 3
+  class: best-western-royal
+  restore: true
+  location: Best Western Royal Hotel, St Helier, Jersey, Channel Islands
+  description: A picturesque St Helier break with breakfast, flights, car hire and optional dinner
+  price: 249
+  price-description: per person for 3 nights
+  link: https://www.secretescapes.com/relaxing-jersey-break-with-car-hire-best-western-royal-hotel-jersey-channel-islands/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
