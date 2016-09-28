@@ -1,6 +1,6 @@
 
 - title: 5* exceptional Jersey break
-  order: 5
+  order: 2
   class: longueville-manor
   replenish: true
   replenish-position: 1
@@ -49,18 +49,9 @@
   price-description: per person for 3 nights
   link: https://www.secretescapes.com/plush-jersey-break-with-car-hire-the-royal-yacht-channel-islands/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
 
-- title: Charming Jersey break with car hire
-  order: 2
-  class: greenhills-country-house-hotel
-  refresh: true
-  refresh-position: 1
-  location: Greenhills country house hotel, St Peter, Jersey, Channel Islands
-  description: A 17th century country hotel, with breakfast, one dinner, afternoon tea, flights and car hire
-  price: 279
-  price-description: per person for 3 nights
-  link: https://www.secretescapes.com/charming-jersey-break-with-car-hire-greenhills-country-house-hotel-channel-islands/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
-
 - title: Boutique Jersey break with car hire
+  refresh: true
+  refresh-position: 2
   order: 6
   class: la-place-hotel-country-cottages
   location: La Place Hotel & Country Cottages, St Brelade, Jersey, Channel Islands
