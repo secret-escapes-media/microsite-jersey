@@ -26,7 +26,7 @@ intro: >
 
 
 <section class="section--lightgrey-bg">
-  {% assign offers = site.data.offers | where: page.class, true %}
+  {% assign offers = site.data.offers | where: page.class, true | sort: 'restore-position'  %}
   {% include offer-content.html %}
 </section>
 

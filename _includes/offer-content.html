@@ -3,11 +3,15 @@
   {% assign offer_count = offer_count | plus: 1 %}
 {% endfor %}
 
+
+
 {% if page.class != "offers" %}
 <div class="row row--padding align-center">
   <h2>Offers</h2>
 </div>
 {% endif %}
+
+
 
 <div class="
   {% if offer_count < 2 %}
@@ -32,6 +36,8 @@
   {% endif %}
 
 </div>
+
+
 
 {% if page.class != "offers" %}
 <div class="row row--padding align-center">

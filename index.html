@@ -42,7 +42,7 @@ intro: >
 
 
 <section class="section--lightgrey-bg">
-  {% assign offers = site.data.offers %}
+  {% assign offers = site.data.offers | sort: 'order' %}
   {% include offer-content.html %}
 </section>
 
