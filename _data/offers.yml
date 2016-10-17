@@ -38,18 +38,18 @@
   price-description: per person for 3 nights
   link: https://www.secretescapes.com/luxury-jersey-break-with-car-hire-somerville-hotel-st-aubin/sale?utm_source=Microsite&utm_campaign=Jersey%10October%202016
 
-- title: Plush Jersey break with car hire
-  order: 4
-  class: the-royal-yacht
-  rebalance: true
-  rebalance-position: 2
-  restore: true
-  restore-position: 2
-  location: The Royal Yacht, St Helier, Jersey, Channel Islands
-  description: A St Helier spa hotel break, with breakfast, flights, car hire and optional gourmet dining
-  price: 298
-  price-description: per person for 3 nights
-  link: https://www.secretescapes.com/plush-jersey-break-with-car-hire-the-royal-yacht-channel-islands/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
+# - title: Plush Jersey break with car hire
+#   order: 4
+#   class: the-royal-yacht
+#   rebalance: true
+#   rebalance-position: 2
+#   restore: true
+#   restore-position: 2
+#   location: The Royal Yacht, St Helier, Jersey, Channel Islands
+#   description: A St Helier spa hotel break, with breakfast, flights, car hire and optional gourmet dining
+#   price: 298
+#   price-description: per person for 3 nights
+#   link: https://www.secretescapes.com/plush-jersey-break-with-car-hire-the-royal-yacht-channel-islands/sale?utm_source=Microsite&utm_campaign=Jersey%20September%202016
 
 # - title: The Grand
 #  order: 1
