@@ -1,39 +1,32 @@
 {% assign ambassadors = site.data.ambassadors %}
-{% for ambassador in ambassadors %}{% if ambassador.category == page.class %}
+{% assign page-class = page.title | slugify %}
+{% for ambassador in ambassadors %}{% if ambassador.category == page-class %}
 
-<section class="section--6-6" id="ambassador">
-  <div class="row--columns-6-6 row--columns-vertical-align">
-
-    <div class="row__column section--6-6__copy align-center">
-        <span class="h4">MEET</span>
-        <h3>{{ambassador.title}}</h3>
-        <p>{{ambassador.description}}</p>
-        <hr class="center" />
-        <a href="https://www.youtube.com/watch?v={{ambassador.video-id}}" target="_blank" class="h4 arrow_link js-launch-modal" data-target-modal="{{ambassador.class}}" data-video-id="{{ambassador.video-id}}">
-          {{ambassador.title}}'s story
-        </a>
+<div id="ambassador" class="row row--full-width row--columns-6-6 row--columns-vertical-align">
+  <div class="row__column row__column--padding align-center">
+    <div class="line-length">
+      <span class="title title--upper title--expanded title--bolder">Meet</span>
+      <h3 class="title title--smaller title--light title--sub-heading">{{ambassador.title}}</h3>
+      <p>{{ambassador.description}}</p>
+      <hr class="hr hr--small bg--pink">
+      <a class="js-open-modal title title--upper title--expanded title--bolder arrow-link" href="https://www.youtube.com/watch?v={{ambassador.video-id}}" target="_blank" data-target-modal="modal" data-video-id="{{ambassador.video-id}}">
+        {{ambassador.title}}'s story
+      </a>
     </div>
-
-    <a href="https://www.youtube.com/watch?v={{ambassador.video-id}}" target="_blank" class="js-launch-modal row__column section--6-6__image bg-image-ratio bg-image-ratio--3-2" style="background-image: url({{site.baseurl}}/img/content/ambassador-{{ambassador.class}}.jpg);" data-target-modal="{{ambassador.class}}" data-video-id="{{ambassador.video-id}}">
-
-      <span class="ambassador__watch">
-        <img src="{{site.baseurl}}/img/content/play.png" alt="">
-      </span>
-
-    </a>
-
   </div>
-</section>
-
-
-<!-- Ambassador video modal -->
-<div id="modal-{{ambassador.class}}" class="js-modal modal is-closed" style="display: none;">
-  <div class="js-modal__close modal__close"></div>
-  <div class="modal__content modal__content--ambassador row row--padding row--columns-vertical-align is-closed">
-    <div class="js-modal__video modal__video bg-image-ratio--16-9 bg-image-ratio"></div>
+  <div class="row__column">
+    <a class="js-open-modal" href="https://www.youtube.com/watch?v={{ambassador.video-id}}" target="_blank" data-target-modal="modal" data-video-id="{{ambassador.video-id}}">
+      <div class="bg-image-ratio bg-image-ratio--4-3" style="background-image: url({{site.baseurl}}/img/content/ambassador-{{ambassador.class}}.jpg);">
+          <img class="play-button" src="{{site.baseurl}}/img/icons/play.png" alt="">
+      </div>
+    </a>
   </div>
 </div>
 
+<!-- Ambassador video modal -->
+<div id="modal" class="js-modal modal is-closed" style="display: none;">
+  <div class="js-close-modal modal__close"></div>
+  <div class="modal__content modal__content--ambassador row row--full-width row--padding is-closed"></div>
+</div>
 
 {% endif %}{% endfor %}
-

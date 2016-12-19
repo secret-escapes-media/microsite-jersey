@@ -4,135 +4,100 @@
 // -------- root typography styles --------
 
 $core-font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
-$main-font-family: 'proxima-nova', 'Proxima Nova', 'Helvetica Neue', sans-serif;
+$main-font-family: 'proxima-nova', 'Helvetica Neue', sans-serif;
+$title-font-family: 'proxima-nova', 'Helvetica Neue', sans-serif;
 
 html { font-size:62.5%; }
 body,
 input, textarea, keygen, select, button {
-  font: 400 15px/1.728 $main-font-family;
-  color: $ms-grey;
+  font: 400 14px/1.728 $main-font-family;
   -webkit-text-size-adjust: 100%;
-  @include bp( xlarge ) {
-    font-size: 16px;
-  }
+  @include bp(medium) { font-size: 15px; }
+  color: $text-paragraph;
 }
 
 
 // -------- Headings --------
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5 {
-  font-family: $main-font-family;
-  font-weight: 300;
-  line-height: 1.4;
-}
+.title {
+  font-family: $title-font-family;
+  letter-spacing: .025em;
+  line-height: 1.33;
+  + * { margin-top: .75em; }
 
-h1, .h1 {
-  line-height: 1.05;
-  margin-bottom: .2em;
-  font-size: 4.3em;
-  @include bp( large ){
-    font-size: 5.063em;
+  &--spacing {
+    * + & { margin-top: .4em; }
+  }
+  &--content-spacing { margin-bottom: .4em; }
+  &--extra-margin { margin-top: 1.5em; }
+  &--sub-heading { margin-top: 0 !important; }
+
+  &--lighter   { font-weight: 200; }
+  &--light     { font-weight: 300; }
+  &--bold      { font-weight: 500; }
+  &--bolder    { font-weight: 600; }
+  &--expanded  { letter-spacing: .2em; }
+  &--condense  { letter-spacing: 0; }
+  &--tight     { line-height: .9; }
+  &--tighter   { line-height: .8; }
+  &--upper     { text-transform: uppercase; }
+  &--italic    { font-style: italic; }
+
+  &--largest {
+    font-size: 4.3em;
+    &-sub {
+      display: block;
+      font-size: .55em;
+    }
+  }
+  &--larger      { font-size: 3.375em; }
+  &--large       { font-size: 2.986em; }
+  &--medium      { font-size: 2.488em; }
+  &--small       { font-size: 2em; }
+  &--smaller     { font-size: 1.867em; }
+  &--smallest    { font-size: 1.5em; }
+  &--tiny        { font-size: 1.44em; }
+  &--micro       { font-size: 1.2em; }
+  @include bp(xxlarge){
+    &--largest     { font-size: 6.25em; }
+    &--larger      { font-size: 6em; }
+    &--large       { font-size: 4em; }
+    &--medium      { font-size: 3.375em; }
+    &--small       { font-size: 2.467em; }
+    &--smaller     { font-size: 2.25em; }
   }
 }
 
-h2, .h2 {
-  line-height: 1.25;
-  margin-bottom: .5em;
-  font-size: 2.074em;
-  @include bp( large ){
-    font-size: 2.488em;
+.paragraph {
+  &--lead {
+    font-size: 1.25em;
+    line-height: 1.25;
+  }
+  &--large { font-size: 1.05em; }
+  @include bp(large){
+    &--lead { font-size: 1.467em; }
+    &--large { font-size: 1.2em; }
   }
 }
-
-h3, .h3 {
-  margin-bottom: .5em;
-  font-size: 1.35em;
-  font-weight: 400;
-}
-
-h4, .h4 {
-  font-size: 1em;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
-}
-
-h6, .h6 { font-weight: 600; }
 
 
 // -------- general content styles --------
 
-.page-content {
-  p             { max-width: $large; }
-  p + *         { margin-top: 1em; }
-  li            { list-style-position: inside; }
-  ul li         { list-style-type: disc; }
-  ol li         { list-style-type: decimal; }
-  em            { font-style: italic; }
-  strong        { font-weight: 600; }
-  .align-left   { text-align: left; }
-  .align-right  { text-align: right; }
-  .align-center { text-align: center; }
-  .align-center p { margin-left: auto; margin-right: auto; }
+p             { font-size: 1.05em;}
+p + *         { margin-top: 1em; }
+li            { list-style-position: inside; }
+ul li         { list-style-type: disc; }
+ol li         { list-style-type: decimal; }
+em            { font-style: italic; }
+strong        { font-weight: 800; }
+.align-left   { text-align: left; }
+.align-right  { text-align: right; }
+.align-center { text-align: center; }
 
-  hr {
-    border: 0;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    height: 1px;
-    background-color: $ms-pink;
-    &.center { margin-left: auto; margin-right: auto; width: 80px; }
-  }
-
-}
-
-
-// ---------- button ----------
-
-.btn {
-  @include transition;
-  display:inline-block;
-  padding: .5em 1.5em;
-  background-color: $ms-purple;
-  color: white;
-  font-weight: 600;
-  text-transform: uppercase;;
-  letter-spacing: 0.01em;
-  font-size: 0.9em;
-  &:hover {
-    background-color: $ms-pink;
-    color: white;
-    text-decoration: none;
-  }
-  * + & { margin-top: 1em; }
-  &--large { padding: 0.8em 1.5em; font-size: 1.1em; }
-
-  &--arrow {
-    &:after {
-      content: "";
-      background-image: url(../img/content/arrow-white.png);
-      background-size: contain; background-position: center right; background-repeat: no-repeat;
-      height: 11px; width: 30px;
-      display: inline-block;
-    }
-  }
-}
-
-a.arrow_link {
-  &:hover { text-decoration: none; }
-  &:after {
-    content: "";
-    background-image: url(../img/content/arrow-grey.png);
-    background-size: contain; background-position: center right; background-repeat: no-repeat;
-    height: 13px; width: 25px;
-    display: inline-block;
-  }
-  &--white {
-    &:after { background-image: url(../img/content/arrow-white.png); }
-  }
+.hr {
+  border: 0;
+  height: 1px;
+  background-color: $light-grey;
+  margin: $margin auto;
+  &--small { width: 80px; }
 }

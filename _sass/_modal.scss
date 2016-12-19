@@ -8,65 +8,46 @@
   right: 0;
   bottom: 0;
   z-index: $z-overlay;
-  background-color: $black-85;
-  color: $white;
-  overflow-y: auto;
+  background-color: $black;
+  background-color: $black-66;
+  // cursor: pointer;
+  overflow: hidden;
+  &.is-open { display: block;}
+  &.is-closed { display: none; }
+  &__wrap {
+    position: absolute;
+    top: ($margin * 1.5);
+    left: ($margin / 2);
+    right: ($margin / 2);
+    bottom: ($margin * 1.5);
+    // cursor: auto;
+    overflow-y: auto;
+    margin-top: 0 !important;
+    @include bp(large){
+      left: $margin;
+      right: $margin;
+    };
+  }
   &__close {
-    position: fixed;
-    right: 2em;
-    top: 1em;
-    height: 3em;
-    width: 3em;
-    border-radius: 5em;
-    background-color: $black-5;
-    background-image: url('../img/icon/close.png');
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 3.5em;
+    width: 3.5em;
+    background-color: $se-dark-grey-85;
+    background-image: url('../img/icons/close.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1em;
     cursor: pointer;
     z-index: $z-overlay-upper;
     @include transition;
-    &:hover {
-      right: 1.75em;
-      top: .75em;
-      height: 3.5em;
-      width: 3.5em;
-      background-size: 1.33em;
-      background-color: $black-85;
+    .svg & {
+      background-image: url('../img/icons/close.svg');
     }
   }
-  &__content {
-    padding-top: ($margin);
-    padding-bottom: ($margin);
-    height: 100%;
-  }
-  &__video {
-    width: 100%;
-    iframe { position: absolute; top: 0; }
-  }
-  &__content-wrap {
-    padding: $margin;
-    color: $text-black;
-    background-color: $white;
-  }
-  &__title {
-    font-size: 2.25em;
-    line-height: 1.2;
-    text-align: center;
-    font-weight: 500;
-    @include bp(large) {
-      text-align: left;
-    };
-  }
-  &__top-cta {
-    text-align: center;
-    > a { text-align: center; }
-    @include bp(large) {
-      text-align: right;
-    };
-  }
-  &__terms {
-    font-size: .8em;
-    color: #738a8c;
-  }
+}
+
+.disable-scroll {
+  overflow: hidden;
 }

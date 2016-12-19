@@ -15,27 +15,29 @@ $margin: 2em;
 
 // -------- grid sections --------
 
-section {
-  padding-top: 3.583em;
-  padding-bottom: 3.583em;
-  &.intro { padding-top: 4.383em; }
-  @include bp( large ) {
+.section {
+  padding-top: 2.986em;
+  padding-bottom: 2.986em;
+  @include bp(large) {
     padding-top: 4em;
     padding-bottom: 4em;
-    &.intro { padding-top: 4.8em; }
   }
 }
 
 .row {
-  @include container( $xxlarge );
+  @include container( $xxxlarge );
   position: relative;
   & + .row { margin-top: $margin; }
+  &--full-width {
+    @include container( 100% );
+    max-width: 1500px;
+  }
 }
 
 .row--padding {
   padding-left: ( $margin / 2 );
   padding-right: ( $margin / 2 );
-  @include bp( medium ) {
+  @include bp(medium) {
     padding-left: $margin;
     padding-right: $margin;
   }
@@ -43,16 +45,19 @@ section {
 .row--margin {
   margin-left: ( $margin / 2 );
   margin-right: ( $margin / 2 );
-  @include bp( medium ) {
+  @include bp(medium) {
     margin-left: $margin;
     margin-right: $margin;
   }
 }
 
-.row__column + .row__column {
-  margin-top: ( $margin / 2 );
-  @include bp( large ) {
-    margin-top: 0;
+.row__column {
+  &--padding { padding: $margin; }
+  & + & {
+    margin-top: ( $margin / 2 );
+    @include bp(large) {
+      margin-top: 0;
+    }
   }
 }
 
@@ -106,10 +111,10 @@ section {
     margin-bottom: gutter();
   }
 
-  // four columns without gutter
+  // three columns without gutter
   .row--columns-3-3-3-3 .row__column { @include gallery(3); }
 
-  // four columns with gutter
+  // three columns with gutter
   .row--columns-3-3-3-3-gutters .row__column {
     @include gallery($gutters 3);
     margin-bottom: gutter();
@@ -121,13 +126,4 @@ section {
     align-items: center;
   }
 
-}
-
-
-.row--column-center {
-  .row__column {
-    margin-left: auto;
-    float: none;
-    margin-right: auto;
-  }
 }

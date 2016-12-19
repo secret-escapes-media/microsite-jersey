@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{% assign page-class = page.title | slugify %}
+{% assign offer-order = page-class | append: '-position' %}
+
+<section class="section">
+  <div class="row row--padding">
+    <div class="line-length  align-center">
+      <span class="title title--tiny title--condense">{{page.intro}}</span>
+    </div>
+  </div>
+</section>
+
+<section class="bg--light-grey section">
+  {% assign offers = site.data.offers | where: page-class, true | sort: offer-order  %}
+  {% include offer-content.html %}
+</section>
+
+{% include ambassador-section.html %}

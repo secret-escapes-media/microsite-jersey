@@ -3,13 +3,13 @@
 ---
 
 @import
-  'reset',
+  '../bower_components/reset-css/_reset',
   '../bower_components/susy/sass/susy',
   'core',
-  'typography',
   'grid',
+  'typography',
   'navigation',
-  'styles',
   'modal',
+  'styles',
   'offers'
 ;

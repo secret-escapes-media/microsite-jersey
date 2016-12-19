@@ -1,35 +1,9 @@
 ---
-layout: default
-page-type: category
+layout: content
 title: Rebalance
-class: rebalance
 nav-order: 4
-
+intro: Find your inner calm this autumn. Jersey is the perfect place to unwind, liberate your soul and nourish your mind. Rebalance in the natural elements of Jersey and retreat to one of our stylish spa hotels for a re-energising autumn break.
+page-type: category
 banner-title: Rebalance
 banner-content: Relax and reconnect
-
-intro: >
-  <p class="h3">Find your inner calm this autumn. Jersey is the perfect place to unwind, liberate your soul and nourish your mind. Rebalance in the natural elements of Jersey and retreat to one of our stylish spa hotels for a re-energising autumn break.</p>
 ---
-
-
-
-
-{% include banner.html %}
-
-
-<section class="intro">
-  <div class="row row--padding align-center">
-    {{page.intro}}
-  </div>
-</section>
-
-
-<section class="section--lightgrey-bg">
-  {% assign offers = site.data.offers | where: page.class, true | sort: 'rebalance-position' %}
-  {% include offer-content.html %}
-</section>
-
-
-{% include ambassador-section.html %}
-{% include competition-section.html %}

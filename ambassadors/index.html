@@ -3,63 +3,44 @@ layout: default
 title: Ambassadors
 class: ambassadors
 nav-order: 7
-
 banner-title: Ambassadors
 banner-content: See the island through the eyes of islanders
-
-intro: >
-  <p class="h3">Discover the real Jersey in the words of the people who live here. Meet locals who are passionate about making the most of Jersey’s island setting, who live and breathe the landscape to the full all year round.</p>
-  <p class="h3">From a local restaurateur to a rock climber to a deli owner and a wildlife expert, discover life stories of Jersey’s ambassadors.</p>
+intro: Discover the real Jersey in the words of the people who live here. Meet locals who are passionate about making the most of Jersey’s island setting, who live and breathe the landscape to the full all year round.
 ---
 
 
-
-
-{% include banner.html %}
-
-
-<section class="intro">
-  <div class="row row--padding align-center">
-    {{page.intro}}
+<section class="section">
+  <div class="row row--padding">
+    <div class="line-length  align-center title title--tiny title--condense">
+      <p>{{page.intro}}</p>
+      <p>From a local restaurateur to a rock climber to a deli owner and a wildlife expert, discover life stories of Jersey’s ambassadors.</p>
+    </div>
   </div>
 </section>
-
 
 {% assign ambassadors = site.data.ambassadors %}
 {% for ambassador in ambassadors %}
-
-<section class="ambassador {% cycle 'ambassador--align-copy-left', 'ambassador--align-copy-right' %} {% cycle 'section--lightgrey-bg', '' %}">
-
-
-  <div class="row row--padding row--columns-5-7-gutters">
-
-    <div class="row__column ambassador__image bg-image-ratio bg-image-ratio--16-9-to-1-1" style="background-image: url({{site.baseurl}}/img/content/ambassador-{{ambassador.class}}.jpg);">
-
-      <a href="https://www.youtube.com/watch?v={{ambassador.video-id}}" target="_blank" class="js-launch-modal ambassador__watch" data-target-modal="{{ambassador.class}}" data-video-id="{{ambassador.video-id}}">
-        <img src="{{site.baseurl}}/img/content/play.png" alt="">
-      </a>
-
+  <section class="section ambassador">
+    <div class="ambassador__wrap row row--padding">
+      <div class="ambassador__video">
+        <a class="js-open-modal" href="https://www.youtube.com/watch?v={{ambassador.video-id}}" target="_blank" data-target-modal="modal" data-video-id="{{ambassador.video-id}}">
+          <div class="bg-image-ratio bg-image-ratio--1-1" style="background-image: url({{site.baseurl}}/img/content/ambassador-{{ambassador.class}}.jpg);">
+            <img class="play-button" src="{{site.baseurl}}/img/icons/play.png" alt="">
+          </div>
+        </a>
+      </div>
+      <div class="ambassador__content">
+        <span class="title title--upper title--expanded title--bolder">Meet</span>
+        <h3 class="title title--medium title--light title--sub-heading">{{ambassador.title}}</h3>
+        <p>{{ambassador.description}}</p>
+        <a href="{{site.baseurl}}/{{ambassador.category}}" class="btn title--upper">View {{ambassador.category}} Offers</a>
+      </div>
     </div>
-
-    <div class="row__column ambassador__copy">
-      <span class="h4">MEET</span>
-      <h2>{{ambassador.title}}</h2>
-      <p>{{ambassador.description}}</p>
-      <a href="{{site.baseurl}}/{{ambassador.category}}" class="btn">VIEW {{ambassador.category | upcase}} OFFERS</a>
-    </div>
-
-  </div>
-
-</section>
+  </section>
 {% endfor %}
 
 <!-- Ambassador video modal -->
-<div class="js-modal modal is-closed" style="display: none;">
-  <div class="js-modal__close modal__close"></div>
-  <div class="modal__content modal__content--ambassador row row--padding row--columns-vertical-align is-closed">
-    <div class="js-modal__video modal__video bg-image-ratio--16-9 bg-image-ratio"></div>
-  </div>
+<div id="modal" class="js-modal modal is-closed" style="display: none;">
+  <div class="js-close-modal modal__close"></div>
+  <div class="modal__content modal__content--ambassador row row--full-width row--padding is-closed"></div>
 </div>
-
-
-{% include competition-section.html %}

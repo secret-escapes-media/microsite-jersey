@@ -1,30 +1,19 @@
 ---
 layout: default
 title: Overview
-class: overview
 nav-order: 1
-
-banner-title: <strong>Your journey of rediscovery...</strong><br />Starts here
-banner-content:
-
-intro: >
-  <p class="h3">An island of rediscovery, packed with activities to experience and explore. Begin your escape here.</p>
-  <p>The rich mellow colours of Jersey come to life in the autumn light, deepening into the vibrant golden tones of an Indian summer. How do you want to feel? Replenish, restore, rebalance and refresh. Experience the island break.</p>
+intro: An island of rediscovery, packed with activities to experience and explore. Begin your escape here.
+banner-title: <span class="title--bold">Your journey of rediscovery... </span><br /><span class="title--light">Starts here</span>
 ---
 
-
-
-
-{% include banner.html %}
-
-
-<section class="intro">
-  <div class="row row--padding align-center">
-    {{page.intro}}
+<section class="row row--padding section">
+  <div class="line-length">
+    <p class="title title--tiny title--condense">{{page.intro}}</p>
+    <p>The rich mellow colours of Jersey come to life in the autumn light, deepening into the vibrant golden tones of an Indian summer. How do you want to feel? Replenish, restore, rebalance and refresh. Experience the island break.</p>
   </div>
 </section>
 
-<section class="category-tabs">
+<section class="category-tabs section">
   <div class="category-tabs__links row--columns-3-3-3-3">
     {% assign categories = site.pages | sort:"nav-order" | where: "page-type", "category" %}
     {% for category in categories %}
@@ -41,10 +30,7 @@ intro: >
 </section>
 
 
-<section class="section--lightgrey-bg">
+<section class="bg--light-grey section">
   {% assign offers = site.data.offers | sort: 'order' %}
   {% include offer-content.html %}
 </section>
-
-
-{% include competition-section.html %}

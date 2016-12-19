@@ -3,7 +3,7 @@ title: Jersey
 description: >
   An island of rediscovery, packed with activities to experience and explore. Begin your escape here.
 baseurl: "/jersey" # the subpath of your site, e.g. /blog/
-url: "https://www.secretescapes.com" # the base hostname & protocol for your site
+url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

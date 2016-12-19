@@ -1,0 +1,10 @@
+<div class="offer {% if offer_count > 2 %} offer--small{% endif %}">
+  <a id="image-link-{{ offer.title | slugify }}" href="{{ offer.link }}"><div class="bg-image-ratio bg-image-ratio--3-2" style="background-image: url('{{ site.baseurl }}/img/offers/{{ offer.title | slugify }}.jpg')">
+  </div></a>
+  <div class="offer__content align-center">
+    <h2 class="offer__content-title title title--light title--smallest"><a id="title-link-{{ offer.title | slugify }}" href="{{ offer.link }}">{{ offer.title }}</a></h2>
+    <h5 class="title title--upper title--bolder">{{ offer.location | upcase }}</h5>
+    <p>{{ offer.description }}</p>
+    <a id="button-link-{{ offer.title | slugify }}" href="{{ offer.link }}" class="btn btn--arrow">View Offer</a>
+  </div>
+</div>

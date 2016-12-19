@@ -1,8 +1,8 @@
 <div
-  class="category__link row__column align-center{% if forloop.first %} category__link--active{% endif %}" data-category="{{category.class}}"
-  style="background-image: url({{site.baseurl}}/img/bg/banner-{{category.class}}.jpg);">
+  class="category__link row__column align-center{% if forloop.first %} category__link--active{% endif %}" data-category="{{category.title | slugify}}"
+  style="background-image: url({{site.baseurl}}/img/bg/{{category.title | slugify}}.jpg);">
 
   <a class="category__link--mobile" href="{{category.url}}"></a>
-  <h2>{{category.title}}</h2>
+  <h2 class="title title--small title--light">{{category.title}}</h2>
 
 </div>
