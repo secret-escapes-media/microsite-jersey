@@ -2,15 +2,6 @@
 <section class="section banner__bg" style="background-image: url('{{site.baseurl}}/img/bg/{{page.title | slugify}}.jpg');">
   <div class="site-header__offset"></div>
   <div class="row row--padding banner">
-    {% if page-class == "overview" %}
-      <h1 class="title title--large title--light">
-        {{ page.banner-title }}
-      </h1>
-    {% else %}
-      <h1 class="title title--largest title--light">
-        {{ page.banner-title }}
-      </h1>
-      <p class="title title--smallest title--sub-heading">{{page.banner-content}}</p>
-    {% endif %}
+    <h1 class="title title--large title--light">{% if page-class == "overview" %}{{page.banner-title}}{% else %}{{ page.title }}{% endif %}</h1>
   </div>
 </section>

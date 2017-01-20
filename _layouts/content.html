@@ -6,14 +6,12 @@ layout: default
 
 <section class="section">
   <div class="row row--padding">
-    <div class="line-length  align-center">
-      <span class="title title--tiny title--condense">{{page.intro}}</span>
-    </div>
+    <p class="line-length align-center paragraph paragraph--large">{{page.intro}}</p>
   </div>
 </section>
 
 <section class="bg--light-grey section">
-  {% assign offers = site.data.offers | where: page-class, true | sort: offer-order  %}
+  {% assign offers = site.data.offers | where: 'category', page-class  %}
   {% include offer-content.html %}
 </section>
 

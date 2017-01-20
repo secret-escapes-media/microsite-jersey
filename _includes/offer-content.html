@@ -14,11 +14,11 @@
   <div class="row row--padding">
     {% if page-class == "overview" %}
       {% for offer in offers limit:3 %}
-        {% include offer/default.html %}
+        {% include offer/third-width.html %}
       {% endfor %}
     {% else %}
       {% for offer in offers %}
-        {% include offer/default.html %}
+        {% include offer/full-width.html %}
       {% endfor %}
     {% endif %}
   </div>

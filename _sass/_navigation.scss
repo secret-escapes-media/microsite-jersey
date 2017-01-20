@@ -135,68 +135,6 @@ $site-header-height: ($core-nav-height + $site-nav-height);
 }
 
 
-
-
-
-
-
-
-// -------- Microsite navigation --------
-
-.microsite-nav {
-  text-align: center;
-
-  overflow: hidden;
-  position: absolute;
-  bottom: -25px;
-  left: 0; right: 0;
-}
-
-.microsite-nav__list {
-  text-align: center;
-  white-space: nowrap;
-  overflow: scroll;
-  overflow-x: auto;
-  overflow-y: hidden;
-  @include bp( xxlarge ) {
-    display: inline-block;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    overflow: visible;
-  }
-}
-
-.microsite-nav__item {
-
-
-  &--current {
-    color: $jersey-pink;
-    background-color: $black-25;
-  }
-  &--win { background-color: $black-25; }
-}
-
-.microsite-nav__link {
-  transition: background-color $transition-time ease;
-  display: block;
-  padding: 0.8em 1.44em;
-  font-size: 1em;
-  letter-spacing: .05em;
-  &:hover {
-    background-color: $black-25;
-    text-decoration: none;
-  }
-  @include bp(large){
-    padding: 1 1.2em;
-  }
-}
-
-
-
-
-
-
 // ---------- NAV FOR MICROSITE ----------
 
 $nav-arrow-width: 66px;
@@ -231,7 +169,7 @@ $nav-arrow-width: 66px;
       background-repeat: no-repeat;
       background-size: $nav-arrow-width auto;
     }
-    @include bp(xlarge){
+    @include bp(xxlarge){
       padding-right: 0;
       overflow: visible;
       &:before { display: none; }
@@ -251,13 +189,13 @@ $nav-arrow-width: 66px;
     @include transition;
     &:hover,
     &--current {
-      color: $jersey-pink;
+      color: $jersey-cyan;
       background-color: $jersey-navy-85;
       text-decoration: none;
     }
     &:hover { background-color: $jersey-navy; }
   }
-  @include bp(xlarge){
+  @include bp(xxlarge){
     overflow: visible;
     height: auto;
     .flexbox & {
@@ -270,7 +208,7 @@ $nav-arrow-width: 66px;
     }
   }
   // resets the nav for the footer to stop side scrolling
-  @media (max-width: $xlarge) {
+  @media (max-width: $xxlarge) {
     &--footer {
       height: auto;
     }
@@ -388,19 +326,28 @@ $mobile-nav-width: 75%;
 // ---------- SITE FOOTER ----------
 .footer {
   background-color: $black-85;
-  &__logos {
-    font-size: .9em;
-    border-top: 1px solid $white-15;
-    padding-top: $margin;
-    padding-bottom: $margin;
-  }
+  padding-top: ($margin*1.5);
+  padding-bottom: ($margin*1.5);
+  border-top: 1px solid $white-15;
   .logo {
     vertical-align: middle;
-    margin-left: ($margin/4);
-    margin-right: ($margin/4);
+    padding-top: .75em;
+    padding-bottom: .75em;
   }
-  p { margin-top: .5em; }
-  .logo--secret-escapes { max-width: 110px; }
+  .logo + .logo {
+    display: inline-block;
+    margin-left: 1em;
+    padding-left: 1em;
+    border-left: 1px solid $white-25;
+  }
+  .copyright {
+    margin-top: 1em;
+    font-size: .9em;
+  }
+  .logo--secret-escapes {
+    max-width: 110px;
+    padding-bottom: 1em;
+  }
   .logo--partner { max-width: 100px; }
 }
 
@@ -435,9 +382,6 @@ $icon-size: 27px;
   &--secret-escapes {
     max-width: 180px;
     padding-top: 4px;
-    .footer__logos & {
-      padding-top: 0;
-    }
   }
   &--partner {
     max-width: 100px;

@@ -127,7 +127,7 @@ $(document).scroll(function() {
     modalLaunchBtn.on('click', function(event) {
       var clicked   = $(this),
           videoId   = clicked.data('video-id'),
-          videoCode = '<div class="video__center"><div class="video"><iframe class="video__iframe" src="https://www.youtube.com/embed/' + videoId + '?rel=0&amp;showinfo=0&autoplay=1" frameborder="0"></iframe></div></div>';
+          videoCode = '<div class="video__center"><div class="video"><iframe class="video__iframe" src="https://www.youtube.com/embed/' + videoId + '?rel=0&amp;showinfo=0&autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div></div>';
       modalContent.html(videoCode);
       modalOpen(event);
     });
@@ -139,30 +139,29 @@ $(document).scroll(function() {
     });
 
 
-
-
 ///////////////////////////////////////
-//      Category tabs
+//      Section Overview tabs
 ///////////////////////////////////////
 
-  $('.category__link').click(function(event){
-    var category = $(this).attr('data-category');
+var tabs = $('.js-tab'),
+    tabContent = $('.js-tab-content'),
+    openClass = 'is-open',
+    closeClass = 'is-closed';
 
-    if($(this).hasClass('category__link--active')){
-    }else{
-      $('.category-tabs__links').find('.category__link--active').removeClass('category__link--active');
-      $(this).addClass('category__link--active');
-    }
+// hide all and show first
+tabContent.hide().filter(':first-child').show();
+// set classes on tabs
+tabs.addClass(closeClass).filter(':first-child').addClass(openClass).removeClass(closeClass);
 
-    $('.category-tabs__content')
-      .find('.category__content.category__content--active')
-      .removeClass('category__content--active');
+tabs.on('click',function(e) {
+  var selected = $(this).data('tab-content');
+  // hide all and show selected content
+  tabContent.hide().filter('.js-tab-content-' + selected).show();
+  // change classes on tabs
+  $('.js-tab.' + openClass).removeClass(openClass).addClass(closeClass);
+  $(this).addClass(openClass).removeClass(closeClass);
+});
 
-    $('.category-tabs__content')
-      .find('[data-category="' + category + '"]')
-      .addClass('category__content--active');
-
-  });
 
 
 ///////////////////////////////////////////////////////////////////////////////

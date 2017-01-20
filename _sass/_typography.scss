@@ -31,6 +31,7 @@ input, textarea, keygen, select, button {
   &--content-spacing { margin-bottom: .4em; }
   &--extra-margin { margin-top: 1.5em; }
   &--sub-heading { margin-top: 0 !important; }
+  &--blue { color: $jersey-blue; }
 
   &--lighter   { font-weight: 200; }
   &--light     { font-weight: 300; }
@@ -43,28 +44,22 @@ input, textarea, keygen, select, button {
   &--upper     { text-transform: uppercase; }
   &--italic    { font-style: italic; }
 
-  &--largest {
-    font-size: 4.3em;
-    &-sub {
-      display: block;
-      font-size: .55em;
-    }
-  }
-  &--larger      { font-size: 3.375em; }
+  &--xxlarge     { font-size: 4.3em; }
+  &--xlarge      { font-size: 3.375em; }
   &--large       { font-size: 2.986em; }
   &--medium      { font-size: 2.488em; }
   &--small       { font-size: 2em; }
-  &--smaller     { font-size: 1.867em; }
-  &--smallest    { font-size: 1.5em; }
-  &--tiny        { font-size: 1.44em; }
-  &--micro       { font-size: 1.2em; }
+  &--xsmall      { font-size: 1.867em; }
+  &--xxsmall     { font-size: 1.5em; }
+  &--xxxsmall    { font-size: 1.44em; }
+  &--xxxxsmall   { font-size: 1.2em; }
   @include bp(xxlarge){
-    &--largest     { font-size: 6.25em; }
-    &--larger      { font-size: 6em; }
+    &--xxlarge     { font-size: 6.25em; }
+    &--xlarge      { font-size: 6em; }
     &--large       { font-size: 4em; }
     &--medium      { font-size: 3.375em; }
     &--small       { font-size: 2.467em; }
-    &--smaller     { font-size: 2.25em; }
+    &--xsmall     { font-size: 2.25em; }
   }
 }
 

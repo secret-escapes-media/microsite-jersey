@@ -10,7 +10,6 @@
   z-index: $z-overlay;
   background-color: $black;
   background-color: $black-66;
-  // cursor: pointer;
   overflow: hidden;
   &.is-open { display: block;}
   &.is-closed { display: none; }
@@ -19,8 +18,7 @@
     top: ($margin * 1.5);
     left: ($margin / 2);
     right: ($margin / 2);
-    bottom: ($margin * 1.5);
-    // cursor: auto;
+    bottom: ($margin * 1.5);  
     overflow-y: auto;
     margin-top: 0 !important;
     @include bp(large){

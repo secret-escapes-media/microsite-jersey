@@ -2,33 +2,18 @@
 layout: default
 title: Overview
 nav-order: 1
-intro: An island of rediscovery, packed with activities to experience and explore. Begin your escape here.
-banner-title: <span class="title--bold">Your journey of rediscovery... </span><br /><span class="title--light">Starts here</span>
+intro: Winter’s a time to recalibrate and restore, a time to cleanse the soul with astounding natural experiences.
+banner-title: Come alive this winter on the UK's favourite British island
 ---
 
 <section class="row row--padding section">
   <div class="line-length">
-    <p class="title title--tiny title--condense">{{page.intro}}</p>
-    <p>The rich mellow colours of Jersey come to life in the autumn light, deepening into the vibrant golden tones of an Indian summer. How do you want to feel? Replenish, restore, rebalance and refresh. Experience the island break.</p>
+    <p class="title title--xxxsmall title--condense">{{page.intro}}</p>
+    <p>Our breathtaking coastal landscapes are exposed to the fresh Jersey air each day, a quality that you too, can savour.  Give yourself 72-hours to discover the crystal-clear clarity of our crisp sea air, soak up our panoramic winter skyscapes and nurture yourself with good food and long weekend lie-ins. Rediscover the island break.</p>
   </div>
 </section>
 
-<section class="category-tabs section">
-  <div class="category-tabs__links row--columns-3-3-3-3">
-    {% assign categories = site.pages | sort:"nav-order" | where: "page-type", "category" %}
-    {% for category in categories %}
-      {% include category-link.html %}
-    {% endfor %}
-  </div>
-
-  <div class="category-tabs__content align-center">
-    {% for category in categories %}
-      {% include category-block.html %}
-    {% endfor %}
-  </div>
-
-</section>
-
+{% include section-overview.html %}
 
 <section class="bg--light-grey section">
   {% assign offers = site.data.offers | sort: 'order' %}

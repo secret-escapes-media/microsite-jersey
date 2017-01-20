@@ -1,34 +1,23 @@
-  - title: An offer
-    replenish: true
-    replenish-position: 1
-    refresh: true
-    refresh-position: 1
-    location: Region, Country
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-    price: 999999
-    price-description: per room per night
-    saved: 40%
-    expires: 2016-03-23
-    link: #
+- title: Picturesque Jersey break with Michelin-star dining
+  category: local-flavour
+  location: St Brelade
+  description: An indulgent two, three or four nights in Jerse, with Michelin star dining, flight and car hire
+  link: https://www.secretescapes.com/picturesque-jersey-break-with-car-hire-the-atlantic-hotel-st-brelade/sale?utm_source=SE&utm_campaign=Jersey_230117&utm_medium=Hub
 
-  - title: Another offer
-    rebalance: true
-    rebalance-position: 1
-    replenish: true
-    replenish-position: 2
-    location: Region, Country
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-    price: 999999
-    price-description: per room per night
-    link: #
+- title: Plush Jersey break at a blissful spa hotel
+  category: a-slower-pace
+  location: St Helier
+  description: A modern spa hotel with award-winning dining in picturesque St Helier - car hire included
+  link: https://www.secretescapes.com/plush-jersey-break-at-a-blissful-spa-hotel-the-royal-yacht-st-helier/sale?utm_source=SE&utm_campaign=Jersey_230117&utm_medium=Hub
 
-  - title: A third offer
-    restore: true
-    restore-position: 1
-    refresh: true
-    refresh-position: 2
-    location: Region, Country
-    description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure architecto eum exercitationem neque.
-    price: 999999
-    price-description: per room per night
-    link: #
+- title: Jersey escape with flights and car hite
+  category: feel-inspired
+  location: Channel Islands
+  description: A picturesque St Helier break including flights, car hire and three-course dinner option
+  link: https://www.secretescapes.com/jersey-escape-with-flights-and-car-hire-best-western-royal-hotel-jersey-channel-islands/sale?utm_source=SE&utm_campaign=Jersey_230117&utm_medium=Hub
+
+- title: Scenic Jersey break at a luxury waterfront hotel
+  category: catch-your-breath
+  location: St Helier
+  description: An upscale stay by St Aubin's Bay and Elizabeth Marina, with beautiful views and fine dining
+  link: https://www.secretescapes.com/scenic-jersey-break-at-a-luxury-waterfront-hotel-radisson-blu-waterfront-hotel-st-helier/sale?utm_source=SE&utm_campaign=Jersey_230117&utm_medium=Hub

@@ -30,7 +30,7 @@ $margin: 2em;
   & + .row { margin-top: $margin; }
   &--full-width {
     @include container( 100% );
-    max-width: 1500px;
+    max-width: 1650px;
   }
 }
 
