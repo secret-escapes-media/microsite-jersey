@@ -86,7 +86,7 @@ $margin: 2em;
 // -------- grid columns --------
 
 // breakpoint for all columns
-@include bp(large){
+@include bp(xlarge){
 
   // two columns without gutter
   .row--columns-4-8 { @include two-column-grid( 4, 8 ); }

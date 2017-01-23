@@ -39,8 +39,12 @@
   }
   &__content {
     overflow: hidden;
-    padding: $margin ($margin * 1.2);
+    margin-top: 0 !important;
+    padding: $margin ($margin / 1.2);
     p + p { margin-top: .2em; }
+    @include bp(large){
+      padding: $margin ($margin * 1.2);
+    }
   }
   &--small {
     .offer__content {

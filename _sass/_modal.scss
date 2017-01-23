@@ -18,13 +18,17 @@
     top: ($margin * 1.5);
     left: ($margin / 2);
     right: ($margin / 2);
-    bottom: ($margin * 1.5);  
+    bottom: ($margin * 1.5);
     overflow-y: auto;
     margin-top: 0 !important;
     @include bp(large){
       left: $margin;
       right: $margin;
     };
+  }
+  &__content {
+    position: relative;
+    height: 100%;
   }
   &__close {
     position: absolute;

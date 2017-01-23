@@ -127,7 +127,7 @@ $(document).scroll(function() {
     modalLaunchBtn.on('click', function(event) {
       var clicked   = $(this),
           videoId   = clicked.data('video-id'),
-          videoCode = '<div class="video__center"><div class="video"><iframe class="video__iframe" src="https://www.youtube.com/embed/' + videoId + '?rel=0&amp;showinfo=0&autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div></div>';
+          videoCode = '<div class="video__wrap"><div class="video"><iframe class="video__iframe" src="https://www.youtube.com/embed/' + videoId + '?rel=0&amp;showinfo=0&autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div></div>';
       modalContent.html(videoCode);
       modalOpen(event);
     });

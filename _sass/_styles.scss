@@ -13,10 +13,10 @@
   .title {
     line-height: 1;
     text-shadow:
-      0px 5px 60px rgba(0,0,0,.66),
-      0px 5px 60px rgba(0,0,0,.66),
-      0px 5px 60px rgba(0,0,0,.66),
-      0px 5px 60px rgba(0,0,0,.66)
+      0 0 60px rgba(0,0,0,.66),
+      0 0 60px rgba(0,0,0,.66),
+      0 0 60px rgba(0,0,0,.66),
+      0 0 60px rgba(0,0,0,.66)
     ;
   }
 }
@@ -59,11 +59,11 @@ $button-size: 100px;
     width: 100%;
     height: 100%;
   }
-  .flexbox &__center {
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
+  .csstransforms.csstransforms3d &__wrap {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
   }
 }
 
@@ -227,8 +227,8 @@ $button-size: 100px;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     z-index: $z-content;
+    height: 100%;
     background-image: url('../img/bg/blue-fade.png');
     background-position: center;
     background-repeat: repeat-x;
