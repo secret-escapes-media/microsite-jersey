@@ -12,7 +12,7 @@ intro: Discover the real Jersey in the words of the people who live here. Meet l
   <div class="row row--padding">
     <div class="line-length align-center paragraph paragraph--large">
       <p>{{page.intro}}</p>
-      <p>From Sally, the cross-channel sea swimmer to Bill, to the market trader, discover life stories from Jersey’s ambassadors.</p>
+      <p>From Sally, the cross-channel sea swimmer to Bill, the market trader, discover life stories from Jersey’s ambassadors.</p>
     </div>
   </div>
 </section>
@@ -32,7 +32,7 @@ intro: Discover the real Jersey in the words of the people who live here. Meet l
         <span class="title title--upper title--expanded title--bolder">Meet</span>
         <h3 class="title title--medium title--light title--sub-heading">{{ambassador.title}}</h3>
         <p>{{ambassador.description}}</p>
-        <a href="{{site.baseurl}}/{{ambassador.category}}" class="btn title--upper">View {{ambassador.category}} Offers</a>
+        <a href="{{site.baseurl}}/{{ambassador.category}}" class="btn title--upper">View {{ambassador.category| replace: '-', ' '}} Offers</a>
       </div>
     </div>
   </section>
