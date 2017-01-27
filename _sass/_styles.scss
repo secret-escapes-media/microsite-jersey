@@ -12,12 +12,7 @@
   }
   .title {
     line-height: 1;
-    text-shadow:
-      0 0 60px rgba(0,0,0,.66),
-      0 0 60px rgba(0,0,0,.66),
-      0 0 60px rgba(0,0,0,.66),
-      0 0 60px rgba(0,0,0,.66)
-    ;
+    text-shadow: 0 0 50px $black;
   }
 }
 
