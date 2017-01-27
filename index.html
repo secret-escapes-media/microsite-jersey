@@ -1,50 +1,21 @@
 ---
 layout: default
 title: Overview
-class: overview
 nav-order: 1
-
-banner-title: <strong>Your journey of rediscovery...</strong><br />Starts here
-banner-content:
-
-intro: >
-  <p class="h3">An island of rediscovery, packed with activities to experience and explore. Begin your escape here.</p>
-  <p>The rich mellow colours of Jersey come to life in the autumn light, deepening into the vibrant golden tones of an Indian summer. How do you want to feel? Replenish, restore, rebalance and refresh. Experience the island break.</p>
+intro: Winter’s a time to recalibrate and restore, a time to cleanse the soul with astounding natural experiences.
+banner-title: Come alive this winter on the UK's favourite British island
 ---
 
-
-
-
-{% include banner.html %}
-
-
-<section class="intro">
-  <div class="row row--padding align-center">
-    {{page.intro}}
+<section class="row row--padding section">
+  <div class="line-length">
+    <p class="title title--xxxsmall title--condense">{{page.intro}}</p>
+    <p>Experience the elements, and feel the invigorating force of Jersey's coast – for unique and captivating experiences, your winter belongs in Jersey. Give yourself 72-hours to discover the crystal-clear clarity of our crisp sea air, soak up our panoramic winter skyscapes and nurture yourself with good food and long weekend lie-ins. Rediscover the island break.</p>
   </div>
 </section>
 
-<section class="category-tabs">
-  <div class="category-tabs__links row--columns-3-3-3-3">
-    {% assign categories = site.pages | sort:"nav-order" | where: "page-type", "category" %}
-    {% for category in categories %}
-      {% include category-link.html %}
-    {% endfor %}
-  </div>
+{% include section-overview.html %}
 
-  <div class="category-tabs__content align-center">
-    {% for category in categories %}
-      {% include category-block.html %}
-    {% endfor %}
-  </div>
-
-</section>
-
-
-<section class="section--lightgrey-bg">
+<section class="bg--light-grey section">
   {% assign offers = site.data.offers | sort: 'order' %}
   {% include offer-content.html %}
 </section>
-
-
-{% include competition-section.html %}

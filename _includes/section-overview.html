@@ -1,0 +1,37 @@
+{% assign categories = site.pages | sort:"nav-order" | where: "page-type", "category" %}
+{% assign ambassadors = site.data.ambassadors %}
+
+<section class="section-overview">
+  <div class="tabs">
+    {% for category in categories %}
+      <div class="tab js-tab" style="background-image: url('{{site.baseurl}}/img/bg/{{category.title | slugify}}.jpg');" data-tab-content="{{category.title | slugify}}">
+        <a class="tab__link" href="{{site.baseurl}}{{category.url}}"></a>
+        <span class="tab__bg-cover"></span>
+        <span class="tab__title title title--xxxsmall title--bolder">{{category.title}}</span>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="contents">
+    {% for category in categories %}
+    <div class="content js-tab-content js-tab-content-{{category.title | slugify}}">
+      <div class="row row--padding">
+        <h3 class="title title--medium title--light title--blue title--tight">{{category.title}}</h3>
+        <p class="line-length">{{category.intro}}</p>
+      </div>
+      <div class="content__bottom row--columns-6-6">
+        <div class="row__column content__bottom-section align-right bg--blue">
+          {% assign category-class = category.title | slugify %}
+          {% for ambassador in ambassadors %}{% if ambassador.category == category-class %}
+          <a href="{{site.baseurl}}{{category.url}}#ambassador"><img class="ambassador-avatar" src="{{site.baseurl}}/img/content/ambassador-{{ambassador.title | slugify}}.jpg" alt="{{ambassador.title}}"> Meet our ambassador: <span class="title title--xxxxsmall title--bold">{{ambassador.title}}</span></a>
+          {% endif %}{% endfor %}
+        </div>
+        <div class="row__column content__bottom-section align-left bg--cyan">
+          <a class="arrow-link arrow-link--white" href="{{site.baseurl}}{{category.url}}"><span class="title title--bold title--upper">Find Out More</span></a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+

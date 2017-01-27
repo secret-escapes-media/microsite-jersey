@@ -34,23 +34,14 @@
 //        Navigation
 ///////////////////////////////////////
 
-  // mobile nav open
-  $('.js-mobile-menu-open').on('click', function(e) {
-    e.preventDefault();
-    $(this).addClass('mobile-icon__menu--open');
-    $('.mobile-menu').toggleClass('mobile-menu--open');
-  });
-
-  // mobile nav close
-  $('.js-mobile-menu-close').on('click', function(e) {
-    e.preventDefault();
-    $('.js-mobile-menu-open').removeClass('mobile-icon__menu--open');
-    $('.mobile-menu').toggleClass('mobile-menu--open');
+  // mobile nav toggle open & close
+  $('.js-toggle-mobile-nav').on('click', function(e) {
+    $('.mobile-nav').toggleClass('is-open').toggleClass('is-closed');
   });
 
   // current page nav highlight
   var currentPage = $('body').data('current-page');
-  $('.' + currentPage + ' .microsite-nav__item--' + currentPage).addClass('microsite-nav__item--current');
+  $('.' + currentPage + ' .site-nav__link--' + currentPage).addClass('site-nav__link--current');
 
 
 ///////////////////////////////////////
@@ -101,77 +92,75 @@ $(document).scroll(function() {
 
 
 ///////////////////////////////////////
-//      Category tabs
+//    Generic modal
 ///////////////////////////////////////
 
+  var modal               = $('.js-modal'),
+      modalLaunchBtn      = $('.js-open-modal'),
+      modalCloseBtn       = $('.js-close-modal'),
+      modalContent        = modal.find('.modal__content');
 
-$('.category__link').click(function(event){
-  var category = $(this).attr('data-category');
+    // opens modal
+    function modalOpen(event){
+      event.preventDefault();
+      // disable scrolling on background content (doesn't work iOS)
+      $('body').addClass('disable-scroll');
+      // // open modal
+      modal.fadeIn('250', function(){
+        $(this).removeClass('is-closed').addClass('is-open');
+      });
+    }
 
-  if($(this).hasClass('category__link--active')){
-  }else{
-    $('.category-tabs__links').find('.category__link--active').removeClass('category__link--active');
-    $(this).addClass('category__link--active');
-  }
+    // closes modal
+    function modalClose(event){
+      event.preventDefault();
+      // enable scrolling
+      $('body').removeClass('disable-scroll');
+      // close modal with fade
+      modal.fadeOut('250', function(){
+        $(this).removeClass('is-open').addClass('is-closed');
+        modalContent.empty();
+      });
+    }
 
-  $('.category-tabs__content')
-    .find('.category__content.category__content--active')
-    .removeClass('category__content--active');
-
-  $('.category-tabs__content')
-    .find('[data-category="' + category + '"]')
-    .addClass('category__content--active');
-
-});
-
-
-
-///////////////////////////////////////
-//      Modal
-///////////////////////////////////////
-
-  var modal         = $('.js-modal'),
-      modalContent  = $('.js-modal__content'),
-      modalClose    = $('.js-modal__close'),
-      modalVideo    = $('.js-modal__video');
-
-  // EVENT - launch modal & populate with content
-  $('.js-launch-modal').on('click', function(e) {
-
-    var modalVideoID = $(this).attr('data-video-id');
-    var modalAttr = $(this).attr('data-target-modal');
-
-    e.preventDefault();
-
-    // launch modal
-    modal.removeClass('is-closed').addClass('is-open').fadeIn();
-    $('body').css('overflow', 'hidden');
-
-    modalVideo.append('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/' + modalVideoID + '?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>');
-
-  });
-
-
-  function closeModal(e) {
-    e.on('click', function() {
-      modal.removeClass('is-open').addClass('is-closed').fadeOut();
-      $('body').css('overflow', 'auto');
-      modalVideo.empty();
+    // creates video & launches modal when offer is clicked
+    modalLaunchBtn.on('click', function(event) {
+      var clicked   = $(this),
+          videoId   = clicked.data('video-id'),
+          videoCode = '<div class="video__wrap"><div class="video"><iframe class="video__iframe" src="https://www.youtube.com/embed/' + videoId + '?rel=0&amp;showinfo=0&autoplay=1" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div></div>';
+      modalContent.html(videoCode);
+      modalOpen(event);
     });
-  }
 
-  $(document).keyup(function(e) {
-     if (e.keyCode == 27) { // escape key maps to keycode `27`
-       modal.removeClass('is-open').addClass('is-closed').fadeOut();
-       $('body').css('overflow', 'auto');
-       modalVideo.empty();
-      }
-  });
+    // closes modal on close icon click
+    modalCloseBtn.on('click', function(event) {
+      var clicked  = $(this);
+      modalClose(event);
+    });
 
-  // close modal on icon and bg click
-  closeModal(modalClose);
-  // closeModal(modal);
 
+///////////////////////////////////////
+//      Section Overview tabs
+///////////////////////////////////////
+
+var tabs = $('.js-tab'),
+    tabContent = $('.js-tab-content'),
+    openClass = 'is-open',
+    closeClass = 'is-closed';
+
+// hide all and show first
+tabContent.hide().filter(':first-child').show();
+// set classes on tabs
+tabs.addClass(closeClass).filter(':first-child').addClass(openClass).removeClass(closeClass);
+
+tabs.on('click',function(e) {
+  var selected = $(this).data('tab-content');
+  // hide all and show selected content
+  tabContent.hide().filter('.js-tab-content-' + selected).show();
+  // change classes on tabs
+  $('.js-tab.' + openClass).removeClass(openClass).addClass(closeClass);
+  $(this).addClass(openClass).removeClass(closeClass);
+});
 
 
 

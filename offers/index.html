@@ -1,31 +1,19 @@
 ---
 layout: default
 title: Offers
-class: offers
 nav-order: 6
-
+intro: Winter’s a time to recalibrate and restore, and a time to cleanse the soul with breathtaking natural experiences. Discover these fantastic travel deals to experience the perfect island break.
 banner-title: Offers
-banner-content:
-
-intro: >
-  <p class="h3">The rich mellow colours of Jersey come to life in the autumn light, deepening into the vibrant golden tones of an Indian summer in Jersey. Replenish, restore, rebalance and refresh. However you want to feel, we have you covered with exclusive promotions and travel deals to experience the island break.</p>
 ---
 
 
-{% include banner.html %}
-
-
-<section class="intro">
-  <div class="row row--padding align-center">
-    {{page.intro}}
+<section class="section">
+  <div class="row row--padding">
+    <p class="line-length align-center paragraph paragraph--large">{{page.intro}}</p>
   </div>
 </section>
 
-
-<section class="section--lightgrey-bg">
-  {% assign offers = site.data.offers | sort: 'order' %}
+<section class="bg--light-grey section">
+  {% assign offers = site.data.offers %}
   {% include offer-content.html %}
 </section>
-
-
-{% include competition-section.html %}
