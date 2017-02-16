@@ -10,9 +10,11 @@ layout: default
   </div>
 </section>
 
+{% assign offers = site.data.offers | where: 'category', page-class  %}
+{% if offers.size != 0 %}
 <section class="bg--light-grey section">
-  {% assign offers = site.data.offers | where: 'category', page-class  %}
   {% include offer-content.html %}
 </section>
+{% endif %}
 
 {% include ambassador-section.html %}
