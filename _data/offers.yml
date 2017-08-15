@@ -1,17 +1,39 @@
-- title: Opulent Jersey break at a highly acclaimed spa hotel
-  category: local-flavour
-  location: Hotel de France
-  description: A Jersey break as a St Helier's number one award-winning hotel on TripAdvisor, with car hire
-  link: https://www.secretescapes.com/opulent-jersey-break-at-a-highly-acclaimed-spa-hotel-hotel-de-france-channel-islands/sale?utm_source=SE&utm_campaign=Jersey&utm_medium=Hub
+- title: THIS Lorem ipsum dolor sit amet consectetur adipisicing elit
+  id: this
+  location: asperiores molestiae provident fugit temporibus officiis
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+  price: 459
+  price-description: per person for 4 nights
+  saved: 37
+  expires: 2018/04/14
+  link: "#se-offer-page"
 
-- title: 5* Jersey boutique break with car hire
-  category: a-slower-pace
-  location: The Club Hotel & Spa, St Helier
-  description: A five-star St Helier stay, at a spa hotel with a Michelin-starred restaurant, including flights
-  link: https://www.secretescapes.com/jersey-break-the-club-hotel-and-spa-st-helier/sale?utm_source=SE&utm_campaign=Jersey&utm_medium=Hub
+- title: THAT Lorem ipsum dolor sit amet consectetur adipisicing elit
+  id: that
+  location: asperiores molestiae provident fugit temporibus officiis
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+  price: 459
+  price-description: per person for 4 nights
+  saved: 37
+  expires: 2018/04/14
+  link: "#se-offer-page"
 
-- title: Jersey break at an award-winning hotel with car hire
-  category: feeling-inspired
-  location: La Place Hotel & Country Cottages, Channel Islands
-  description: Stay at a St Brelade hotel ranked as one of the best in the Channel Islands on TripAdvisor
-  link: https://www.secretescapes.com/jersey-break-at-an-award-winning-hotel-with-car-hire-la-place-hotel-and-country-cottages-channel-islands/sale?utm_source=SE&utm_campaign=Jersey&utm_medium=Hub
+- title: THEOTHER Lorem ipsum dolor sit amet consectetur adipisicing elit
+  id: theother
+  location: asperiores molestiae provident fugit temporibus officiis
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+  price: 459
+  price-description: per person for 4 nights
+  saved: 37
+  expires: 2018/04/14
+  link: "#se-offer-page"
+
+- title: AND ANOTHER ONE Lorem ipsum dolor sit amet consectetur adipisicing elit
+  id: another
+  location: asperiores molestiae provident fugit temporibus officiis
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+  price: 459
+  price-description: per person for 4 nights
+  saved: 37
+  expires: 2018/04/14
+  link: "#se-offer-page"

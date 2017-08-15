@@ -3,8 +3,17 @@
 
 // -------- colors --------
 
-$white:       #fff;
-$black:       #000;
+// style guide colours
+$white:          #fff;
+$grey-lightest:  #f2f5f7;
+$grey-lighter:   #dadcdf;
+$grey-light:     #a1a5a9;
+$grey:           #74787d;
+$grey-dark:      #47484a;
+$grey-darker:    #2e2e2e;
+$black:          #000;
+
+// other colors
 $light-grey:  #eeeeee;
 $dark-grey:  #1a1a1a;
 
@@ -34,27 +43,26 @@ $se-dark-grey-5:  rgba(41,39,40,.5);
 $se-dark-grey-66: rgba(41,39,40,.66);
 $se-dark-grey-85: rgba(41,39,40,.85);
 
-$text-black:      #0d0d0d;
-$text-heading:    #0d0d0d;
+$j-orange:     #f58353;
+$j-blue-dark:  #42404d;
+$j-blue-light: #42404d;
+
+$text-black:      #47484a;
+$text-white:      #d9d9d9;
+$text-heading:    #47484a;
 $text-paragraph:  #5f5f5f;
 
-$jersey-navy:         #42404d;
-$jersey-navy-5:      rgba(66,64,77,.5);
-$jersey-navy-85:      rgba(66,64,77,.85);
-$jersey-cyan:         #68c9d0;
-$jersey-blue:         #4b61a1;
-$jersey-light-grey:   #f3f3f3;
-$jersey-grey:         #757575;
+.text-white { color: $text-white; }
 
 
 // -------- breakpoints --------
 
-$xxxlarge:  1120px;
-$xxlarge:   1000px;
-$xlarge:    850px;
+$xxxlarge:  1200px;
+$xxlarge:   955px;
+$xlarge:    800px;
 $large:     650px;
-$medium:    450px;
-$small:     300px;
+$medium:    520px;
+$small:     400px;
 
 @mixin bp($width){
   @if $width == xxxlarge {
@@ -79,7 +87,7 @@ $small:     300px;
 
 // vertical breakpoint for small screen mobile
 @mixin bp-vertical {
-  @media (max-height:$medium) and (max-width:$large) { @content; }
+  @media (max-height:$small) and (max-width:$large) { @content; }
 }
 
 
@@ -177,17 +185,43 @@ $z-background:      -1;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: $grey-lighter;
+  overflow: hidden;
   &:before {
     display: block;
     content: "";
     width: 100%;
   }
+  &--1-1:before   { padding-top: 100%; }
+  &--4-3:before   { padding-top: 75%; }
+  &--3-2:before   { padding-top: 66.666666666667%; }
+  &--16-9:before  { padding-top: 56.25%; }
+  &--21-9:before  { padding-top: 42.8571429%; }
+  &__credit{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    padding: 1em;
+    font-size: .7em;
+    line-height: 1;
+    color: rgba($white,.75);
+    background-color: rgba($black,.25);
+    transition: all ($transition-time*2.5) ease;
+    opacity: 0; // have the text appear on hover
+    .touch & {
+      opacity: 1; // stop this on mobile as no hover
+    }
+  }
+  &:hover &__credit {
+    // text appears on hover
+    opacity: 1;
+    &:hover {
+      color: $white;
+      background-color: rgba($black,.5);
+    }
+  }
 }
-.bg-image-ratio--1-1:before   { padding-top: 100%; }
-.bg-image-ratio--4-3:before   { padding-top: 75%; }
-.bg-image-ratio--3-2:before   { padding-top: 66.666666666667%; }
-.bg-image-ratio--16-9:before  { padding-top: 56.25%; }
-.bg-image-ratio--21-9:before  { padding-top: 42.8571429%; }
 
 
 // -------- generic styles --------
@@ -199,3 +233,7 @@ $z-background:      -1;
   background-size: 100%;
   background-size: cover;
 }
+
+// generic box shadow
+@mixin box-shadow { box-shadow: 0 8px 66px 0 rgba(122,145,169,.33); }
+.shadow{ @include box-shadow; }

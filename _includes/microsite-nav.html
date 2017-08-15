@@ -1,0 +1,8 @@
+<div class="site-nav">
+  <div class="row">
+    <ul class="site-nav__list">
+
+      {% for topic in page.topics %}<li class="site-nav__item site-nav__item--{{topic.id}}"><a class="site-nav__link" href="#{{topic.id}}">{{topic.nav-title}}</a></li>{% endfor %}<li class="site-nav__item site-nav__item--offers"><a class="site-nav__link" href="#offers">Offers</a></li><li class="site-nav__item site-nav__item--competition"><a class="site-nav__link" href="#competition">Competition</a></li>
+    </ul>
+  </div><!-- END - .row -->
+</div><!-- END - .site-nav -->

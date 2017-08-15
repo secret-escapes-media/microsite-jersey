@@ -9,38 +9,51 @@ $susy:(
   global-box-sizing: border-box,
   gutters: 0,
 );
-$gutters:( gutters: 1 / 2, );
+$gutters:( gutters: 1/2, );
 $margin: 2em;
 
 
 // -------- grid sections --------
 
+.space {
+  &--xl { margin-top: 3em; }
+  &--lg { margin-top: 2.5em; }
+  &--md { margin-top: 2em; }
+  &--sm { margin-top: 1.5em; }
+}
+
 .section {
-  padding-top: 2.986em;
-  padding-bottom: 2.986em;
-  @include bp(large) {
-    padding-top: 4em;
-    padding-bottom: 4em;
+  padding-top: 3.583em;
+  padding-bottom: 3.583em;
+  @include bp(large){
+    padding-top: 5.16em;
+    padding-bottom: 5.16em;
+  }
+  @include bp(xxlarge) {
+    padding-top: 7.234em;
+    padding-bottom: 7.234em;
   }
 }
 
 .row {
   @include container( $xxxlarge );
   position: relative;
-  & + .row { margin-top: $margin; }
-  &--full-width {
-    @include container( 100% );
-    max-width: 1650px;
+  & + & { margin-top: $margin; }
+  & + &--extra-margin { margin-top: ($margin * 1.5); }
+  &--narrow {
+    @include container( $xxlarge );
   }
+  &--100 { @include container(100%);}
+  &--xxl { @include container($xxlarge);}
+  &--xl  { @include container($xlarge);}
+  &--lg  { @include container($large);}
+  &--md  { @include container($medium);}
+  &--sm  { @include container($small);}
 }
 
 .row--padding {
-  padding-left: ( $margin / 2 );
-  padding-right: ( $margin / 2 );
-  @include bp(medium) {
-    padding-left: $margin;
-    padding-right: $margin;
-  }
+  padding-left: $margin;
+  padding-right: $margin;
 }
 .row--margin {
   margin-left: ( $margin / 2 );
@@ -51,13 +64,10 @@ $margin: 2em;
   }
 }
 
-.row__column {
-  &--padding { padding: $margin; }
-  & + & {
-    margin-top: ( $margin / 2 );
-    @include bp(large) {
-      margin-top: 0;
-    }
+.row__column + .row__column {
+  margin-top: ( $margin / 2 );
+  @include bp(large) {
+    margin-top: 0;
   }
 }
 
@@ -86,7 +96,7 @@ $margin: 2em;
 // -------- grid columns --------
 
 // breakpoint for all columns
-@include bp(xlarge){
+@include bp(large){
 
   // two columns without gutter
   .row--columns-4-8 { @include two-column-grid( 4, 8 ); }
@@ -111,19 +121,71 @@ $margin: 2em;
     margin-bottom: gutter();
   }
 
-  // three columns without gutter
-  .row--columns-3-3-3-3 .row__column { @include gallery(3); }
-
-  // three columns with gutter
-  .row--columns-3-3-3-3-gutters .row__column {
-    @include gallery($gutters 3);
-    margin-bottom: gutter();
-  }
-
   // vertical align floated columns
   .row--columns-vertical-align {
     display: flex;
     align-items: center;
   }
 
+}
+
+
+// Harvey is Bob's second cousin on his Mother's side. He was a troubled
+// youth and, after years of medical examination Harvey was diagnosed with
+// multipersonality disorder. It is this disorder which allows him to build
+// the following two sided image/text layouts.
+// Harvey is a 50/50 text image layout with no gutter. Use Harvey to make
+// an alternating full width section with centred text, and limited height
+// image sizing so the layout works across screens and sizes.
+.harvey {
+  @include container(100%);
+  @include layout(12 0);
+  &__text { padding: $margin $margin ($margin*2.5); }
+  &__image {
+    position: relative;
+    width: 100%;
+    background-color: $grey;
+    @include background-attributes;
+    &:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 75%;
+    }
+    &-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: $z-content;
+    }
+  }
+  @include bp(xlarge){
+    .flexbox & {
+      display: flex;
+      align-items: center;
+    }
+    &__image {
+      @include span(6);
+      min-height: 450px;
+      max-height: 700px;
+    }
+    &__text {
+      @include span(6 last);
+      max-width: 600px;
+      padding: ($margin*1.5);
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &--swap{
+      &__image { @include span(6 last); }
+      &__text { @include span(6); }
+      .flexbox & {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+      }
+    }
+  }
 }
