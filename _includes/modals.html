@@ -1,0 +1,24 @@
+<div class="js-modal modal is-closed">
+  <div class="modal__ui-wrap row">
+    <div class="js-close-modal modal__close"></div>
+
+
+    <!-- modal__content -->
+    {% assign modals = site.data.modals %}
+    {% for modal in modals %}
+      <div class="modal__content-wrap">
+      {% if modal.type == 'youtube' %}
+        <div class="modal__content modal__content--{{modal.id}} modal__video" data-youtube-id="{{modal.youtube-id}}">
+      {% elsif modal.type == 'iframe' %}
+        <div class="modal__content modal__content--{{modal.id}} modal__iframe">
+          <iframe class="competition-form" src="{{modal.iframe-src}}" frameborder="0"></iframe>
+      {% else %}
+        <div class="modal__content modal__content--{{modal.id}}">
+          {{modal.content}}
+      {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+
+  </div>
+</div>

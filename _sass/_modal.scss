@@ -22,7 +22,7 @@ $icon-size: 3em;
     right: 0;
     bottom: ($margin * 1.5);
     width: 100%;
-    max-width: $xlarge;
+    max-width: $xxlarge;
     margin-top: 0 !important;
     cursor: auto;
   }
@@ -33,7 +33,7 @@ $icon-size: 3em;
     right: 0;
     bottom: 0;
     margin-top: 0 !important;
-    max-width: $xlarge;
+    max-width: $xxlarge;
     cursor: auto;
     overflow-y: auto;
     .flexbox & {
@@ -42,6 +42,7 @@ $icon-size: 3em;
     }
   }
   &__content {
+    z-index: $z-overlay-upper;
     margin: auto;
     color: $text-black;
     background-color: $white;
@@ -114,4 +115,39 @@ $icon-size: 3em;
 
 .disable-scroll {
   overflow: hidden;
+}
+
+.competition-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: $z-overlay-upper;
+  height: 100%;
+  width: 100%;
+  background-color: $white;
+}
+
+.video {
+  position: relative;
+  height: 0;
+  max-width: 100%;
+  padding-bottom: 56.25%;
+  background-color: #000;
+  overflow: hidden;
+  &__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .csstransforms.csstransforms3d &__wrap {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+  }
 }

@@ -1,0 +1,7 @@
+- id: welcome-video
+  type: youtube
+  youtube-id: Mihjesz7iYQ
+
+- id: competition-form
+  type: iframe
+  iframe-src: https://secretescapes-jersey.strutta.com

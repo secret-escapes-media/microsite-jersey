@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Overview
-intro: Life is so busy that sometimes we forget to think about how we feel. Slow down for a moment and allow yourself to relax, revitalise and connect. In Jersey, ‘Island life’ is the perfect tonic to the stress of daily life. It’s an experience which will leave you feeling revitalised, so dive in this autumn and explore the island break. 
+intro: Sometimes, the time is right to escape the city and spend a weekend getting lost in a new destination, to relax, rebalance and put yourself first. In Jersey, ‘Island life’ is the perfect tonic to the stress of daily life. It’s an experience which will leave you feeling revitalised, so dive in this autumn and explore the island break.  
 
 topics:
 
@@ -9,7 +9,7 @@ topics:
     nav-title: Relax
     title: Relax this autumn
     text: >
-      ...And breathe, relaxation is a state of mind - a moment of utter content. In Jersey, balance is restored, discover your own ways to relax with the island break.
+      Autumn is a time to relax. In Jersey, balance is restored. Discover your own ways to relax with the island break.
     article:
       title: Relaxing island weekends in Jersey
       text: The beauty of escaping to a small island is that everywhere’s close by, making it simple to have a leisurely weekend. So get away from your daily routine with a peaceful island break where you’re never more than ten minutes from the sea ….
@@ -19,7 +19,7 @@ topics:
     nav-title: Revitalise
     title: Ready to feel revitalised?
     text: >
-      We all need time to reclaim some energy back in our lives. In Jersey, you’ll find balance is restored. Discover your own ways to revitalise taking an island break.
+      We all need time to reclaim some energy back in our lives. In Jersey, you’ll find balance is restored. Discover your own ways to revitalise by taking an island break.
     article:
       title: 72 hours to rebalance in Jersey
       text: Jersey is the perfect place to unwind, liberate your soul and nourish your mind.  Jump on a 40-minute flight to Jersey and rebalance without the research - let us take care of your itinerary. Revitalise in the natural elements of Jersey and retreat for a long weekend escape. Here’s our guide to 72 hours on the island break.
@@ -42,6 +42,8 @@ topics:
     <h1 class="title title--special title--largest title--color">Jersey</h1>
     <h2 class="title title--special title--smaller title--sub-heading title--color">The Island Break</h2>
     <div class="space--sm"></div>
+    <a class="js-open-modal" data-modal-id="welcome-video"><img src="{{site.baseurl}}/img/icons/play.png" alt="Play video icon"></a>
+    <div class="space--sm"></div>
     <a href="#competition" class="btn btn--outline-white btn--small">Win Your Autumn Escape</a>
   </div>
   <div class="banner__nav">
@@ -50,19 +52,9 @@ topics:
 </div>
 
 <section id="intro" class="section intro bg--light-grey">
-  <div class="row row--padding">
-    <div class="row row--columns-7-5-gutters row--columns-vertical-align">
-      <div class="row__column">
-        <div class="video js-youtube-thumbnail" data-thumbnail-img="img/content/video.jpg">
-          <iframe class="video__iframe" src='https://www.youtube.com/embed/Mihjesz7iYQ?rel=0&amp;showinfo=0' frameborder='0' allowfullscreen="allowfullscreen"></iframe>
-        </div>
-      </div>
-      <div class="row__column">
-        <div class="title title--special title--small">How do you want to feel</div>
-        <p>{{page.intro}}</p>
-      </div>
-    </div>
-
+  <div class="row row--lg row--padding align-center">
+    <div class="title title--special title--small">How do you want to feel</div>
+    <p>{{page.intro}}</p>
   </div>
 </section>
 
@@ -108,16 +100,19 @@ topics:
   </div>
 </section>
 
-<section id="competition">
-  <div class="harvey bg--light-grey">
-    <div class="harvey__image" style="background-image: url({{site.baseurl}}/img/content/competition.jpg); background-position: right center;">
-      <a class="harvey__image-link" href="#competition-form-maybe-modal"></a>
+<section id="competition" class="section bg--light-grey">
+  <div class="row row--padding">
+    <div class="row align-center">
+      <h3 class="title title--special title--larger">Win your Autumnal island escape</h3>
     </div>
-    <div class="harvey__text">
-      <h3 class="title title--special title--larger">WIN your 2017 <br>Autumn escape</h3>
-      <p>Escaping to the countryside is one thing; escaping to an island gives you a whole new perspective on re-energising. Nothing calms and relaxes more than time spent by the sea.</p>
+    <div class="row row--xl">
+      <a class="js-open-modal" data-modal-id="competition-form"><div class="bg-image-ratio bg-image-ratio--16-9" style="background-image: url('{{site.baseurl}}/img/content/competition.jpg');"></div></a>
+    </div>
+    <div class="row row--lg align-center">
+      <p>Rejuvenate this Autumn with a chance to win a break on the island of Jersey. One lucky winner will fly business class with a partner, including transfers, to enjoy a perfect island retreat. With two nights to be spent at the five-star Radisson Blu Waterfront Hotel, you’ll ease into your Jersey escape. Enjoy a full English each morning, to help set you up for a day of exploring the wild, rugged coastline. Alight at quaint villages dotted with superlative dining options and homely pubs, before wistful walks along untamed beaches.</p>
+      <p>To prepare you for the revitalising Autumnal weather, you’ll also receive £300 to spend with Barbour on their Weather Comforts collection. Marry quintessential British fashion with a rugged, refreshing landscape and reinvigorate the senses…</p>
       <div></div>
-      <a href="#competition-form-maybe-modal" class="btn btn--j-orange">Enter Now</a>
+      <a class="js-open-modal btn btn--j-orange" data-modal-id="competition-form">Enter Now</a>
     </div>
   </div>
 </section>
