@@ -2,6 +2,6 @@
   type: youtube
   youtube-id: Mihjesz7iYQ
 
-- id: competition-form
-  type: iframe
-  iframe-src: https://secretescapes-jersey.strutta.com
+# - id: competition-form
+#   type: iframe
+#   iframe-src: https://promotion4014.strutta.me

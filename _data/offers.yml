@@ -1,39 +1,36 @@
-- title: THIS Lorem ipsum dolor sit amet consectetur adipisicing elit
-  id: this
-  location: asperiores molestiae provident fugit temporibus officiis
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-  price: 459
-  price-description: per person for 4 nights
-  saved: 37
-  expires: 2018/04/14
-  link: "#se-offer-page"
 
-- title: THAT Lorem ipsum dolor sit amet consectetur adipisicing elit
-  id: that
-  location: asperiores molestiae provident fugit temporibus officiis
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-  price: 459
-  price-description: per person for 4 nights
-  saved: 37
-  expires: 2018/04/14
-  link: "#se-offer-page"
 
-- title: THEOTHER Lorem ipsum dolor sit amet consectetur adipisicing elit
-  id: theother
-  location: asperiores molestiae provident fugit temporibus officiis
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-  price: 459
-  price-description: per person for 4 nights
-  saved: 37
-  expires: 2018/04/14
-  link: "#se-offer-page"
+- title: 5* exceptional Jersey stay with Tennerfest dates
+  id: relax
+  location: Longueville Manor, St Saviour
+  description: Magnificent five-star Jersey retreat with prized dining
+  price: 375
+  price-description: per person for 3 nights
+  saved: 33
+  link: "https://www.secretescapes.com/5-star-exceptional-jersey-stay-with-tennerfest-dates-longueville-manor-st-saviour/sale?gce_urgv3=0&utm_source=SE&utm_medium=Hub&utm_campaign=Jersey_2017"
 
-- title: AND ANOTHER ONE Lorem ipsum dolor sit amet consectetur adipisicing elit
-  id: another
-  location: asperiores molestiae provident fugit temporibus officiis
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-  price: 459
-  price-description: per person for 4 nights
-  saved: 37
-  expires: 2018/04/14
-  link: "#se-offer-page"
+- title: Award-winning St Helier spa stay with Tennerfest dates
+  id: revitalise
+  location: Hotel de France, St Helier
+  description: A Jersey break at St Helier's number one award-winning spa hotel on TripAdvisor, with car hire
+  price: 199
+  price-description: per person for 2 nights
+  saved: 47
+  link: "https://www.secretescapes.com/award-winning-stay-on-the-island-of-jersey-hotel-de-france-channel-islands/sale?utm_source=SE&utm_medium=Hub&utm_campaign=Jersey_2017"
+
+- title: Picturesque Jersey escape with Tennerfest dates
+  id: reconnect
+  location: Best Western Royal Hotel Jersey, St Helier
+  description: A classic break in beautiful St Helier with AA Rosette-awarded dining - Tennerfest dates available
+  price: 190
+  price-description: per person for 2 nights
+  saved: 42
+  link: "https://www.secretescapes.com/picturesque-jersey-escape-best-western-royal-hotel-jersey-channel-islands/sale?gce_urgv3=0&utm_source=SE&utm_medium=Hub&utm_campaign=Jersey_2017"
+
+- title: Jersey break at an award-winning hotel
+  location: Hotel La Place, St Brelade
+  description: A top-rated stay at an award-winning St Brelade hotel
+  price: 214
+  price-description: per person for 2 nights
+  saved: 45
+  link: "https://www.secretescapes.com/jersey-break-at-an-award-winning-hotel-with-tennerfest-dates-hotel-la-place-rated-the-best-hotel-in-the-channel-islands/sale?gce_urgv3=0&utm_source=SE&utm_medium=Hub&utm_campaign=Jersey_2017"

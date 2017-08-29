@@ -15,7 +15,7 @@ input, textarea, keygen, select, button {
   @include bp(medium) {
     font-size: 15px;
   }
-  color: $text-black;
+  color: $text-paragraph;
 }
 
 
@@ -42,7 +42,7 @@ input, textarea, keygen, select, button {
 
   &--color     { color: inherit !important; }
   &--light     { font-weight: 200; }
-  &--bold      { font-weight: 700; }
+  &--bold      { font-weight: 600; }
   &--expanded  { letter-spacing: .15em; }
   &--expanded-extra  { letter-spacing: .35em; }
   &--condense  { letter-spacing: 0; }
@@ -118,4 +118,8 @@ hr {
   height: 1px;
   background-color: $light-grey;
   margin: 1em 0;
+}
+
+.hr {
+  &--center { width: 100px; margin-left: auto; margin-right: auto; }
 }

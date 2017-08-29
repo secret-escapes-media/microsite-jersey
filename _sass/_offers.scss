@@ -179,6 +179,10 @@
     @include gallery(12);
     margin-bottom: 0;
     line-height: 0;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid rgba($black,0.1);
     @include transition;
     > * {
       display: inline-block;
@@ -186,7 +190,7 @@
     }
     .offer__link { background-color: transparent; }
     .offer__image { width: 33.33%; }
-    .offer__title { font-size: 1.15em; }
+    .offer__title { font-size: 1.35em; }
     .offer__location { margin-bottom: 0;}
     .offer__content {
       width: 56.66%;
@@ -200,7 +204,6 @@
     }
     &:hover,
     &:active {
-      background-color: $white;
       @include box-shadow;
       transform: scale(1.025) translateY(-2%);
     }
