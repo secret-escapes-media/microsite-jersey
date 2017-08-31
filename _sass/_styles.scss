@@ -77,13 +77,16 @@
     max-width: $large;
     margin-left: auto;
     margin-right: auto;
-    // margin-bottom: ($margin*1.5);
+    margin-top: ($margin*1.5);
   }
   &--center { text-align: center; }
   @include bp(xxlarge){
     &--center { text-align: left; }
     &__text  { @include span(7); }
-    &__image { @include span(last 5); }
+    &__image {
+      margin-top: 0;
+      @include span(last 5);
+    }
     .flexbox & {
       display: flex;
       align-items: center;
@@ -175,8 +178,6 @@ $cta-size: 53px;
   height: $cta-size;
   width: $cta-size;
   background-color: $white;
-  background-image: url(../img/icons/british-airways.png);
-  .svg & { background-image: url(../img/icons/british-airways.svg); }
   background-position: 45% 52%;
   background-repeat: no-repeat;
   background-size: 75% auto;

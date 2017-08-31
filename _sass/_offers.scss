@@ -143,7 +143,7 @@
   }
   &__arrow {
     display: none;
-    @include bp(small){
+    @include bp(medium){
       display: inline-block;
       width: $circle-height;
       height: $circle-height;
@@ -157,7 +157,7 @@
     }
   }
   &__bottom {
-    @include bp(small){
+    @include bp(medium){
       display: table;
       width: 100%;
       * { vertical-align: middle; }
@@ -189,14 +189,21 @@
       vertical-align: middle;
     }
     .offer__link { background-color: transparent; }
-    .offer__image { width: 33.33%; }
+    .offer__image {
+      width: 100%;
+      @include bp(medium){ width: 33.33%; }
+    }
     .offer__title { font-size: 1.35em; }
     .offer__location { margin-bottom: 0;}
     .offer__content {
-      width: 56.66%;
-      padding: .5em 1em;
+      width: 100%;
+      padding: 1em 1em;
       background-color: transparent;
       border-color: transparent;
+      @include bp(medium){
+        padding: .5em 1em;
+        width: 56.66%;
+      }
     }
     &__right {
       width: 10%;
