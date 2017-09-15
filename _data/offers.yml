@@ -1,19 +1,8 @@
 
 
 
-- title: 5* exceptional Jersey stay with Tennerfest dates
-  id: relax
-  location: Longueville Manor, St Saviour
-  description: Magnificent five-star Jersey retreat with prized dining
-  price: 375
-  price-description: per person for 3 nights
-  saved: 33
-  link: "https://www.secretescapes.com/5-star-exceptional-jersey-stay-with-tennerfest-dates-longueville-manor-st-saviour/sale?gce_urgv3=0&utm_source=SE&utm_medium=Hub&utm_campaign=Jersey_2017"
-
-
-
 - title: Scenic Jersey break at a luxury waterfront hotel
-  id: revitalise
+  id: relax
   location: Radisson Blu Waterfront Hotel, St Aubin's Bay
   description: Scenic stay by St Aubin's Bay with sea views - flights and car hire included
   price: 199
@@ -24,7 +13,7 @@
 
 
 - title: Picturesque Jersey break with harbour views & car hire
-  id: reconnect
+  id: revitalise
   location: Somerville Hotel, St Aubin
   description: An award-winning hotel overlooking a Jersey harbour
   price: 199
@@ -35,7 +24,7 @@
 
 
 - title: Picturesque Jersey break at a luxury hotel
-  id: 
+  id: reconnect
   location: The Atlantic Hotel, St Brelade
   description: High-end dining with this luxe Jersey break
   price: 349
