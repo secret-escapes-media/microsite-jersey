@@ -80,6 +80,10 @@ input, textarea, keygen, select, button {
   }
 }
 
+.text {
+  &--orange { color: $j-orange; }
+}
+
 .p {
   &--lead {
     font-size: 1.05em;

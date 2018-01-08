@@ -1,8 +1,5 @@
-
-
-
 - title: Scenic Jersey break at a luxury waterfront hotel
-  id: relax
+  id: rainwatcher
   location: Radisson Blu Waterfront Hotel, St Aubin's Bay
   description: Scenic stay by St Aubin's Bay with sea views - flights and car hire included
   price: 199
@@ -10,24 +7,11 @@
   saved: 43
   link: "https://www.secretescapes.com/scenic-jersey-break-at-a-luxury-waterfront-hotel-radisson-blu-waterfront-hotel-channel/sale?utm_source=SE&utm_medium=Jersey&utm_campaign=Sep_2017"
 
-
-
 - title: Picturesque Jersey break with harbour views & car hire
-  id: revitalise
+  id: windchaser
   location: Somerville Hotel, St Aubin
   description: An award-winning hotel overlooking a Jersey harbour
   price: 199
   price-description: per person for 2 nights
   saved: 40
   link: "https://www.secretescapes.com/picturesque-jersey-break-with-harbour-views-and-car-hire-somerville-hotel-st-aubin/sale?utm_source=SE&utm_medium=Jersey&utm_campaign=Sep_2017"
-
-
-
-- title: Picturesque Jersey break at a luxury hotel
-  id: reconnect
-  location: The Atlantic Hotel, St Brelade
-  description: High-end dining with this luxe Jersey break
-  price: 349
-  price-description: per person for 3 nights
-  saved: 42
-  link: "https://www.secretescapes.com/picturesque-jersey-break-at-a-luxury-hotel-the-atlantic-hotel-st-brelade/sale?utm_source=SE&utm_medium=Jersey&utm_campaign=Sep_2017"

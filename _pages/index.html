@@ -1,48 +1,41 @@
 ---
 layout: default
-title: Overview
+title: Love Winter
 
-intro: Escape the city and spend a weekend getting lost in a new destination to relax, rebalance and put yourself first. In Jersey, ‘island life’ is the perfect tonic to the stress of daily life – a restorative experience that leaves you ready to dive back in.
+intro: Embrace the elements; enjoy the intrepid feeling of tackling the season head on. The winter in Jersey brings drama, beauty and a sense of freshness that doesn’t just blow away the cobwebs, it invigorates the soul.
 
 topics:
 
-  - id: relax
-    nav-title: Relax
-    title: Ready to feel relaxed?
+  - id: rainwatcher
+    nav-title: Rainwatcher
+    title: Are you a Rainwatcher?
     text: >
-      Autumn is a time to relax. In Jersey, balance is restored. Discover your own ways to relax with the island break.
+      Though the powerful elements of the Atlantic tide are beautiful, the essence of winter is also about retreating to a roaring fire and battening down the hatches.
     article:
-      title: Relaxing island weekends in Jersey
-      text: The beauty of escaping to a small island is that everywhere’s close by, making it simple to have a leisurely weekend. So get away from your daily routine with a peaceful island break where you’re never more than ten minutes from the sea ….
+      title: A Rainwatchers 48 hours in Jersey.
+      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cumque laudantium ducimus voluptate eaque ullam vitae illum perferendis dolor voluptatem. Recusandae quibusdam nemo unde eligendi iste inventore qui illum ex distinctio consectetur placeat, enim beatae vitae obcaecati necessitatibus repellendus! Eum?
+      link: "#article-link"
 
-  - id: revitalise
-    nav-title: Revitalise
-    title: Ready to feel revitalised?
+  - id: windchaser
+    nav-title: Windchaser
+    title: Are you a Windchaser?
     text: >
-      We all need time to reclaim some energy back in our lives. In Jersey, you’ll find balance is restored. Discover your own ways to revitalise by taking an island break.
+      A winter in Jersey arrives in full force, as the bone structure of the island is revealed with dramatic landscapes and renewed energy.
     article:
-      title: 72 hours to rebalance in Jersey
-      text: Jersey is the perfect place to unwind, liberate your soul and nourish your mind.  Jump on a 40-minute flight to Jersey and rebalance without the research - let us take care of your itinerary. Revitalise in the natural elements of Jersey and retreat for a long weekend escape. Here’s our guide to 72 hours on the island break.
-
-  - id: reconnect
-    nav-title: Reconnect
-    title: Ready to feel reconnected?
-    text: >
-      Taking time out to feel truly connected can be difficult. In Jersey, balance is restored. Discover your own ways to reconnect whilst enjoying the island break.
-    article:
-      title: Always better together
-      text: Experiences are always better shared. From challenging yourselves with adventure activities to just seeing a new landscape from the same perspective, travelling can bring you closer together. So make the most of your island break by creating memories and bonding experiences that you’ll share.
+      title: A Windchasers 48 hours in Jersey.
+      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cumque laudantium ducimus voluptate eaque ullam vitae illum perferendis dolor voluptatem. Recusandae quibusdam nemo unde eligendi iste inventore qui illum ex distinctio consectetur placeat, enim beatae vitae obcaecati necessitatibus repellendus! Eum?
+      link: "#article-link"
 
 ---
 
 <div class="banner banner--home">
   <div class="banner__wrap row">
     <h1 class="title title--special title--largest title--color">Jersey</h1>
-    <h2 class="title title--special title--smaller title--sub-heading title--color">The Island Break</h2>
+    <h2 class="title title--special title--smaller title--sub-heading title--color">The island break</h2>
     <div class="space--sm"></div>
     <a class="js-open-modal" data-modal-id="welcome-video"><img src="{{site.baseurl}}/img/icons/play.png" alt="Play video icon"></a>
     <div class="space--sm"></div>
-    <a href="#competition" class="btn btn--outline-white btn--small">Win Your Autumn Escape</a>
+    <a href="#competition" class="btn btn--outline-white">WIN a winter escape</a>
   </div>
   <div class="banner__nav">
     {% include microsite-nav.html %}
@@ -51,7 +44,7 @@ topics:
 
 <section id="intro" class="section intro bg--light-grey">
   <div class="row row--lg row--padding align-center">
-    <div class="title title--special title--small">How do you want to feel?</div>
+    <div class="title title--special title--small">Love Winter.</div>
     <p class="p--lead">{{page.intro}}</p>
   </div>
 </section>
@@ -68,7 +61,7 @@ topics:
             <p class="p--lead">{{topic.text}}</p>
             <div class="space--md"></div>
             <h2 class="title title--micro title--upper title--bold title--expanded mobile-align-center">{{topic.article.title}}</h2>
-            <p>{{topic.article.text}}</p>
+            <p>{{topic.article.text | truncatewords: 25}} &nbsp; <a href="{{topic.article.link}}" class="text--orange">Find out more</a></p>
           </div>
           <div class="row">
             {% assign topic-offer = site.data.offers | where: "id", topic.id %}
@@ -104,17 +97,18 @@ topics:
 <section id="competition" class="section">
   <div class="row row--padding">
     <div class="row align-center">
-      <h3 class="title title--special title--larger title--spacing">Win an island escape to Jersey</h3>
-      <h5 class="title title--tiny title--upper title--bold title--expanded title--spacing">including £300 to spend with Barbour </h5>
+      <h3 class="title title--special title--larger title--spacing">WIN a 48-hour island escape</h3>
     </div>
     <div class="row row--xl">
+      <div class="space--lg"></div>
       <div class="bg-image-ratio bg-image-ratio--16-9" style="background-image: url('{{site.baseurl}}/img/content/competition.jpg');"></div>
+      <div class="space--lg"></div>
     </div>
     <div class="row row--lg align-center">
-      <p>Rejuvenate this autumn with a chance to win a break on the island of Jersey. One lucky winner and their travel partner will enjoy flights and transfers, with access to the business class lounge, to begin their perfect island retreat. With two nights to be spent at the five-star Radisson Blu Waterfront Hotel, you’ll ease into your Jersey escape. Enjoy a full English each morning, to help set you up for a day of exploring the wild, rugged coastline. Alight at quaint villages dotted with superlative dining options and homely pubs, before wistful walks along untamed beaches.  Two nights of blissful island calm await, brought to you by our partner Channel Escapes.</p>
-      <p>To prepare you for the revitalising autumnal weather, you’ll also receive £300 to spend with Barbour on their Weather Comfort collection. Marry quintessential British fashion with a rugged, refreshing landscape and reinvigorate the senses…</p>
-
+      <p>Love Winter. WIN a 48-hour winter escape. One lucky winner and their travel partner will enjoy flights and transfers, with access to the business class lounge, to begin their perfect island retreat. With two nights *************, you’ll ease into your Jersey escape. Enjoy a full English each morning, to help set you up for a day of exploring the wild, rugged coastline. Alight at quaint villages dotted with superlative dining options and homely pubs, before wistful walks along untamed beaches. Two nights of blissful island calm await, brought to you by our partner Channel Escapes.</p>
+      <div class="space--lg"></div>
       <hr class="hr--center">
+      <div class="space--lg"></div>
       <h4 class="title title--small title--special">Enter below to be in to win!</h4>
 
       <iframe src="https://promotion4014.strutta.me" width="100%" height="500"> </iframe>
