@@ -2,7 +2,7 @@
 layout: default
 title: Love Winter
 
-intro: Embrace the elements; enjoy the intrepid feeling of tackling the season head on. The winter in Jersey brings drama, beauty and a sense of freshness that doesn’t just blow away the cobwebs, it invigorates the soul.
+intro: Embrace the elements – relish the intrepid feeling of tackling the season head on. Winter in Jersey brings drama, beauty, and a vigor that doesn’t just blow away the cobwebs, it awakens the soul.
 
 topics:
 
@@ -13,18 +13,16 @@ topics:
       Though the powerful elements of the Atlantic tide are beautiful, the essence of winter is also about retreating to a roaring fire and battening down the hatches.
     article:
       title: A Rainwatchers 48 hours in Jersey.
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cumque laudantium ducimus voluptate eaque ullam vitae illum perferendis dolor voluptatem. Recusandae quibusdam nemo unde eligendi iste inventore qui illum ex distinctio consectetur placeat, enim beatae vitae obcaecati necessitatibus repellendus! Eum?
-      link: "#article-link"
+      text: No need to get up early – instead enjoy breakfast in bed before heading for your all-day spa retreat. Jersey knows how to do luxury, wit ha host of five-star hotels and spa retreats dotting the island. Take a leisurely stroll along St Brelade’s Bay Walk for a refreshing outing in truly inspired scenery, dipping into cosy pubs along the way, before heading to town and exploring the foodie delights of St Helier and its Central Markets.
 
   - id: windchaser
     nav-title: Windchaser
     title: Are you a Windchaser?
     text: >
-      A winter in Jersey arrives in full force, as the bone structure of the island is revealed with dramatic landscapes and renewed energy.
+      A winter in Jersey arrives in full force, with dramatic landscapes offering superlative opportunities for bracing adventures.
     article:
       title: A Windchasers 48 hours in Jersey.
-      text: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cumque laudantium ducimus voluptate eaque ullam vitae illum perferendis dolor voluptatem. Recusandae quibusdam nemo unde eligendi iste inventore qui illum ex distinctio consectetur placeat, enim beatae vitae obcaecati necessitatibus repellendus! Eum?
-      link: "#article-link"
+      text: Discover the glorious coastal trails that circle the island, which offer challenging trail-running opportunities framed by jaw-dropping views. Invigorate your morning self, before re-discovering seafood in the island’s superlative restaurants – where the local catch is guaranteed to astound. Head to St Ouen’s Bay for an afternoon of catching waves. Surfing in winter is a truly refreshing experience, safe in the knowledge that you can warm up with a hot chocolate at the seafront El Tico Cantina.
 
 ---
 
@@ -35,7 +33,7 @@ topics:
     <div class="space--sm"></div>
     <a class="js-open-modal" data-modal-id="welcome-video"><img src="{{site.baseurl}}/img/icons/play.png" alt="Play video icon"></a>
     <div class="space--sm"></div>
-    <a href="#competition" class="btn btn--outline-white">WIN a winter escape</a>
+    <a href="#competition" class="btn btn--outline-white">WIN a 48 hour winter escape</a>
   </div>
   <div class="banner__nav">
     {% include microsite-nav.html %}
@@ -44,8 +42,9 @@ topics:
 
 <section id="intro" class="section intro bg--light-grey">
   <div class="row row--lg row--padding align-center">
-    <div class="title title--special title--small">Love Winter.</div>
+    <div class="title title--special title--medium">Love Winter.</div>
     <p class="p--lead">{{page.intro}}</p>
+    <p class="p--lead">Whether you’re a windchaser or a rainwatcher, Jersey offers delights unparalleled this winter.</p>
   </div>
 </section>
 
@@ -61,7 +60,7 @@ topics:
             <p class="p--lead">{{topic.text}}</p>
             <div class="space--md"></div>
             <h2 class="title title--micro title--upper title--bold title--expanded mobile-align-center">{{topic.article.title}}</h2>
-            <p>{{topic.article.text | truncatewords: 25}} &nbsp; <a href="{{topic.article.link}}" class="text--orange">Find out more</a></p>
+            <p>{{topic.article.text}}</p>
           </div>
           <div class="row">
             {% assign topic-offer = site.data.offers | where: "id", topic.id %}
@@ -97,7 +96,7 @@ topics:
 <section id="competition" class="section">
   <div class="row row--padding">
     <div class="row align-center">
-      <h3 class="title title--special title--larger title--spacing">WIN a 48-hour island escape</h3>
+      <h3 class="title title--special title--larger title--spacing">WIN a 48 hour winter escape</h3>
     </div>
     <div class="row row--xl">
       <div class="space--lg"></div>
@@ -105,11 +104,11 @@ topics:
       <div class="space--lg"></div>
     </div>
     <div class="row row--lg align-center">
-      <p>Love Winter. WIN a 48-hour winter escape. One lucky winner and their travel partner will enjoy flights and transfers, with access to the business class lounge, to begin their perfect island retreat. With two nights *************, you’ll ease into your Jersey escape. Enjoy a full English each morning, to help set you up for a day of exploring the wild, rugged coastline. Alight at quaint villages dotted with superlative dining options and homely pubs, before wistful walks along untamed beaches. Two nights of blissful island calm await, brought to you by our partner Channel Escapes.</p>
+      <p>One lucky winner and their travel partner will enjoy a winter escape to enjoy the dramatic winter beauty of Jersey. Spend 48 hours enjoying the island break, with two nights staying at Relais & Châteaux Longueville Manor, with a full English each morning to help set you up for a day of exploring the wild, rugged coastline. Flights are just a short hop across the channel with EasyJet, flying from London Gatwick.</p>
       <div class="space--lg"></div>
       <hr class="hr--center">
       <div class="space--lg"></div>
-      <h4 class="title title--small title--special">Enter below to be in to win!</h4>
+      <h4 class="title title--small title--special">Enter below for your chance to win.</h4>
 
       <iframe src="https://promotion4014.strutta.me" width="100%" height="500"> </iframe>
 
