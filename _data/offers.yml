@@ -1,17 +1,35 @@
-- title: Scenic Jersey break at a luxury waterfront hotel
-  id: rainwatcher
-  location: Radisson Blu Waterfront Hotel, St Aubin's Bay
-  description: Scenic stay by St Aubin's Bay with sea views - flights and car hire included
-  price: 199
-  price-description: per person for 2 nights
-  saved: 43
-  link: "https://www.secretescapes.com/scenic-jersey-break-at-a-luxury-waterfront-hotel-radisson-blu-waterfront-hotel-channel/sale?utm_source=SE&utm_medium=Jersey&utm_campaign=Sep_2017"
 
-- title: Picturesque Jersey break with harbour views & car hire
-  id: windchaser
-  location: Somerville Hotel, St Aubin
-  description: An award-winning hotel overlooking a Jersey harbour
+
+
+- title: Radisson Blu Waterfront Hotel
+  id: rainwatcher
+  location: St Aubin's Bay, Jersey
+  description: Waterfront Jersey break with car hire
   price: 199
   price-description: per person for 2 nights
   saved: 40
-  link: "https://www.secretescapes.com/picturesque-jersey-break-with-harbour-views-and-car-hire-somerville-hotel-st-aubin/sale?utm_source=SE&utm_medium=Jersey&utm_campaign=Sep_2017"
+  link: https://www.secretescapes.com/waterfront-jersey-break-with-car-hire-radisson-blu-waterfront-hotel-channel-islands/sale?gce_sa=0&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=Jan_2018
+
+
+
+- title: Hotel La Place
+  id: windchaser
+  location: St Brelade, Jersey
+  description: Relaxing Jersey break at an award-winning hotel
+  price: 189
+  price-description: per person for 2 nights
+  saved: 36
+  link: https://www.secretescapes.com/relaxing-jersey-break-at-an-award-winning-hotel-hotel-la-place-st-brelade/sale?gce_sa=0&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=Jan_2018
+
+
+
+- title: The Revere
+  id:
+  location: St Helier, Jersey
+  description: Jersey break at a charming & characterful hotel
+  price: 199
+  price-description: per person for 3 nights
+  saved: 40
+  link: https://www.secretescapes.com/jersey-break-at-a-charming-and-characterful-hotel-the-revere-hotel-st-helier-uk/sale?utm_source=SE_Media&utm_medium=Jersey&utm_campaign=Jan_2018
+
+
