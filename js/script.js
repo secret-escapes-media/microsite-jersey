@@ -152,5 +152,27 @@ $(window).scroll(function(){
     });
 
 
+
+  //  MODAL URL QUERY OPENING
+  function queryString(sParam){
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split("&");
+    for (var i = 0; i < sURLVariables.length; i++){
+      var sParameterName = sURLVariables[i].split("=");
+      if (sParameterName[0] == sParam){
+        return sParameterName[1];
+      }
+    }
+  }
+
+  // launches modal if query string
+  var targetModalQuery = queryString('modal');
+  if (targetModalQuery) {
+    var contentId = targetModalQuery;
+    modalOpen(event, contentId);
+  }
+
+
+
 ///////////////////////////////////////////////////////////////////////////////
 });})(jQuery, this); // on ready end
