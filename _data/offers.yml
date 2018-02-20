@@ -24,7 +24,6 @@
 
 
 - title: The Revere
-  id:
   location: St Helier, Jersey
   description: Jersey break at a charming & characterful hotel
   price: 199
@@ -35,10 +34,39 @@
 
 
 - title: Longueville Manor
-  id:
   location: Channel Island, Jersey
   description: A fabulous five-star Jersey break with renowned dining
   price: 299
   price-description: per person for 3 nights
   saved: 45
   link: https://www.secretescapes.com/5-star-exceptional-jersey-foodie-break-with-car-hire-longueville-manor-channel-islands/sale?gce_sa=0&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=2018
+
+
+
+- title: Somerville Hotel
+  location: St Aubin's Bay, Jersey
+  description: An award-winning hotel overlooking a Jersey harbour
+  price: 249
+  price-description: per person for 3 nights
+  saved: 40
+  link: https://www.secretescapes.com/picturesque-jersey-break-with-harbour-views-and-car-hire-somerville-hotel-st-aubin-1/sale?utm_source=SE_Media&utm_medium=Jersey&utm_campaign=2018
+
+
+
+- title: Merton Hotel
+  location: Merton Hotel, Channel Islands
+  description: A scenic stay near the sea in stunning Jersey
+  price: 199
+  price-description: per person for 3 nights
+  saved: 38
+  link: https://www.secretescapes.com/relaxing-jersey-break-with-car-hire-merton-hotel-channel-islands/sale?utm_source=SE_Media&utm_medium=Jersey&utm_campaign=2018
+
+
+
+- title: Beachcombers Hotel
+  location: Beachcombers Hotel, Channel Islands
+  description: Discover Jersey's magnetic beauty, half board, with car hire
+  price: 269
+  price-description: per person for 3 nights
+  saved: 33
+  link: https://www.secretescapes.com/relaxing-jersey-break-with-car-hire-beachcombers-hotel-channel-islands/sale?utm_source=SE_Media&utm_medium=Jersey&utm_campaign=2018
