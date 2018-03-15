@@ -1,17 +1,3 @@
-
-
-
-- title: Longueville Manor
-  id: rainwatcher
-  location: Channel Island, Jersey
-  description: A fabulous five-star Jersey break with renowned dining
-  price: 299
-  price-description: per person for 3 nights
-  saved: 45
-  link: https://www.secretescapes.com/5-star-exceptional-jersey-foodie-break-with-car-hire-longueville-manor-channel-islands/sale?gce_sa=0&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=2018
-
-
-
 - title: Hotel La Place
   id: windchaser
   location: St Brelade, Jersey
@@ -40,3 +26,13 @@
   price-description: per person for 3 nights
   saved: 40
   link: https://www.secretescapes.com/picturesque-jersey-break-with-harbour-views-and-car-hire-somerville-hotel-st-aubin-1/sale?utm_source=SE_Media&utm_medium=Jersey&utm_campaign=2018
+
+
+
+- title: Grandiose Jersey break at a highly acclaimed spa hotel
+  location: Hotel de France, Channel Islands
+  description: A short break at a high-end St Helier spa hotel
+  price: 298
+  price-description: per person for 2 nights
+  saved: 38
+  link: https://www.secretescapes.com/grandiose-jersey-hotel-with-a-highly-acclaimed-spa-1-hotel-de-france-channel-islands/sale?utm_source=Offer&utm_medium=SE_Media&utm_campaign=2018
