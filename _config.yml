@@ -1,9 +1,0 @@
-# Site settings
-title: Jersey
-description: Embrace the elements – relish the intrepid feeling of tackling the season head on. Winter in Jersey brings drama, beauty, and a vigor that doesn’t just blow away the cobwebs, it awakens the soul.
-baseurl: "/jersey" # the subpath of your site, e.g. /blog/
-url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
-
-# Build settings
-markdown: kramdown
-exclude: [node_modules, gulpfile.js, package.json, package-lock.json, bower_components, bower.json, README.md]
