@@ -40,4 +40,8 @@
       &:before { border-color: $orange; }
     }
   }
+
+  &--primary { background-color: $partner;
+    &:hover { background-color: darken($partner,10); }
+  }
 }

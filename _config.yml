@@ -1,7 +1,7 @@
 # Site settings
-title: Template
+title: Jersey
 client:
-  name: Client Name
+  name: Jersey
   link: "#client-name"
 core-se-link: https://www.secretescapes.com/current-sales
 description: >
@@ -9,10 +9,10 @@ description: >
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/template" # the subpath of your site, e.g. /blog/
-img:     "/template/_assets/img"
-css:     "/template/_assets/css"
-js:      "/template/_assets/js"
+baseurl: "/jersey" # the subpath of your site, e.g. /blog/
+img:     "/jersey/_assets/img"
+css:     "/jersey/_assets/css"
+js:      "/jersey/_assets/js"
 
 
 # Build settings

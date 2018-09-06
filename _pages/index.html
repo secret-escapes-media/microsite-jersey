@@ -3,18 +3,42 @@ layout: default
 id: overview
 nav: true
 nav-order: 1
-title: Overview
-intro: this is my home page
+title: Autumn Unfiltered
 
 sections:
-  - id: section-1
-    title: Section 1
-  - id: section-2
-    title: Section 2
-  - id: section-3
-    title: Section 3
-  - id: section-4
-    title: Section 4
+  - id: unfiltered-jersey
+    title: Unfiltered Jersey
+  - id: experiences
+    title: Experiences
+
+intro: >
+  <p class="text--lg">Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+
+experiences:
+
+  - id: experience-1
+    title: Experience 1
+    content:
+
+  - id: experience-2
+    title: Experience 2
+    content:
+
+  - id: experience-3
+    title: Experience 3
+    content:
+
+  - id: experience-4
+    title: Experience 4
+    content:
+
+  - id: experience-5
+    title: Experience 5
+    content:
+
+  - id: experience-6
+    title: Experience 6
+    content:
 
 ---
 
@@ -22,51 +46,50 @@ sections:
 {% include nav/page.html content=page.sections %}
 
 
-<div class="container vpad--xxl">
-
-  <div class="title title--lg text--center">Bob layout</div>
-
-  <div class="space--lg"></div>
-
-  <div class="bob" id="section-1">
-    <div class="bob__img">
-      <a href="#image-link">
-        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-      </a>
-    </div>
-    <div class="bob__text">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam officia voluptatem officiis magnam perferendis iste dolor dolore ipsa illo non pariatur cumque quod delectus nostrum rem facilis! Ipsum, nostrum debitis illum voluptas ad molestias. Dolor repellendus atque aut magni sapiente nam et quas consectetur nulla nemo tempore, alias, quae eius obcaecati voluptas, quos neque, inventore minima officiis reprehenderit ullam. Asperiores adipisci possimus inventore quia odit aliquam incidunt commodi iste explicabo dolore impedit consequuntur temporibus iusto dolor repudiandae at tempore repellendus, atque hic accusantium doloribus placeat. Dolores provident tempore molestias laborum ad repudiandae.</p>
-    </div>
-  </div>
-  <div class="bob bob--swap" id="section-2">
-    <div class="bob__img">
-      <a href="#image-link">
-        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-      </a>
-    </div>
-    <div class="bob__text">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam officia voluptatem officiis magnam perferendis iste dolor dolore ipsa illo non pariatur cumque quod delectus nostrum rem facilis! Ipsum, nostrum debitis illum voluptas ad molestias. Dolor repellendus atque aut magni sapiente nam et quas consectetur nulla nemo tempore, alias, quae eius obcaecati voluptas, quos neque, inventore minima officiis reprehenderit ullam. Asperiores adipisci possimus inventore quia odit aliquam incidunt commodi iste explicabo dolore impedit consequuntur temporibus iusto dolor repudiandae at tempore repellendus, atque hic accusantium doloribus placeat. Dolores provident tempore molestias laborum ad repudiandae.</p>
-    </div>
-  </div>
-
-</div>
-
-<div class="title title--lg vpad--lg text--center">Harvey layout</div>
-
-<div class="harvey" id="section-3">
-  <div class="harvey__img" style="background-image: url({{site.img}}/img.jpg);">
-    <a class="harvey__link" href="#image-link"></a>
-  </div>
-  <div class="harvey__text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam officia voluptatem officiis magnam perferendis iste dolor dolore ipsa illo non pariatur cumque quod delectus nostrum rem facilis! Ipsum, nostrum debitis illum voluptas ad molestias. Dolor repellendus atque aut magni sapiente nam et quas consectetur nulla nemo tempore, alias, quae eius obcaecati voluptas, quos neque, inventore minima officiis reprehenderit ullam. Asperiores adipisci possimus inventore quia odit aliquam incidunt commodi iste explicabo dolore impedit consequuntur temporibus iusto dolor repudiandae at tempore repellendus, atque hic accusantium doloribus placeat. Dolores provident tempore molestias laborum ad repudiandae.</p>
+<div class="wp" id="unfiltered-jersey"></div>
+<div class="container container--xxl vpad--xxl text--center">
+  {{page.intro}}
+  <div class="space--sm">
+    <a href="#" class="btn btn--primary">Watch main video</a>
   </div>
 </div>
 
-<div class="harvey harvey--swap" id="section-4">
-  <div class="harvey__img" style="background-image: url({{site.img}}/img.jpg);">
-    <a class="harvey__link" href="#image-link"></a>
-  </div>
-  <div class="harvey__text">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam officia voluptatem officiis magnam perferendis iste dolor dolore ipsa illo non pariatur cumque quod delectus nostrum rem facilis! Ipsum, nostrum debitis illum voluptas ad molestias. Dolor repellendus atque aut magni sapiente nam et quas consectetur nulla nemo tempore, alias, quae eius obcaecati voluptas, quos neque, inventore minima officiis reprehenderit ullam. Asperiores adipisci possimus inventore quia odit aliquam incidunt commodi iste explicabo dolore impedit consequuntur temporibus iusto dolor repudiandae at tempore repellendus, atque hic accusantium doloribus placeat. Dolores provident tempore molestias laborum ad repudiandae.</p>
+
+<div class="bg--grey-lightest">
+  <div class="wp" id="experiences"></div>
+  <div class="container vpad--xxl">
+
+    <div class="title title--xxl text--center">Experiences</div>
+
+    <div class="space--lg"></div>
+
+    {% for experience in page.experiences %}
+    <div class="bob{% cycle '', ' bob--swap' %}">
+      <div class="bob__img">
+        <a href="#image-link">
+          <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
+        </a>
+      </div>
+      <div class="bob__text">
+        <h2 class="title title--md">{{experience.title}}</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam officia voluptatem officiis magnam perferendis iste dolor dolore ipsa illo non pariatur cumque quod delectus nostrum rem facilis!</p>
+        <div class="space--sm">
+          <a href="#" class="btn btn--primary">Watch video</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
   </div>
 </div>
+
+<div class="bg--grey-darkest">
+  <div class="container container--xxl vpad--xxxxl text--center text--white">
+    <h2 class="title title--xl">Enter competition</h2>
+    <p class="text--lg">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. </p>
+    <div class="space--sm">
+      <a href="#" class="btn btn--primary">Enter now</a>
+    </div>
+  </div>
+</div>
+
