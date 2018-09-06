@@ -32,12 +32,24 @@
       border-radius: inherit;
       @include transition;
     }
+    &:hover {
+      background-color: $white;
+      color: $grey-darkest;
+      &:before { border-color: $white; }
+    }
   }
   &--outline-orange {
     &:before { border-color: $orange; }
     &:hover {
       background-color: $orange;
       &:before { border-color: $orange; }
+    }
+  }
+  &--outline-white {
+    &:before { border-color: $white; }
+    &:hover {
+      background-color: $white;
+      color: $grey-darkest;
     }
   }
 

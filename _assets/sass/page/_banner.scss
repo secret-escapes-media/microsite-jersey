@@ -59,4 +59,35 @@
       bottom: auto;
     }
   }
+
+
+
+  &--overview {
+    height: 100%;
+  }
+  &--overview &__footer {
+    z-index: $z-content;
+    width: 100%;
+    padding: $s4 0;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%);
+  }
+  &--overview &__footer-arrow {
+    @include transition;
+    $icon-size: 50px;
+    display: block;
+    width: $icon-size;
+    height: $icon-size;
+    background-image: url('../img/icons/arrow-down.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    border-radius: 50%;
+    border: 2px solid $white;
+    margin: auto;
+    &:hover { border-width: 4px; }
+  }
+
 }
+

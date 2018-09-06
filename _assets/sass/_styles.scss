@@ -1,1 +1,16 @@
 // general styles for the project that wouldn't be a reuseable component
+
+
+
+.experience {
+  &__video {
+    @include transition();
+    background-color: $white;
+    box-shadow: 0 0 15px rgba($grey-darkest,0.1);
+    transform: scale(1);
+    &:hover {
+      transform: scale(1.05);
+      box-shadow:  0 0 25px rgba($grey-darkest,0.2);
+    }
+  }
+}

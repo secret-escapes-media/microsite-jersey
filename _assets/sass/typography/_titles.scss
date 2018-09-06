@@ -1,9 +1,9 @@
 // all banner types on site
 
 .title {
-
   // custom content headline
   font-family: $font-title-01;
+  line-height: 1.2;
   &--xxxl   { font-size: $s8; }
   &--xxl    { font-size: $s7; }
   &--xl     { font-size: $s6; }
@@ -78,8 +78,9 @@
 
   // custom banner headline
   font-family: $font-title-01;
-  text-transform: uppercase;
   font-size: $s5;
+  font-weight: 700;
+  line-height: 1;
   @include bp($md){ font-size: $s7; }
   @include bp($xl){ font-size: $s10; }
 

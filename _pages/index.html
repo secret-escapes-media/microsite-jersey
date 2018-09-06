@@ -5,91 +5,99 @@ nav: true
 nav-order: 1
 title: Autumn Unfiltered
 
-sections:
-  - id: unfiltered-jersey
-    title: Unfiltered Jersey
-  - id: experiences
-    title: Experiences
+banner:
+  content: >
+    <h1 class="banner-title">Autumn Unfiltered</h1>
+    <div class="title title--sm text--bold">#theislandbreak</div>
+    <div class="space--sm">
+      <a href="javascript:void(0);" data-modal-item="video" class="js-open-modal btn btn--outline btn--outline-white">Watch video</a>
+    </div>
+  intro: >
+    <p class="text--lg">Do away with the filters and discover the raw beauty of an autumnal escape in Jersey. Forage for wild foods, gaze at the stars after sunset, discover secluded beaches you’ll have all to yourself… Live life unfiltered in Jersey this autumn.</p>
+    <p class="text--lg space--xxs">Discover unforgettable experiences, luxurious country bolt holes, and an unmissable competition prize. Live the island life this autumn.</p>
 
-intro: >
-  <p class="text--lg">Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
 
 experiences:
 
-  - id: experience-1
-    title: Experience 1
-    content:
+  - id: a-night-with-the-stars
+    title: A night with the stars
+    content: >
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam.</p>
 
-  - id: experience-2
-    title: Experience 2
-    content:
+  - id: come-dine-with-us
+    title: Come dine with us
+    content: >
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam.</p>
 
-  - id: experience-3
-    title: Experience 3
-    content:
+  - id: love-and-oysters
+    title: Love and Oysters
+    content: >
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam.</p>
 
-  - id: experience-4
-    title: Experience 4
-    content:
+  - id: saturday-night-takeaway
+    title: Saturday night takeaway
+    content: >
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam.</p>
 
-  - id: experience-5
-    title: Experience 5
-    content:
-
-  - id: experience-6
-    title: Experience 6
-    content:
+  - id: love-island
+    title: Love Island
+    content: >
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam.</p>
 
 ---
 
 
-{% include nav/page.html content=page.sections %}
-
-
-<div class="wp" id="unfiltered-jersey"></div>
-<div class="container container--xxl vpad--xxl text--center">
+<div class="wp" id="main"></div>
+{% if page.intro %}
+<div class="container container--xl vpad--xxl text--center">
   {{page.intro}}
-  <div class="space--sm">
-    <a href="#" class="btn btn--primary">Watch main video</a>
-  </div>
 </div>
+{% endif %}
 
 
 <div class="bg--grey-lightest">
-  <div class="wp" id="experiences"></div>
   <div class="container vpad--xxl">
 
-    <div class="title title--xxl text--center">Experiences</div>
+    <div class="container container--xl text--center">
+      <div class="title title--xxl text--medium">Experiences</div>
+      <p class="text--xl">Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero.</p>
+    </div>
 
-    <div class="space--lg"></div>
+    <div class="space--xxl"></div>
 
     {% for experience in page.experiences %}
-    <div class="bob{% cycle '', ' bob--swap' %}">
+    <div class="experience bob{% cycle '', ' bob--swap' %}">
+
       <div class="bob__img">
-        <a href="#image-link">
-          <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-        </a>
+        <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/content/{{page.id}}/{{experience.id}}.jpg');"></div>
       </div>
+
       <div class="bob__text">
-        <h2 class="title title--md">{{experience.title}}</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam officia voluptatem officiis magnam perferendis iste dolor dolore ipsa illo non pariatur cumque quod delectus nostrum rem facilis!</p>
-        <div class="space--sm">
-          <a href="#" class="btn btn--primary">Watch video</a>
+        <h2 class="title title--lg text--medium">{{experience.title}}</h2>
+        {{experience.content}}
+        <div class="space--md"></div>
+
+        <div class="experience__video">
+          <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/{{experience.id}}-video.jpg);">
+            <a href="javascript:void(0);" data-modal-item="video" class="js-open-modal bg-img__link"></a>
+          </div>
+          <div class="boxpad--md">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat.</p>
+            <div class="space--sm">
+              <a href="javascript:void(0);" data-modal-item="video" class="js-open-modal btn btn--primary btn--sm">Watch video</a>
+            </div>
+          </div>
         </div>
+
       </div>
+
     </div>
+    <div class="space--xxxxl"></div>
     {% endfor %}
 
   </div>
 </div>
 
-<div class="bg--grey-darkest">
-  <div class="container container--xxl vpad--xxxxl text--center text--white">
-    <h2 class="title title--xl">Enter competition</h2>
-    <p class="text--lg">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. </p>
-    <div class="space--sm">
-      <a href="#" class="btn btn--primary">Enter now</a>
-    </div>
-  </div>
-</div>
+
+{% include page/promo-competition.html %}
 
