@@ -3,11 +3,11 @@ layout: default
 id: overview
 nav: true
 nav-order: 1
-title: Autumn Unfiltered
+title: Autumn unfiltered
 
 banner:
   content: >
-    <h1 class="banner-title">Autumn Unfiltered</h1>
+    <h1 class="banner-title">Autumn unfiltered</h1>
     <div class="title title--sm text--bold">#theislandbreak</div>
     <div class="space--sm">
       <a href="javascript:void(0);" data-modal-item="video" class="js-open-modal btn btn--outline btn--outline-white">Watch video</a>
@@ -18,31 +18,35 @@ banner:
 
 
 experiences:
+  title: Experiences
+  intro: Choose your autumnal experience below. Whether you’re looking for your own island sanctuary, or you’re ready to sample the seasonal delights in a wealth of fine restaurants, discover the locals that will guide you to Jersey’s finest experiences.
 
-  - id: love-island
-    title: Love Island
-    content: Join your local guides Rich & Steph for a RIB tour to the isolated shores of Les Ecrehous. Six miles off the coast of Jersey, this spellbinding rock offers true sanctuary to autumn adventurers.
-    video-intro: Head out to sea and set up your barbecue on isolated shores...
+  items:
 
-  - id: shore-to-chef
-    title: Shore to Chef
-    content: Embark on a wild forage in Jersey’s natural larder. Discover the tastes of the coast and land with local guide Kazz, before an acclaimed dinner at award-winning The Grand Jersey.
-    video-intro: St Ouen’s Bay offers a wealth of wild produce, a bounty for skilled Jersey chefs…
+    - id: love-island
+      title: Explore the sea
+      content: Join your local guides Rich & Steph for a RIB tour to the isolated shores of Les Ecrehous. Six miles off the coast of Jersey, this spellbinding rock offers true sanctuary to autumn adventurers.
+      video-intro: Head out to sea and set up your barbecue on isolated shores...
 
-  - id: a-night-with-the-stars
-    title: A night with the stars
-    content: Wrap up warm and lie back in the shadow of the Grosnez ruins, gazing up at the heavens as the sun sets. In this wild region, the sky lights up with the twinkle of thousands of stars.
-    video-intro: A twilight walk finishes with a spellbinding sight unfolding in the night sky...
+    - id: shore-to-chef
+      title: Tastes of the land
+      content: Embark on a wild forage in Jersey’s natural larder. Discover the tastes of the coast and land with local guide Kazz, before an acclaimed dinner at award-winning The Grand Jersey.
+      video-intro: St Ouen’s Bay offers a wealth of wild produce, a bounty for skilled Jersey chefs…
 
-  - id: feast-your-eyes
-    title: Feast your eyes
-    content: Discover Jersey’s enviable autumnal larder, with a visit to the famous Central Market. Local chef Rex is on-hand to guide you through Jersey’s culinary staples, before sampling the island’s famous oysters…
-    video-intro: Discover Central Market and unpick the irresistible Jersey larder...
+    - id: a-night-with-the-stars
+      title: Gaze at the stars
+      content: Wrap up warm and lie back in the shadow of the Grosnez ruins, gazing up at the heavens as the sun sets. In this wild region, the sky lights up with the twinkle of thousands of stars.
+      video-intro: A twilight walk finishes with a spellbinding sight unfolding in the night sky...
 
-  - id: saturday-night-takeaway
-    title: Saturday night takeaway
-    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis a laborum, amet repellat, quasi exercitationem laboriosam quisquam.
-    video-intro:
+    - id: feast-your-eyes
+      title: An autumnal larder
+      content: Discover Jersey’s enviable autumnal larder, with a visit to the famous Central Market. Local chef Rex is on-hand to guide you through Jersey’s culinary staples, before sampling the island’s famous oysters…
+      video-intro: Discover Central Market and unpick the irresistible Jersey larder...
+
+    - id: hit-the-town
+      title: Hit the town
+      content: Speakeasies and irresistable gin bars await in St Helier. Take the gin trail for a night of artisanal tipples in quirky, unique bars and prop up the bar for masterful mixology.
+      video-intro: Head out on an evening trail for exquisite distilled delights...
 
 ---
 
@@ -55,12 +59,19 @@ experiences:
 {% endif %}
 
 
+
+
 <div class="bg--grey-lightest">
   <div class="container vpad--xxl">
 
+    <div class="text--center container container--xl">
+      <h2 class="title title--xl text--bolder">{{page.experiences.title}}</h2>
+      <p class="text--lg">{{page.experiences.intro}}</p>
+    </div>
+
     <div class="space--xxl"></div>
 
-    {% for experience in page.experiences %}
+    {% for experience in page.experiences.items %}
     <div class="experience bob{% cycle '', ' bob--swap' %}">
 
       <div class="bob__img">
@@ -87,12 +98,22 @@ experiences:
       </div>
 
     </div>
-    <div class="space--xxxxl"></div>
+    {% unless forloop.last %}
+      <div class="space--xxxxl"></div>
+    {% endunless %}
     {% endfor %}
 
   </div>
 </div>
 
+<div class="ugc bg--grey-lightest">
+  <div class="container container--xxl text--center">
+    <h3 class="title title--xl text--bolder">Jersey in autumn needs #nofilter</h3>
+    <p class="text--xl">See photos taken by visitors and locals</p>
+    <div class="space--xxl"></div>
+  </div>
+  <script id="cr-init__57bf62874dfebbec" src="https://starling.crowdriff.com/js/crowdriff.js" async></script>
+</div>
 
 {% include page/promo-competition.html %}
 
