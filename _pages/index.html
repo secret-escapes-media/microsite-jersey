@@ -10,7 +10,7 @@ banner:
     <h1 class="banner-title">Autumn unfiltered</h1>
     <div class="title title--sm text--bold">#theislandbreak</div>
     <div class="space--sm">
-      <a href="javascript:void(0);" data-modal-item="video" class="js-open-modal btn btn--outline btn--outline-white">Watch video</a>
+      <a href="javascript:void(0);" data-modal-item="main-video" class="js-open-modal btn btn--outline btn--outline-white">Watch video</a>
     </div>
   intro: >
     <p class="text--lg">Do away with the filters and discover the raw beauty of an autumnal escape in Jersey. Forage for wild foods, gaze at the stars after sunset, discover secluded beaches you’ll have all to yourself… Live life unfiltered in Jersey this autumn.</p>
@@ -43,7 +43,7 @@ experiences:
       content: Discover Jersey’s enviable autumnal larder, with a visit to the famous Central Market. Local chef Rex is on-hand to guide you through Jersey’s culinary staples, before sampling the island’s famous oysters…
       video-intro: Discover Central Market and unpick the irresistible Jersey larder...
 
-    - id: hit-the-town
+    - id: just-the-tonic
       title: Hit the town
       content: Speakeasies and irresistable gin bars await in St Helier. Take the gin trail for a night of artisanal tipples in quirky, unique bars and prop up the bar for masterful mixology.
       video-intro: Head out on an evening trail for exquisite distilled delights...
@@ -85,12 +85,12 @@ experiences:
 
         <div class="experience__video">
           <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/{{experience.id}}-video.jpg);">
-            <a href="javascript:void(0);" data-modal-item="video" class="js-open-modal bg-img__link"></a>
+            <a href="javascript:void(0);" data-modal-item="{{experience.id}}" class="js-open-modal bg-img__link"></a>
           </div>
           <div class="boxpad--md">
             <p class="text--italic">{{experience.video-intro}}</p>
             <div class="space--sm">
-              <a href="javascript:void(0);" data-modal-item="video" class="js-open-modal btn btn--primary btn--sm">Watch video</a>
+              <a href="javascript:void(0);" data-modal-item="{{experience.id}}" class="js-open-modal btn btn--primary btn--sm">Watch video</a>
             </div>
           </div>
         </div>

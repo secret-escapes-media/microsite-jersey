@@ -34,7 +34,7 @@ function modalOpen(event, modalId){
 
     // update video
     if( $(modalItem).attr('data-video-id') ){
-      $('#modal-video__'+modalItemID).attr('src', 'https://www.youtube.com/embed/' + modalVideoId + '?enablejsapi=1&controls=1&rel=0&showinfo=0&modestbranding=1');
+      $('#modal-video__'+modalItemID).attr('src', 'https://www.youtube.com/embed/' + modalVideoId + '?enablejsapi=1&controls=1&rel=0&showinfo=0&modestbranding=1&utm_source=secretescapes.com&utm_medium=referral&utm_campaign=Autumn%2BUnfiltered');
     }
 
     // update map
