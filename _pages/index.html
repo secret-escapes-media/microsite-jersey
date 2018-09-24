@@ -12,25 +12,26 @@ banner:
     <div class="space--sm">
       <a href="javascript:void(0);" data-modal-item="main-video" class="js-open-modal btn btn--outline btn--outline-white">Watch video</a>
     </div>
+    <div class="space--sm"></div>
   intro: >
     <p class="text--lg">Do away with the filters and discover the raw beauty of an autumnal escape in Jersey. Forage for wild foods, gaze at the stars after sunset, discover secluded beaches you’ll have all to yourself… Live life unfiltered in Jersey this autumn.</p>
     <p class="text--lg space--xxs">Discover unforgettable experiences, luxurious country bolt holes, and an unmissable competition prize. Live the island life this autumn.</p>
 
 
 experiences:
-  title: Experiences
+  title: Unforgettable Experiences
   intro: Choose your autumnal experience below. Whether you’re looking for your own island sanctuary, or you’re ready to sample the seasonal delights in a wealth of fine restaurants, discover the locals that will guide you to Jersey’s finest experiences.
 
   items:
 
     - id: love-island
       title: Explore the sea
-      content: Join your local guides Rich & Steph for a RIB tour to the isolated shores of Les Ecrehous. Six miles off the coast of Jersey, this spellbinding rock offers true sanctuary to autumn adventurers.
+      content: Join your local guides Rich & Stef for a RIB tour to the isolated shores of Les Ecréhous. Six miles off the coast of Jersey, this spellbinding archipelago offers true sanctuary to autumn adventurers.
       video-intro: Head out to sea and set up your barbecue on isolated shores...
 
     - id: shore-to-chef
       title: Tastes of the land
-      content: Embark on a wild forage in Jersey’s natural larder. Discover the tastes of the coast and land with local guide Kazz, before an acclaimed dinner at award-winning The Grand Jersey.
+      content: Embark on a wild forage in Jersey’s natural larder. Discover the tastes of the coast and land with local guide Kazz, before an acclaimed dinner at the award-winning Grand Jersey Hotel & Spa.
       video-intro: St Ouen’s Bay offers a wealth of wild produce, a bounty for skilled Jersey chefs…
 
     - id: a-night-with-the-stars
@@ -40,8 +41,8 @@ experiences:
 
     - id: feast-your-eyes
       title: An autumnal larder
-      content: Discover Jersey’s enviable autumnal larder, with a visit to the famous Central Market. Local chef Rex is on-hand to guide you through Jersey’s culinary staples, before sampling the island’s famous oysters…
-      video-intro: Discover Central Market and unpick the irresistible Jersey larder...
+      content: Discover Jersey’s enviable autumnal produce, with a visit to the famous Central Market in St Helier. Local chef Rex is on-hand to guide you through Jersey’s culinary staples, before sampling the island’s famous oysters.
+      video-intro: Discover the Victorian covered market for foodie delights..
 
     - id: just-the-tonic
       title: Hit the town
@@ -72,10 +73,11 @@ experiences:
     <div class="space--xxl"></div>
 
     {% for experience in page.experiences.items %}
+    <div class="wp" id="{{experience.id}}"></div>
     <div class="experience bob{% cycle '', ' bob--swap' %}">
 
       <div class="bob__img">
-        <div class="bg-img bg-img--1-1" style="background-image: url('{{site.img}}/content/{{page.id}}/{{experience.id}}.jpg');"></div>
+        <div class="bg-img bg-img--16-9 bg-img--xxl-1-1" style="background-image: url('{{site.img}}/content/{{page.id}}/{{experience.id}}.jpg');"></div>
       </div>
 
       <div class="bob__text">
@@ -85,12 +87,12 @@ experiences:
 
         <div class="experience__video">
           <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/{{experience.id}}-video.jpg);">
-            <a href="javascript:void(0);" data-modal-item="{{experience.id}}" class="js-open-modal bg-img__link"></a>
+            <a href="javascript:void(0);" data-modal-item="{{experience.id}}" class="js-open-modal bg-img__link" id="tracking-experience-{{experience.id}}-image"></a>
           </div>
           <div class="boxpad--md">
             <p class="text--italic">{{experience.video-intro}}</p>
             <div class="space--sm">
-              <a href="javascript:void(0);" data-modal-item="{{experience.id}}" class="js-open-modal btn btn--primary btn--sm">Watch video</a>
+              <a href="javascript:void(0);" data-modal-item="{{experience.id}}" class="js-open-modal btn btn--primary btn--sm" id="tracking-experience-{{experience.id}}-button">Watch video</a>
             </div>
           </div>
         </div>
@@ -106,14 +108,16 @@ experiences:
   </div>
 </div>
 
+{% include page/promo-competition.html %}
+
 <div class="ugc bg--grey-lightest">
   <div class="container container--xxl text--center">
+    <div class="space--xxl"></div>
     <h3 class="title title--xl text--bolder">Jersey in autumn needs #nofilter</h3>
     <p class="text--xl">See photos taken by visitors and locals</p>
     <div class="space--xxl"></div>
   </div>
-  <script id="cr-init__57bf62874dfebbec" src="https://starling.crowdriff.com/js/crowdriff.js" async></script>
+  <script id="cr-init__0128ee179cc402e5" src="https://starling.crowdriff.com/js/crowdriff.js" async></script>
 </div>
 
-{% include page/promo-competition.html %}
 

@@ -63,7 +63,17 @@
 
 
   &--overview {
-    height: 100%;
+    height: auto;
+    min-height: 100%;
+    max-height: none;
+    padding-top: 100px;
+    @include bp($lg){
+      padding-top: 100px;
+    }
+    @include bp($xl){
+      height: 100%;
+      padding-top: 0;
+    }
   }
   &--overview &__footer {
     z-index: $z-content;
