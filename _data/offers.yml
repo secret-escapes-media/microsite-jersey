@@ -7,7 +7,7 @@
   price: 189
   price-description: per person for 3 nights
   saved: 40
-  expires: 2018/09/30
+  expires: 2018/10/02
   link: https://www.secretescapes.com/sleek-waterfront-jersey-break-with-festive-and-tennerfest-dates-radisson-blu-waterfront-hotel-channel-islands/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
 
 - title: Historic cliffside Jersey stay with fine dining
@@ -17,7 +17,7 @@
   price: 129
   price-description: per room per night
   saved: 28
-  expires: 2018/09/30
+  expires: 2018/09/26
   link: https://www.secretescapes.com/chateau-la-chaire-jersey-channel-islands/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
 
 - title: 5* exceptional Jersey foodie break with car hire
@@ -27,7 +27,7 @@
   price: 399
   price-description: per person for 3 nights
   saved: 49
-  expires: 2018/09/25
+  expires: 2018/10/02
   link: https://www.secretescapes.com/5-star-exceptional-jersey-foodie-break-with-car-hire-longueville-manor-channel-islands1/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
 
 - title: Tranquil Jersey break with fine dining & car hire
@@ -37,7 +37,7 @@
   price: 298
   price-description: per person for 3 nights
   saved: 35
-  expires: 2018/09/30
+  expires: 2018/10/02
   link: https://www.secretescapes.com/elegant-jersey-break-with-fine-dining-and-car-hire-the-royal-yacht-channel-islands/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
 
 - title: Scenic Jersey break with Christmas market dates
@@ -47,7 +47,7 @@
   price: 175
   price-description: per person for 3 nights
   saved: 35
-  expires: 2018/09/25
+  expires: 2018/10/02
   link: https://www.secretescapes.com/scenic-jersey-break-with-christmas-market-dates-best-western-royal-hotel-jersey-channel-islands/sale?gce_=&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
 
 - title: Jersey break at an award-winning hotel with festive dates
@@ -57,5 +57,15 @@
   price: 298
   price-description: per person for 3 nights
   saved: 36
-  expires: 2018/09/25
+  expires: 2018/10/02
   link: https://www.secretescapes.com/jersey-break-at-an-award-winning-hotel-hotel-la-place-st-brelade/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
+
+- title: Gourmet Jersey hotel break with car hire
+  id: gourmet-jersey-hotel-break-with-car-hire
+  location: The Atlantic Hotel
+  description: High-end dining on a luxe Jersey break
+  price: 349
+  price-description: per person for 3 nights
+  saved: 41
+  expires: 2018/10/09
+  link: https://www.secretescapes.com/gourmet-jersey-hotel-break-with-car-hire-the-atlantic-hotel-st-brelade/sale?se_source=rvs_widget&gce_hpp=1&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
