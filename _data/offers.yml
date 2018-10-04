@@ -7,28 +7,8 @@
   price: 189
   price-description: per person for 3 nights
   saved: 40
-  expires: 2018/10/02
+  expires: 2018/10/07
   link: https://www.secretescapes.com/sleek-waterfront-jersey-break-with-festive-and-tennerfest-dates-radisson-blu-waterfront-hotel-channel-islands/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
-
-- title: Historic cliffside Jersey stay with fine dining
-  id: historic-cliffside-jersey-stay-with-fine-dining
-  location: Chateau La Chaire, Channel Islands
-  description: A 19th-century cliffside Jersey stay in Rozel
-  price: 129
-  price-description: per room per night
-  saved: 28
-  expires: 2018/09/26
-  link: https://www.secretescapes.com/chateau-la-chaire-jersey-channel-islands/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
-
-- title: 5* exceptional Jersey foodie break with car hire
-  id: 5-exceptional-jersey-foodie-break-with-car-hire
-  location: Longueville Manor, Channel Islands
-  description: A fabulous five-star Jersey break with renowned dining
-  price: 399
-  price-description: per person for 3 nights
-  saved: 49
-  expires: 2018/10/02
-  link: https://www.secretescapes.com/5-star-exceptional-jersey-foodie-break-with-car-hire-longueville-manor-channel-islands1/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
 
 - title: Tranquil Jersey break with fine dining & car hire
   id: tranquil-jersey-break-with-fine-dining-car-hire
@@ -37,18 +17,8 @@
   price: 298
   price-description: per person for 3 nights
   saved: 35
-  expires: 2018/10/02
+  expires: 2018/10/07
   link: https://www.secretescapes.com/elegant-jersey-break-with-fine-dining-and-car-hire-the-royal-yacht-channel-islands/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
-
-- title: Scenic Jersey break with Christmas market dates
-  id: scenic-jersey-break-with-christmas-market-dates
-  location: Best Western Royal Hotel Jersey, Channel Islands
-  description: A picturesque St Helier break with Christmas market dates
-  price: 175
-  price-description: per person for 3 nights
-  saved: 35
-  expires: 2018/10/02
-  link: https://www.secretescapes.com/scenic-jersey-break-with-christmas-market-dates-best-western-royal-hotel-jersey-channel-islands/sale?gce_=&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
 
 - title: Jersey break at an award-winning hotel with festive dates
   id: jersey-break-at-an-award-winning-hotel-with-festive-dates
@@ -57,7 +27,7 @@
   price: 298
   price-description: per person for 3 nights
   saved: 36
-  expires: 2018/10/02
+  expires: 2018/10/07
   link: https://www.secretescapes.com/jersey-break-at-an-award-winning-hotel-hotel-la-place-st-brelade/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
 
 - title: Gourmet Jersey hotel break with car hire
@@ -69,3 +39,25 @@
   saved: 41
   expires: 2018/10/09
   link: https://www.secretescapes.com/gourmet-jersey-hotel-break-with-car-hire-the-atlantic-hotel-st-brelade/sale?se_source=rvs_widget&gce_hpp=1&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
+
+- title: Picturesque Jersey break with harbour views & car hire
+  id: picturesque-jersey-break-with-harbour-views-car-hire
+  location: Somerville Hotel, Saint Aubin
+  description: An award-winning hotel overlooking a Jersey harbour
+  price: 239
+  price-description: per person for 3 nights
+  saved: 34
+  expires: 2018/10/10
+  link: https://www.secretescapes.com/picturesque-jersey-break-with-harbour-views-and-car-hire-somerville-hotel-saint-aubin/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=October2018
+
+- title: Characterful Jersey break at a former coaching inn
+  id: characterful-jersey-break-at-a-former-coaching-inn
+  location: The Revere Hotel, St Helier
+  description: A St Helier break at a former 17th-century coaching inn
+  price: 1655
+  price-description: per person for 3 nights
+  saved: 14
+  expires: 2018/10/08
+  link: https://www.secretescapes.com/characterful-jersey-break-at-a-former-coaching-inn-the-revere-hotel-st-helier/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=October2018
+
+
