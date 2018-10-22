@@ -1,15 +1,5 @@
 
 
-- title: Sleek waterfront Jersey break with festive & 'Tennerfest' dates
-  id: sleek-waterfront-jersey-break-with-festive-tennerfest-dates
-  location: Radisson Blu Waterfront Hotel, Channel Islands
-  description: A relaxing getaway at an idyllic waterfront Jersey hotel
-  price: 189
-  price-description: per person for 3 nights
-  saved: 40
-  expires: 2018/10/07
-  link: https://www.secretescapes.com/sleek-waterfront-jersey-break-with-festive-and-tennerfest-dates-radisson-blu-waterfront-hotel-channel-islands/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
-
 - title: Tranquil Jersey break with fine dining & car hire
   id: tranquil-jersey-break-with-fine-dining-car-hire
   location: The Royal Yacht, Channel Islands
@@ -17,28 +7,8 @@
   price: 298
   price-description: per person for 3 nights
   saved: 35
-  expires: 2018/10/07
+  expires: 2018/10/23
   link: https://www.secretescapes.com/elegant-jersey-break-with-fine-dining-and-car-hire-the-royal-yacht-channel-islands/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
-
-- title: Jersey break at an award-winning hotel with festive dates
-  id: jersey-break-at-an-award-winning-hotel-with-festive-dates
-  location: Hotel La Place, St Brelade
-  description: A top-rated stay at an award-winning St Brelade hotel
-  price: 298
-  price-description: per person for 3 nights
-  saved: 36
-  expires: 2018/10/07
-  link: https://www.secretescapes.com/jersey-break-at-an-award-winning-hotel-hotel-la-place-st-brelade/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
-
-- title: Gourmet Jersey hotel break with car hire
-  id: gourmet-jersey-hotel-break-with-car-hire
-  location: The Atlantic Hotel
-  description: High-end dining on a luxe Jersey break
-  price: 349
-  price-description: per person for 3 nights
-  saved: 41
-  expires: 2018/10/09
-  link: https://www.secretescapes.com/gourmet-jersey-hotel-break-with-car-hire-the-atlantic-hotel-st-brelade/sale?se_source=rvs_widget&gce_hpp=1&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=September2018
 
 - title: Picturesque Jersey break with harbour views & car hire
   id: picturesque-jersey-break-with-harbour-views-car-hire
@@ -47,17 +17,27 @@
   price: 239
   price-description: per person for 3 nights
   saved: 34
-  expires: 2018/10/10
+  expires: 2018/10/23
   link: https://www.secretescapes.com/picturesque-jersey-break-with-harbour-views-and-car-hire-somerville-hotel-saint-aubin/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=October2018
 
-- title: Characterful Jersey break at a former coaching inn
-  id: characterful-jersey-break-at-a-former-coaching-inn
-  location: The Revere Hotel, St Helier
-  description: A St Helier break at a former 17th-century coaching inn
-  price: 1655
+- title: Relaxing Jersey break at a highly acclaimed spa hotel
+  id: relaxing-jersey-break-at-a-highly-acclaimed-spa-hotel
+  location: Hotel de France, Channel Islands
+  description: A short break at a high-end St Helier spa hotel
+  price: 309
   price-description: per person for 3 nights
-  saved: 14
-  expires: 2018/10/08
-  link: https://www.secretescapes.com/characterful-jersey-break-at-a-former-coaching-inn-the-revere-hotel-st-helier/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=October2018
+  saved: 37
+  expires: 2018/10/23
+  link: https://www.secretescapes.com/relaxing-jersey-break-at-a-highly-acclaimed-spa-hotel-hotel-de-france-channel-islands/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=October2018
+
+- title: Beachfront Jersey break with sea views & car hire
+  id: beachfront-jersey-break-with-sea-views-car-hire
+  location: Golden Sands, St Brelade's Bay
+  description: Coastal charm at a St Brelade's hotel right on the bay
+  price: 199
+  price-description: per person for 3 nights
+  saved: 53
+  expires: 2018/10/23
+  link: https://www.secretescapes.com/golden-sands-st-brelades-bay/sale?gce_hpp=2&utm_source=SE_Media&utm_medium=Jersey&utm_campaign=October2018
 
 
