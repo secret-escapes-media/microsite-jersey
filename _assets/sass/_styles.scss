@@ -1,1 +1,31 @@
 // general styles for the project that wouldn't be a reuseable component
+
+
+.guide-section {
+  position: relative;
+  &__content {
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: right;
+  }
+}
+
+.js-stick {
+  position: relative;
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+    .is-fixed & {
+      position: fixed;
+      opacity: 0.667;
+    }
+    .is-parked & {
+      position: absolute;
+      top: auto;
+      bottom: 0;
+    }
+  }
+}

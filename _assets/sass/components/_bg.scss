@@ -12,6 +12,11 @@
   &--darkest       { background-color: $grey-darkest; }
 
   &--img   { @include background-attributes; }
+  &--img-fixed {
+    @include background-attributes;
+    background-attachment: fixed;
+    background-size: cover;
+  }
   &__fixed {
     position: fixed;
     top: 0;
@@ -23,6 +28,6 @@
     background-color: $grey-darker;
   }
 
-  &--shadow { box-shadow: 0 2px 4px 2px rgba($grey-darkest,0.2); }
+  &--shadow { box-shadow: 0 2px 4px 2px rgba($grey-darkest,0.1); }
   &--rounded { border-radius: 4px; }
 }
