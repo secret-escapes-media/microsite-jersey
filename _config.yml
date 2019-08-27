@@ -1,10 +1,25 @@
 # Site settings
-title: Jersey
+title: Jersey - Rediscover Yourself
+client:
+  name: Jersey
+  link: "https://www.jersey.com/"
+core-se-link: https://www.secretescapes.com/current-sales
 description: >
-  An island of rediscovery, packed with activities to experience and explore. Begin your escape here.
-baseurl: "/jersey" # the subpath of your site, e.g. /blog/
-url: "http://mp.secretescapes.com" # the base hostname & protocol for your site
+  Rediscover yourself in the refreshing outdoor landscapes of the perfect island break: Jersey. Escape the city, the commute, and the digital overload; take a moment to indulge mind, body and spirit with enchanting experiences set to relax and revitalise. Whether you’re ready to explore the island’s rugged coastline by kayak or discover untamed beauty at Plemont Waterfall, get ready to rewild yourself in Jersey.
+
+
+# file paths
+url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
+baseurl: "/2019/jersey-autumn" # the subpath of your site, e.g. /blog/
+img:     "/2019/jersey-autumn/_assets/img"
+css:     "/2019/jersey-autumn/_assets/css"
+js:      "/2019/jersey-autumn/_assets/js"
+
 
 # Build settings
 markdown: kramdown
-exclude: [node_modules, gulpfile.js, package.json, bower_components, bower.json, README.md]
+exclude: [node_modules, gulpfile.js, package.json, package-lock.json, js/script.js]
+keep_files: [_assets]
+sass:
+    sass_dir: css
+    style: compressed

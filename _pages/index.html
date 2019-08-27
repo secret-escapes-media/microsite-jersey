@@ -1,0 +1,127 @@
+---
+layout: default
+id: overview
+nav: true
+nav-order: 1
+title: Overview
+
+page-nav:
+  - id: revitalise-your-mind
+    title: Revitalise your mind
+  - id: rebalance-your-body
+    title: Rebalance your Body
+  - id: liberate-your-spirit
+    title: Liberate your Spirit
+  - id: competition
+    title: Competition
+  - id: offers
+    title: Offers
+
+
+
+intro: >
+  <p class="text--xl">Rediscover yourself in the refreshing outdoor landscapes of the perfect island break: Jersey.</p>
+  <p class="text--xl">Escape the city, the commute, and the digital overload; take a moment to indulge mind, body and spirit with enchanting experiences set to relax and revitalise. Whether you’re ready to explore the island’s rugged coastline by kayak or discover untamed beauty at Plemont Waterfall, get ready to rewild yourself in Jersey.</p>
+
+
+
+sections:
+
+
+  - id: revitalise-your-mind
+    title: Revitalise your mind
+    intro: >
+      <p class="text--lg">Time to refresh and re-set. Getaway from the every day and experience something new, something to take your mind off the daily stresses and strains. Imagine foraging for local produce in St Ouen's Bay, a favourite for local chefs, with the rhythmic murmur of the tide as your soundtrack. Or, wait for the sun to set and discover a beguiling night-time spectacle. Watch as the beach illuminates with an eerie glow, emitting from strange creatures – this is the bioluminescent beach, once known only to the local fishermen. During the day, don’t miss the chance to explore Jersey’s National Park, where long wistful walks take you through truly exquisite landscapes. </p>
+    interview:
+      name: Name here
+      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.
+      link: "#"
+
+
+  - id: rebalance-your-body
+    title: Rebalance your Body
+    intro: >
+      <p class="text--lg">Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    interview:
+      name: Name here
+      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.
+      link: "#"
+
+
+  - id: liberate-your-spirit
+    title: Liberate your Spirit
+    intro: >
+      <p class="text--lg">Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    interview:
+      name: Name here
+      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.
+      link: "#"
+
+---
+
+
+<div class="vpad--xxl">
+  <div class="container container--xl text--center">
+    {{page.intro}}
+  </div>
+</div>
+
+
+
+
+{% for section in page.sections %}
+<div class="wp" id="{{section.id}}"></div>
+<div class="vpad--xxl bg--grey-lightest">
+  <div class="container">
+
+    <div class="row">
+      <div class="col col--6">
+        <h2 class="title title--xxl">{{section.title}}</h2>
+        <div class="space--xs"></div>
+        {{section.intro}}
+      </div>
+      <div class="col col--6">
+        <div class="bg-img bg-img--4-3">
+          <a href="javascript:void(0);" class="bg-img__link js-open-modal" data-modal-id="video-{{section.id}}"></a>
+          <div class="bg-img__content">
+            <div class="bg-img__play"></div>
+          </div>
+        </div>
+        <div class="space--md"></div>
+        {% assign interview = section.interview %}
+        <div class="boxpad--md bg--white bg--shadow bg--rounded">
+          <h4 class="title title--xs">{{interview.name}}</h4>
+          <hr class="hr--left">
+          {{interview.content}}
+          <hr>
+          <a href="{{interview.link}}" class="btn btn--solid">Find out more</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endfor %}
+
+
+
+{% include page/promo-competition.html %}
+
+<div class="bg--grey-lightest vpad--xxl">
+  <div class="container">
+    <div class="text--center">
+      <h2 class="title title--xl">Jersey holiday deals</h2>
+    </div>
+    <div class="space--lg"></div>
+
+    <div class="row row--xl-6-6 row--gutters-lg">
+      {% for offer in site.data.offers | sort: 'price' %}
+        <div class="col">
+          {% include offer/offer.html %}
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
+{% include page/promo-offers.html %}

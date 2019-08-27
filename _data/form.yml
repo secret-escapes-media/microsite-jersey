@@ -1,0 +1,27 @@
+- id: signup
+  post-url: "#getFormUrl"
+  fields:
+    - id: name
+      type: text
+      label: Name
+      required: true
+    - id: email
+      type: email
+      label: Email
+      required: true
+  submit: Sign up
+
+
+
+- id: competition
+  post-url: "#getFormUrl"
+  fields:
+    - id: name
+      type: text
+      label: Name
+      required: true
+    - id: email
+      type: email
+      label: Email
+      required: true
+  submit: Sign up

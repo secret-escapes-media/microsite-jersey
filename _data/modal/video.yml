@@ -1,0 +1,75 @@
+
+
+
+# - type: video
+#   title: Kirribilli Markets
+#   subtitle: Kirribilli, Sydney
+#   id: kirribilli-markets-video
+#   youtube-id: WQhGftS8ptQ
+#   pages:
+#     - id: overview
+
+- type: video
+  title: Vivid Sydney
+  subtitle: Sydney
+  id: vivid-festival-video
+  youtube-id: zYyRELY8ewk
+  pages:
+    - id: overview
+
+
+
+- type: video
+  title: Jervis Bay
+  subtitle: South Coast
+  id: jervis-bay-video
+  youtube-id: P3lFqlo3L9A
+  pages:
+    - id: overview
+
+- type: video
+  title: Pebbly Beach
+  subtitle: Murramarang National Park
+  id: pebbly-beach-video
+  youtube-id: WQhGftS8ptQ
+  pages:
+    - id: overview
+
+
+
+- type: video
+  title: Bouddi National Park
+  subtitle: Central Coast
+  id: bouddi-national-park-video
+  youtube-id: SLsZMM9cZI0
+  pages:
+    - id: overview
+
+# - type: video
+#   title: Blue Mountains
+#   subtitle: West of Sydney
+#   id: blue-mountains-video
+#   youtube-id: WQhGftS8ptQ
+#   pages:
+#     - id: overview
+
+
+
+- type: video
+  title: Patonga to Pearl Beach
+  subtitle: Central Coast
+  id: patonga-video
+  youtube-id: dNqQpcB4o0o
+  pages:
+    - id: overview
+
+- type: video
+  title: Terrigal
+  subtitle: New South Wales
+  id: terrigal-video
+  youtube-id: Hzv-bkDx6vU
+  pages:
+    - id: overview
+
+
+

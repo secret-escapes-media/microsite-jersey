@@ -1,0 +1,18 @@
+
+
+{% assign nav-pages = page.page-nav %}
+
+<div class="site-nav">
+  <div class="site-nav__scroll-wrap">
+    <div class="site-nav__wrap">
+
+        {% for nav-page in nav-pages %}<span class="site-nav__item">
+
+          <a class="site-nav__link" href="#{{nav-page.id}}">
+            {{nav-page.title}}
+          </a>
+
+        </span>{% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {% include head.html %}
+  {% include page/head.html %}
 
-  <body id="top" {% if page.title %}class="{{ page.title | slugify }}" data-current-page="{{ page.title | slugify }}"{% endif %}>
+  <body class="no-js">
 
-    {% include tracking.html %}
+    {% include components/tracking.html %}
 
-    {% include header.html %}
+    {% include page/header.html %}
 
-    {% include banner.html %}
+    {% include page/banner.html %}
 
-    {{ content }}
+    <div class="content-spacing section-spacing">
+      {{ content }}
+    </div>
 
-    {% include competition-section.html %}
+    {% include page/footer.html %}
 
-    {% include footer.html %}
+    {% include modal/modal.html %}
 
   </body>
 

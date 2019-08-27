@@ -1,0 +1,47 @@
+
+{% assign modal-items = site.data.modal.text | concat: site.data.modal.video %}
+
+<div class="js-modal modal is-closed content-spacing section-spacing">
+  <div class="js-close-modal modal__close"></div>
+
+  <div class="js-modal-nav modal__nav modal__nav--next" data-nav-direction="next"></div>
+  <div class="js-modal-nav modal__nav modal__nav--previous" data-nav-direction="prev"></div>
+
+  <div class="modal__container">
+
+    {% for item in modal-items %}
+      {% if item.pages %}
+        {% for item-page in item.pages %}
+          {% if item-page.id == page.id or item-page.id == 'all' %}
+
+            <div
+              class="modal__item modal__item--{{item.id}} is-closed"
+              id="modal-{{item.id}}"
+              {% if item.youtube-id %}data-video-id="{{item.youtube-id}}"{% endif %}
+              {% if item.page %}data-group-page="{{item.page}}"{% endif %}
+              {% if item.section %}data-group-section="{{item.section}}"{% endif %}>
+              <div class="modal__content">
+                {% if item.type == 'highlight' %}
+                  {% include modal/content/highlight.html %}
+                {% elsif item.type == 'expert' %}
+                  {% include modal/content/expert.html %}
+                {% elsif item.type == 'video' %}
+                  {% include modal/content/video.html %}
+                {% elsif item.type == 'form' %}
+                  {% include modal/content/form.html %}
+                {% elsif item.type == 'map' %}
+                  {% include modal/content/map.html %}
+                {% else %}
+                  {% include modal/content/text.html %}
+                {% endif %}
+              </div>
+            </div>
+
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+
+  </div>
+
+</div>

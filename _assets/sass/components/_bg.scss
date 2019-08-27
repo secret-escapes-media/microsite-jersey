@@ -1,0 +1,28 @@
+// background styles
+
+.bg {
+  &--white { background-color: $white; }
+  &--black { background-color: $black; }
+  &--grey-lightest { background-color: $grey-lightest; }
+  &--grey-lighter  { background-color: $grey-lighter; }
+  &--grey-light    { background-color: $grey-light; }
+  &--grey          { background-color: $grey; }
+  &--dark          { background-color: $grey-dark; }
+  &--darker        { background-color: $grey-darker; }
+  &--darkest       { background-color: $grey-darkest; }
+
+  &--img   { @include background-attributes; }
+  &__fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-background;
+    @include background-attributes;
+    background-color: $grey-darker;
+  }
+
+  &--shadow { box-shadow: 0 2px 4px 2px rgba($grey-darkest,0.2); }
+  &--rounded { border-radius: 4px; }
+}

@@ -1,0 +1,14 @@
+
+
+- type: text
+  id: terms
+  title: Terms and Conditions
+  content: >
+    <p>Pricing correct as of 1 July 2019. Prices are in GBP and are a return Economy Class fare.</p>
+    <p>Tickets must be issued on before 31 July 2019. Valid for travel commencing on or before 31 March 2020. Prices based on minimum stay of 6 days and purchased at least 5 days ahead of travel.</p>
+  pages:
+    - id: overview
+
+
+
+
