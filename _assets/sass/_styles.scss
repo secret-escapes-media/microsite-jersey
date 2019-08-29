@@ -1,14 +1,6 @@
 // general styles for the project that wouldn't be a reuseable component
 
 
-.guide-section {
-  position: relative;
-  &__content {
-    position: relative;
-    flex-direction: row-reverse;
-    justify-content: right;
-  }
-}
 
 .js-stick {
   position: relative;
@@ -27,5 +19,42 @@
       top: auto;
       bottom: 0;
     }
+  }
+}
+
+
+
+.guide-section {
+  position: relative;
+  &__content {
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: right;
+  }
+  &__left,
+  &__right { padding-top: $s8 !important; }
+}
+
+.ambassador {
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &-image {
+      width: 50%;
+      max-width: 120px;
+      margin-right: 1rem;
+    }
+  }
+}
+
+
+
+.competition {
+  &__box {
+    background-color: rgba($white,0.9);
+    color: $grey-darkest;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 2px rgba($black,0.2);
   }
 }

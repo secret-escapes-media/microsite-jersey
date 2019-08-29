@@ -2,9 +2,15 @@
 
 
 - type: video
-  title:
-  subtitle:
   id: video
+  youtube-id: WQhGftS8ptQ
+  pages:
+    - id: all
+
+
+
+- type: video
+  id: hero-video
   youtube-id: WQhGftS8ptQ
   pages:
     - id: all
