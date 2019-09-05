@@ -24,26 +24,17 @@
 
 
 
-.guide-section {
-  position: relative;
-  &__content {
-    position: relative;
-    flex-direction: row-reverse;
-    justify-content: right;
-  }
-  &__left,
-  &__right { padding-top: $s8 !important; }
-}
 
 .ambassador {
   &__title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    text-align: center;
+    border-right: 1px solid rgba($grey-darkest,0.2);
+    padding-right: $s2;
     &-image {
-      width: 50%;
+      width: 70%;
       max-width: 120px;
-      margin-right: 1rem;
+      margin: auto;
+      margin-bottom: 1rem;
     }
   }
 }

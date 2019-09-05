@@ -2,16 +2,28 @@
 
 
 - type: video
-  id: video
-  youtube-id: WQhGftS8ptQ
+  id: hero-video
+  youtube-id: ITtj4JYIRlM
   pages:
     - id: all
 
 
 
 - type: video
-  id: hero-video
-  youtube-id: WQhGftS8ptQ
+  id: revitalise-your-mind-video
+  youtube-id: Xw9KUJm3yBQ
+  pages:
+    - id: all
+
+- type: video
+  id: rebalance-your-body-video
+  youtube-id: hSq4fWl3y2E
+  pages:
+    - id: all
+
+- type: video
+  id: liberate-your-spirit-video
+  youtube-id: wO5u6c7A_IU
   pages:
     - id: all
 
