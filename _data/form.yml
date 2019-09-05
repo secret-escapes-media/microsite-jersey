@@ -14,7 +14,7 @@
 
 
 - id: competition
-  post-url: "#getFormUrl"
+  post-url: "https://getform.io/f/9cc88786-6769-4fbe-a539-3bf7c3795f20"
   fields:
     - id: name
       type: text

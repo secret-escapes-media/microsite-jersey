@@ -2,34 +2,13 @@
 
 
 
-.js-stick {
-  position: relative;
-  &__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 1;
-    transition: opacity 500ms ease-in-out;
-    .is-fixed & {
-      position: fixed;
-      opacity: 0.667;
-    }
-    .is-parked & {
-      position: absolute;
-      top: auto;
-      bottom: 0;
-    }
-  }
-}
-
-
-
-
 .ambassador {
   &__title {
     text-align: center;
-    border-right: 1px solid rgba($grey-darkest,0.2);
-    padding-right: $s2;
+    @include bp($xl){
+      border-right: 1px solid rgba($grey-darkest,0.2);
+      padding-right: $s2;
+    }
     &-image {
       width: 70%;
       max-width: 120px;
