@@ -27,7 +27,7 @@ function browserSyncServe() {
     server: {
       baseDir: '_site/',
       routes: {
-        '/2019/jersey-autumn': '_site/'
+        '/jersey-autumn': '_site/'
       }
     }
   });

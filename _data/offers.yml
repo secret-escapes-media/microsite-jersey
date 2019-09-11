@@ -1,27 +1,14 @@
 
-
-- title: Elegant Jersey break with sea views, car hire & vineyard tour
-  id: elegant-jersey-break-with-sea-views-car-hire-and-vineyard-tour
-  location: Hotel Cristina, Channel Islands
-  description: Sip Jersey wine on a tasting with an elegant St Lawrence stay
-  price: 259
+- title: Award-winning 5* Jersey manor break with car hire
+  id: award-winning-5-jersey-manor-break-with-car-hire
+  location: Longueville Manor, Channel Islands
+  description: Retreat to Jersey with an award-winning, five-star manor stay
+  price: 425
   price-description: per person for 3 nights
-  saved: 36
-  expires: 2019/07/30
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/98226/1973a1ad_5ed3_45f1_ac1c_b421503fb723.jpg
-  link: https://www.secretescapes.com/elegant-jersey-break-with-sea-views-car-hire-and-vineyard-tour-hotel-cristina-channel-islands/sale?utm_source=SE_media&utm_medium=Jersey&utm_campaign=September2019
-
-
-- title: Jersey holiday at a former coaching inn with car hire
-  id: jersey-holiday-at-a-former-coaching-inn-with-car-hire
-  location: The Revere Hotel, St Helier
-  description: Choose the Channel Islands and stay at a historic St Helier coaching inn
-  price: 239
-  price-description: per person for 4 nights
-  saved: 37
-  expires: 2019/07/31
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/50618/16136c4a_b575_4eee_b7ff_39307ad8275b.jpg
-  link: https://www.secretescapes.com/revere-hotel-st-helier-jersey/sale?utm_source=SE_media&utm_medium=Jersey&utm_campaign=September2019
+  saved: 33
+  expires: 2019/10/22
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/100696/c9de69b0_7694_4dd8_aa57_d6c696908213.jpg
+  link: https://www.secretescapes.com/award-winning-5-star-jersey-manor-break-with-car-hire-longueville-manor-channel-islands/sale?utm_source=SE_media&utm_medium=Jersey&utm_campaign=September2019
 
 
 - title: Tranquil Jersey waterside break with car hire
@@ -31,18 +18,54 @@
   price: 249
   price-description: per person for 3 nights
   saved: 36
-  expires: 2019/08/06
+  expires: 2019/09/09
   image: https://d1x3cbuht6sy0f.cloudfront.net/sales/66779/ddd4237d_1aa8_4100_a1a2_f6948302b4b7.jpg
   link: https://www.secretescapes.com/tranquil-jersey-waterside-break-with-car-hire-radisson-blu-waterfront-hotel-channel-islands/sale?utm_source=SE_media&utm_medium=Jersey&utm_campaign=September2019
 
 
-- title: Relaxing Jersey break
-  id: relaxing-jersey-break
-  location: Pomme d'Or Hotel, Channel Islands
-  description: See Jersey while based overlooking St Helier's yacht-lined marina
-  price: 255
+- title: Jersey break at an award-winning hotel with car hire
+  id: jersey-break-at-an-award-winning-hotel-with-car-hire
+  location: La Place Hotel, St. Brelade
+  description: Embrace St. Brelade's charm at an award-winning hotel in Jersey
+  price: 298
   price-description: per person for 3 nights
-  saved: 28
-  expires: 2019/08/06
-  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/66009/3e31eef1_68fb_4de1_b588_913c3bb1c62e.jpg
-  link: https://www.secretescapes.com/pomme-dor-hotel-jersey-channel-islands/sale?utm_source=SE_media&utm_medium=Jersey&utm_campaign=September2019
+  saved: 36
+  expires: 2019/09/10
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/87034/7a54dbc2_a622_4a94_a32c_5d7b4f47d945.jpg
+  link: https://www.secretescapes.com/jersey-break-at-an-award-winning-hotel-with-car-hire-la-place-hotel-st-brelade/sale?utm_source=SE_media&utm_medium=Jersey&utm_campaign=September2019
+
+
+- title: Picturesque seaside Jersey break with car hire
+  id: picturesque-seaside-jersey-break-with-car-hire
+  location: L’Horizon Beach Hotel & Spa, Channel Islands
+  description: St Brelade spa hotel on a lovely Jersey bay
+  price: 299
+  price-description: per person for 3 nights
+  saved: 34
+  expires: 2019/09/18
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/96403/620dd261_00c7_4dde_b4ee_0db8c02a2674.jpg
+  link: https://www.secretescapes.com/picturesque-jersey-break-with-car-hire-lhorizon-beach-hotel-and-spa-channel-islands/sale?utm_source=SE_media&utm_medium=Jersey&utm_campaign=September2019
+
+
+- title: Deluxe Jersey break with fine dining & car hire
+  id: deluxe-jersey-break-with-fine-dining-and-car-hire
+  location: The Royal Yacht, Channel Islands
+  description: Refined St Helier spa hotel with fine dining
+  price: 298
+  price-description: per person for 3 nights
+  saved: 35
+  expires: 2019/10/22
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/42302/e0d745df_44d3_4e92_8c3b_095c0ed7095f.jpg
+  link: https://www.secretescapes.com/the-royal-yacht-jersey-channel-islands/sale?utm_source=SE_media&utm_medium=Jersey&utm_campaign=September2019
+
+
+- title: Picturesque Jersey break with award-winning dining
+  id: picturesque-jersey-break-with-award-winning-dining
+  location: The Atlantic Hotel, St Brelade
+  description: Award-winning Jersey break with lauded dining and sea views
+  price: 345
+  price-description: per person for 3 nights
+  saved: 33
+  expires: 2019/10/22
+  image: https://d1x3cbuht6sy0f.cloudfront.net/sales/34879/69c53fea_07ba_4762_9a60_89aa349714bb.jpg
+  link: https://www.secretescapes.com/the-atlantic-hotel-st-brelade-jersey/sale?utm_source=SE_media&utm_medium=Jersey&utm_campaign=September2019

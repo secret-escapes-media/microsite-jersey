@@ -10,10 +10,10 @@ description: >
 
 # file paths
 url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
-baseurl: "/2019/jersey-autumn" # the subpath of your site, e.g. /blog/
-img:     "/2019/jersey-autumn/_assets/img"
-css:     "/2019/jersey-autumn/_assets/css"
-js:      "/2019/jersey-autumn/_assets/js"
+baseurl: "/jersey-autumn" # the subpath of your site, e.g. /blog/
+img:     "/jersey-autumn/_assets/img"
+css:     "/jersey-autumn/_assets/css"
+js:      "/jersey-autumn/_assets/js"
 
 
 # Build settings
