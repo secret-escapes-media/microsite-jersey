@@ -25,3 +25,5 @@
       label: Email
       required: true
   submit: Sign up
+  terms: >
+    By submitting your entry, you agree to the <a href="#" class="js-open-modal link--underlined" data-modal-item="competition-terms">terms and conditions</a> of this competition
