@@ -1,32 +1,5 @@
-- title: Serene Jersey escape with included car hire
-  location: St. Brelades Bay Hotel, Jersey
-  description: A peaceful Jersey break with car hire and beach views
-  price: 299
-  price-description: per person. Based on 2 people for 3 nights
-  saved: 29
-  expires: 2019/10/26
-  image: https://d2g6qre7voj6kv.cloudfront.net/sales/70326/0e5bebb2_12fb_46d8_afe2_3d1e172610df.jpg?auto=format,compress
-  link: https://www.secretescapes.com/serene-jersey-escape-with-included-car-hire-st-brelades-bay-hotel-jersey/sale
 
-- title: Award-winning 5* Jersey manor break with car hire
-  location: Longueville Manor, Channel Islands
-  description: Retreat to Jersey with an award-winning, five-star manor stay
-  price: 425
-  price-description: per person. Based on 2 people for 3 nights
-  saved: 33
-  expires: 2019/10/21
-  image: https://d2g6qre7voj6kv.cloudfront.net/sales/100696/c9de69b0_7694_4dd8_aa57_d6c696908213.jpg?auto=format,compress
-  link: https://www.secretescapes.com/award-winning-5-star-jersey-manor-break-with-car-hire-longueville-manor-channel-islands/sale
 
-- title: Deluxe Jersey break with fine dining & car hire
-  location: The Royal Yacht, Channel Islands
-  description: Refined St Helier spa hotel with fine dining
-  price: 298
-  price-description: per person. Based on 2 people for 3 nights
-  saved: 35
-  expires: 2019/10/21
-  image: https://d2g6qre7voj6kv.cloudfront.net/sales/42302/e0d745df_44d3_4e92_8c3b_095c0ed7095f.jpg?auto=format,compress
-  link: https://www.secretescapes.com/the-royal-yacht-jersey-channel-islands/sale
 
 - title: Tranquil Jersey waterside break with car hire
   location: Radisson Blu Waterfront Hotel, Channel Islands
@@ -47,3 +20,14 @@
   expires: 2019/10/29
   image: https://d2g6qre7voj6kv.cloudfront.net/sales/50618/16136c4a_b575_4eee_b7ff_39307ad8275b.jpg?auto=format,compress
   link: https://www.secretescapes.com/jersey-holiday-at-a-former-coaching-inn-with-car-hire-the-revere-hotel-st-helier/sale
+
+- title: Luxury Jersey country house getaway with car hire
+  location: Somerville Hotel, St Aubin
+  description: Luxe harbourside Jersey holiday with car hire
+  price: 274
+  price-description: per person. Based on 2 people for 3 nights
+  saved: 58
+  expires: 2019/11/05
+  image: https://d2g6qre7voj6kv.cloudfront.net/sales/35521/2151a700_3b27_4411_af93_6ddc5aefc20e.jpg?auto=format,compress
+  link: https://www.secretescapes.com/luxury-country-house-hotel-break-with-car-hire-in-scenic-jersey-somerville-hotel-st-aubin/sale
+
